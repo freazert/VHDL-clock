@@ -1,0 +1,6 @@
+work	"Date/date_block.vhd"
+work	"Date/max_day_setter.vhd"
+work	"Wekker/wekker_block.vhd"
+work	"alarm_clock.vhd"
+work	"counter.vhd"
+work	"time_block.vhd"
