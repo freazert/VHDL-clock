@@ -1,0 +1,3 @@
+vhdl isim_temp "max_day_setter.vhd"
+vhdl isim_temp "../counter.vhd"
+vhdl isim_temp "date_block.vhd"

@@ -17,4 +17,4 @@ at 0 ps, Instance /tb_date_block/uut/SD/ : Warning: NUMERIC_STD.TO_INTEGER: meta
 at 0 ps, Instance /tb_date_block/uut/SD/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 at 0 ps, Instance /tb_date_block/uut/SD/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 Finished circuit initialization process.
-# run 200ms
+# run 1.00s

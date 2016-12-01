@@ -34,6 +34,7 @@ entity date_block is
 				cnten	 			: in  STD_LOGIC;
 				mode		: in  STD_LOGIC;									-- OPGELET : voor deze ingangen mag de ingang slechts gedurende 1 klokperiode 1 zijn.
 				incr, decr	: in  STD_LOGIC;
+				endEdit		: in STD_LOGIC;
 				ostate			: out  STD_LOGIC_VECTOR (3 downto 0);
 				date_cnt 		: out  STD_LOGIC_VECTOR (23 downto 0));
 end date_block;
@@ -80,22 +81,29 @@ begin
 		if rising_edge(sysclk) then 								
 			if reset = '1' then present_state <= cnt; else present_state <= next_state; end if;
 		end if;
+	end process;
+	
+	DATE_COUNT_PROCESS: process (countT1, countT2)
+	begin
 		countT2T1 (7 downto 0) <= countT1;
 		countT2T1 (15 downto 8) <= countT2;
 		date_cnt (15 downto 0) <= countT2T1;
 	end process;
 
-	NXT_STATE: process (present_state, mode)		
+	NXT_STATE: process (present_state, mode, endEdit)		
 	begin
+	if endEdit = '1' then next_state <= cnt; 
+	else
 		case present_state is
 			when cnt   =>	if mode = '1' then 	next_state <= setT1;	else next_state <= cnt;		end if;
 			when setT3 =>	if mode = '1' then 	next_state <= cnt;	else next_state <= setT3;	end if;
 			when setT2 =>	if mode = '1' then 	next_state <= setT3;	else next_state <= setT2;	end if;	
 			when setT1 =>	if mode = '1' then 	next_state <= setT2;	else next_state <= setT1;	end if;			
 		end case;
+	end if;
 	end process;
 	-- het OUTPUTS process zal, afhankelijk van de "present-state", de verbindingen met de correcte (teller)poorten leggen
-	OUTPUTS : process (present_state,cnten,tcT1,tcT2,btn) 		
+	OUTPUTS : process (present_state,cnten,tcT1,tcT2,btn, incr, decr) 		
 	begin
 	if incr = '1' 
 		then upDwn <= '1'; btn <= '1'; 
@@ -112,10 +120,20 @@ begin
 		end case;
 	end process;	
 	
-	T1: counter PORT MAP(cnten => cntenT1, reset => reset,sysclk => sysclk,min => x"16",max => x"99",count => countT1, upDwn => upDwn );
-	T2: counter PORT MAP(cnten => cntenT2, reset => reset,sysclk => sysclk,min => x"01",max => x"12",count => countT2, tc => tcT2, upDwn => upDwn );
-	T3: counter PORT MAP(cnten => cntenT3, reset => reset,sysclk => sysclk,min => x"01",max => setMaxDay,count => date_cnt(23 downto 16),tc => tcT1 , upDwn => upDwn );
-	SD: max_day_setter PORT MAP (MYinput => countT2T1, maxDay => setMaxDay);
+	T1: counter PORT MAP(
+		cnten => cntenT1, reset => reset,sysclk => sysclk,
+		min => x"16",max => x"99",count => countT1, upDwn => upDwn 
+	);
+	T2: counter PORT MAP(
+		cnten => cntenT2, reset => reset,sysclk => sysclk,
+		min => x"01",max => x"12",count => countT2, tc => tcT2, upDwn => upDwn 
+	);
+	T3: counter PORT MAP(
+		cnten => cntenT3, reset => reset,sysclk => sysclk,
+		min => x"01",max => setMaxDay,count => date_cnt(23 downto 16),tc => tcT1 , upDwn => upDwn );
+	SD: max_day_setter PORT MAP (
+		MYinput => countT2T1, maxDay => setMaxDay
+	);
 	
 
 end Behavioral;
