@@ -34,17 +34,33 @@ entity buttons is
            btn2 : in  STD_LOGIC;
            btn3 : in  STD_LOGIC;
            btn4 : in  STD_LOGIC;
+			  btn5 : in std_logic;
            sysclk : in  STD_LOGIC;
            debclk : in  STD_LOGIC;
            op1 : out  STD_LOGIC;
            op2 : out  STD_LOGIC;
            op3 : out  STD_LOGIC;
-           op4 : out  STD_LOGIC);
+           op4 : out  STD_LOGIC;
+			  op5: out std_logic);
 end buttons;
 
 architecture Behavioral of buttons is
 
+COMPONENT button 
+Port ( btn : in  STD_LOGIC;
+           sysclk : in  STD_LOGIC;
+           debclk : in  STD_LOGIC;
+           op : out  STD_LOGIC);
+end COMPONENT;
+
 begin
+
+B1: button PORT MAP( btn => btn1, sysclk => sysclk, debclk => debclk, op => op1);
+B2: button PORT MAP( btn => btn2, sysclk => sysclk, debclk => debclk, op => op2);
+B3: button PORT MAP( btn => btn3, sysclk => sysclk, debclk => debclk, op => op3);
+B4: button PORT MAP( btn => btn4, sysclk => sysclk, debclk => debclk, op => op4);
+B5: button PORT MAP( btn => btn5, sysclk => sysclk, debclk => debclk, op => op5);
+
 
 
 end Behavioral;
