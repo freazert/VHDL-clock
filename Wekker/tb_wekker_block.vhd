@@ -135,8 +135,8 @@ BEGIN
 		
 		btnStop <= '1'; wait for sysclk_period;
 		btnStop <= '0'; wait for sysclk_period;
-		btnStop <= '1'; wait for sysclk_period;
-		btnStop <= '0'; wait for sysclk_period;
+		--btnStop <= '1'; wait for sysclk_period;
+		--btnStop <= '0'; wait for sysclk_period;
 		
 		counterInput <= "000000000000000001011000"; wait for sysclk_period;
 		counterInput <= "000000000000000001011001"; wait for sysclk_period;
@@ -151,6 +151,8 @@ BEGIN
 		counterInput <= "000000000000000100000000"; wait for sysclk_period;
 		counterInput <= "000000000000000100000001"; wait for sysclk_period;
 		
+		btnStop <= '1'; wait for sysclk_period;
+		btnStop <= '0'; wait for sysclk_period;
 		btnStop <= '1'; wait for sysclk_period;
 		btnStop <= '0'; wait for sysclk_period;
 		

@@ -35,6 +35,7 @@ entity wekker_block is
            mode : in  STD_LOGIC;
            incr : in  STD_LOGIC;
            decr : in  STD_LOGIC;
+			  endEdit: in std_logic;
            counterInput : in  STD_LOGIC_VECTOR (23 downto 0);
            sysclk : in  STD_LOGIC;
 				wstate : out STD_LOGIC_VECTOR (3 downto 0);
@@ -52,7 +53,6 @@ COMPONENT counter
 		min 						: IN std_logic_vector(7 downto 0);
 		max 						: IN std_logic_vector(7 downto 0); 
 		upDwn						: IN std_logic;
-		endEdit					: IN std_logic;
 		count 					: OUT std_logic_vector(7 downto 0);
 		tc 						: OUT std_logic);
 	END COMPONENT;
