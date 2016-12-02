@@ -103,13 +103,18 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-    reset <='1';wait for 100 ns;	
-		reset <='0';wait for sysclk_period*8650;
+    reset <='1';wait for sysclk_period;	
+		reset <='0';wait for sysclk_period;
+		--wait for sysclk_period*8650;
 		
-		wait for 100 ns;
-		mode <='0';	wait for 20 ns;
+		--wait for 100 ns;
+		--mode <='0';	wait for 20 ns;
 		
 		-- stel instel mode in op setT3
+		mode <='1';	wait for sysclk_period;
+		mode <='0';	wait for 100 ns;	
+		mode <='1';	wait for sysclk_period;
+		mode <='0';	wait for 100 ns;
 		mode <='1';	wait for sysclk_period;
 		mode <='0';	wait for 100 ns;	
 			-- stel T3 in
@@ -118,35 +123,82 @@ BEGIN
 		incr <='1';	wait for sysclk_period;
 		incr <='0';	wait for sysclk_period;
 		incr <='1';	wait for sysclk_period;
-		incr <='0';	wait for 100 ns;	
-		-- stel instel mode in op setT2	
-		mode <='1';	wait for sysclk_period; 
-		mode <='0';	wait for 100 ns;	
-			-- stel T2 in	
-		incr <='1';	wait for sysclk_period;
 		incr <='0';	wait for sysclk_period;
 		incr <='1';	wait for sysclk_period;
 		incr <='0';	wait for sysclk_period;
 		incr <='1';	wait for sysclk_period;
-		incr <='0';	wait for 100 ns;		
+		incr <='0';	wait for sysclk_period;
 		
-		-- stel instel mode in op setT1
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		incr <='1';	wait for sysclk_period;
+		incr <='0';	wait for sysclk_period;
+		
+		
 		mode <='1';	wait for sysclk_period;
-		mode <='0';	wait for 100 ns;	
-			-- stel T1 in	
+		mode <='0';	wait for 10 ns;
+		mode <='1';	wait for sysclk_period;
+		mode <='0';	wait for 100 ns;
+		mode <='1';	wait for sysclk_period;
+		mode <='0';	wait for 100 ns;
+		
 		incr <='1';	wait for sysclk_period;
 		incr <='0';	wait for sysclk_period;
-		incr <='1';	wait for sysclk_period;
-		incr <='0';	wait for sysclk_period;
-		incr <='1';	wait for sysclk_period;
-		incr <='0';	wait for 100 ns;
+		
+		
+		
 
-		decr <='1';	wait for sysclk_period;
-		decr <='0';	wait for sysclk_period;
-		decr <='1';	wait for sysclk_period;
-		decr <='0';	wait for sysclk_period;
-		decr <='1';	wait for sysclk_period;
-		decr <='0';	wait for 100 ns;		
+		--date_cnt <= "001100010000000100010110"
 
 		endEdit <= '1'; wait for 100 ns;
 		

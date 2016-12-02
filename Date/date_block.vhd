@@ -66,6 +66,8 @@ COMPONENT max_day_setter
 	signal countT2T1			: STD_LOGIC_VECTOR (15 downto 0);
 	signal countT1				: STD_LOGIC_VECTOR (7 downto 0);
 	signal countT2 			: STD_LOGIC_VECTOR (7 downto 0);
+	--signal countT3 			: STD_LOGIC_VECTOR (7 downto 0);
+	signal countTrigger		: STD_LOGIC := '0';
 	signal upDwn				: std_logic := '1';
 	signal btn					: std_logic := '0';
 ----------------------------------------------------------------
@@ -83,10 +85,14 @@ begin
 		end if;
 	end process;
 	
-	DATE_COUNT_PROCESS: process (countT1, countT2)
+	DATE_COUNT_PROCESS: process (countT1, countT2, countTrigger)
 	begin
 		countT2T1 (7 downto 0) <= countT1;
 		countT2T1 (15 downto 8) <= countT2;
+	end process;
+	
+	DATE_COUNT_PROCESS2: process (countT2T1)
+	begin
 		date_cnt (15 downto 0) <= countT2T1;
 	end process;
 
@@ -130,7 +136,7 @@ begin
 	);
 	T3: counter PORT MAP(
 		cnten => cntenT3, reset => reset,sysclk => sysclk,
-		min => x"01",max => setMaxDay,count => date_cnt(23 downto 16),tc => tcT1 , upDwn => upDwn );
+		min => x"01",max => setMaxDay,count => date_cnt (23 downto 16),tc => tcT1 , upDwn => upDwn );
 	SD: max_day_setter PORT MAP (
 		MYinput => countT2T1, maxDay => setMaxDay
 	);
