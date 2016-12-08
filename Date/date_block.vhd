@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -62,14 +63,26 @@ COMPONENT max_day_setter
 	signal tcT1,tcT2 			: std_logic;
 	signal cntenT1,cntenT2	: std_logic;
 	signal cntenT3 			: std_logic;
+	signal cntenT3_s 			: std_logic;
+	signal cntenT3_s2 			: std_logic;
+
 	signal setMaxDay			: STD_LOGIC_VECTOR (7 downto 0);
-	signal countT2T1			: STD_LOGIC_VECTOR (15 downto 0);
+	signal countT3T2T1		: STD_LOGIC_VECTOR (23 downto 0);
 	signal countT1				: STD_LOGIC_VECTOR (7 downto 0);
 	signal countT2 			: STD_LOGIC_VECTOR (7 downto 0);
-	--signal countT3 			: STD_LOGIC_VECTOR (7 downto 0);
+	signal countT3 			: STD_LOGIC_VECTOR (7 downto 0);
 	signal countTrigger		: STD_LOGIC := '0';
 	signal upDwn				: std_logic := '1';
 	signal btn					: std_logic := '0';
+	signal Udaycheck 			: 	integer range 0 to 9;
+	signal Tdaycheck 			: 	integer range 0 to 9;
+	signal Uday 				: 	integer range 0 to 9;
+	signal Tday 				: 	integer range 0 to 9;
+	--signal Umonth 				: 	integer range 0 to 9;
+	--signal Tmonth 				: 	integer range 0 to 9;
+	--signal Uyear 				: 	integer range 0 to 9;
+	--signal Tyear 				: 	integer range 0 to 9;
+	signal dayforward 		: std_logic := '0';
 ----------------------------------------------------------------
 -- TOESTANDSMACHINE VOOR DE BEDIENING
 -- declaratie toestanden
@@ -85,15 +98,16 @@ begin
 		end if;
 	end process;
 	
-	DATE_COUNT_PROCESS: process (countT1, countT2, countTrigger)
+	DATE_COUNT_PROCESS: process (countT1, countT2, countT3, countTrigger)
 	begin
-		countT2T1 (7 downto 0) <= countT1;
-		countT2T1 (15 downto 8) <= countT2;
+		countT3T2T1 (7 downto 0) <= countT1;
+		countT3T2T1 (15 downto 8) <= countT2;
+		countT3T2T1 (23 downto 16) <= countT3;
 	end process;
 	
-	DATE_COUNT_PROCESS2: process (countT2T1)
+	DATE_COUNT_PROCESS2: process (countT3T2T1)
 	begin
-		date_cnt (15 downto 0) <= countT2T1;
+		date_cnt (23 downto 0) <= countT3T2T1;
 	end process;
 
 	NXT_STATE: process (present_state, mode, endEdit)		
@@ -109,7 +123,7 @@ begin
 	end if;
 	end process;
 	-- het OUTPUTS process zal, afhankelijk van de "present-state", de verbindingen met de correcte (teller)poorten leggen
-	OUTPUTS : process (present_state,cnten,tcT1,tcT2,btn, incr, decr) 		
+	OUTPUTS : process (present_state,btn, incr, decr) 		
 	begin
 	if incr = '1' 
 		then upDwn <= '1'; btn <= '1'; 
@@ -119,12 +133,45 @@ begin
 		upDwn <= '1'; btn <= '0'; 
 	end if;
 	case present_state is
-			when cnt  	=> cntenT1 <= tcT2;	cntenT2 <= tcT1;	cntenT3 <= cnten; ostate <= "1000";
-			when setT3  =>	cntenT1 <= '0';	cntenT2 <= '0'; 	cntenT3 <= btn; ostate <= "0100";
-			when setT2  =>	cntenT1 <= '0';	cntenT2 <= btn;	cntenT3 <= '0'; ostate <= "0010";
-			when setT1  =>	cntenT1 <= btn;	cntenT2 <= '0'; 	cntenT3 <= '0'; ostate <= "0001";
+			when cnt  	=> cntenT1 <= tcT2;	cntenT2 <= tcT1;	cntenT3_s <= cnten; ostate <= "1000";
+			when setT3  =>	cntenT1 <= '0';	cntenT2 <= '0'; 	cntenT3_s <= btn; ostate <= "0100";
+			when setT2  =>	cntenT1 <= '0';	cntenT2 <= btn;	cntenT3_s <= '0'; ostate <= "0010";
+			when setT1  =>	cntenT1 <= btn;	cntenT2 <= '0'; 	cntenT3_s <= '0'; ostate <= "0001";
 		end case;
-	end process;	
+	end process;
+
+   CHECKIFDAYISIMPOSSIBLE : process (setMaxDay, sysclk)
+	begin
+									
+		Udaycheck <= to_integer(unsigned(setMaxDay(3 downto 0))) ;	
+		Tdaycheck <= to_integer(unsigned(setMaxDay(7 downto 4))) ;
+		Uday <= to_integer(unsigned(countT3(3 downto 0))) ;	
+		Tday <= to_integer(unsigned(countT3(7 downto 4))) ;
+	
+		dayforward <= not dayforward;
+	
+	
+	end process;
+	
+	SETDAYFORWARD : process (dayforward)
+	begin
+	if (Tday > Tdaycheck or (Tday = Tdaycheck and Uday > Udaycheck))
+	then cntenT3_s2 <= '1';
+	else cntenT3_s2 <= '0';
+	end if;
+	end process;
+	
+	
+	SETCNTENBACKTONORMAL : process (countT3)
+	begin
+	--if countT3 = "00000001" and cntenT3_s2 = '1'
+	--then cntenT3_s2 <= '0';
+	--end if;
+	end process;
+	
+	cntenT3 <= '1' when cntenT3_s2 = '1' else cntenT3_S;
+	
+	
 	
 	T1: counter PORT MAP(
 		cnten => cntenT1, reset => reset,sysclk => sysclk,
@@ -136,9 +183,9 @@ begin
 	);
 	T3: counter PORT MAP(
 		cnten => cntenT3, reset => reset,sysclk => sysclk,
-		min => x"01",max => setMaxDay,count => date_cnt (23 downto 16),tc => tcT1 , upDwn => upDwn );
+		min => x"01",max => setMaxDay,count => countT3,tc => tcT1 , upDwn => upDwn );
 	SD: max_day_setter PORT MAP (
-		MYinput => countT2T1, maxDay => setMaxDay
+		MYinput => countT3T2T1 (15 downto 0), maxDay => setMaxDay
 	);
 	
 

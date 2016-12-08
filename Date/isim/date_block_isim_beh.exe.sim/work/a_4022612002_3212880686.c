@@ -689,6 +689,6 @@ LAB4:    goto LAB2;
 extern void work_a_4022612002_3212880686_init()
 {
 	static char *pe[] = {(void *)work_a_4022612002_3212880686_p_0,(void *)work_a_4022612002_3212880686_p_1,(void *)work_a_4022612002_3212880686_p_2,(void *)work_a_4022612002_3212880686_p_3,(void *)work_a_4022612002_3212880686_p_4,(void *)work_a_4022612002_3212880686_p_5,(void *)work_a_4022612002_3212880686_p_6};
-	xsi_register_didat("work_a_4022612002_3212880686", "isim/tb_date_block_isim_beh.exe.sim/work/a_4022612002_3212880686.didat");
+	xsi_register_didat("work_a_4022612002_3212880686", "isim/date_block_isim_beh.exe.sim/work/a_4022612002_3212880686.didat");
 	xsi_register_executes(pe);
 }

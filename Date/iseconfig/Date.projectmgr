@@ -9,13 +9,13 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>date_block - Behavioral (D:/School UAntwerpen/Electronica-1/Labo Digitaal/ISE Projects/Gitmap kopie/vhdl-clock/Date/date_block.vhd)</SelectedItem>
+         <SelectedItem>date_block - Behavioral (D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/Date/date_block.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000175000000020000000000000000000000000200000064ffffffff000000810000000300000002000001750000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>date_block - Behavioral (D:/School UAntwerpen/Electronica-1/Labo Digitaal/ISE Projects/Gitmap kopie/vhdl-clock/Date/date_block.vhd)</CurrentItem>
+      <CurrentItem>date_block - Behavioral (D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/Date/date_block.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -77,13 +77,13 @@
          <ClosedNode>/tb_max_day_setter - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|ISE Projects|Gitmap kopie|vhdl-clock|Date|tb_max_day_setter.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb_date_block - behavior (D:/School UAntwerpen/Electronica-1/Labo Digitaal/ISE Projects/Gitmap kopie/vhdl-clock/Date/tb_date_block.vhd)</SelectedItem>
+         <SelectedItem>tb_date_block - behavior (D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/Date/tb_date_block.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000189000000020000000000000000000000000200000064ffffffff000000810000000300000002000001890000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>tb_date_block - behavior (D:/School UAntwerpen/Electronica-1/Labo Digitaal/ISE Projects/Gitmap kopie/vhdl-clock/Date/tb_date_block.vhd)</CurrentItem>
+      <CurrentItem>tb_date_block - behavior (D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/Date/tb_date_block.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
