@@ -49,12 +49,15 @@ ARCHITECTURE behavior OF tb_selection IS
          U1_1 : OUT  std_logic;
          U1_2 : OUT  std_logic;
          U1_3 : OUT  std_logic;
+			U1_active : out std_logic;
          U2_1 : OUT  std_logic;
          U2_2 : OUT  std_logic;
          U2_3 : OUT  std_logic;
+			U2_active : out std_logic;
          U3_1 : OUT  std_logic;
          U3_2 : OUT  std_logic;
          U3_3 : OUT  std_logic;
+			U3_active: out std_logic;
 			ostate : OUT STD_LOGIC_VECTOR(1 downto 0)			
         );
     END COMPONENT;
@@ -78,6 +81,7 @@ ARCHITECTURE behavior OF tb_selection IS
    signal U3_2 : std_logic;
    signal U3_3 : std_logic;
 	signal ostate : std_logic_vector(1 downto 0);
+	signal U1_active, U2_active, U3_active : std_logic;
 
    -- Clock period definitions
    constant sysclk_period : time := 10 ns;
@@ -100,7 +104,8 @@ BEGIN
           U3_1 => U3_1,
           U3_2 => U3_2,
           U3_3 => U3_3,
-			 ostate => ostate
+			 U1_active => U1_active, U2_active => U2_active, U3_active => U3_active,
+			 ostate => ostate 
         );
 
    -- Clock process definitions
@@ -152,10 +157,14 @@ BEGIN
 		i3 <= '0';
 		selectm <= '1';
 		wait for 10 ns;
+		selectm <= '0';
       -- hold reset state for 100 ns.
       wait for 10 ns;	
+		i1 <= '1';
+		wait for 10ns;
+		i1 <= '0';
 
-      wait for sysclk_period*10;
+      wait for sysclk_period*10; 
 
       -- insert stimulus here 
 

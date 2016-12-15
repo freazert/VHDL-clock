@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/tb_wekker_block_isim_beh.exe" -prj "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/tb_wekker_block_beh.prj" "work.tb_wekker_block" 
+-intstyle "ise" -incremental -lib "secureip" -o "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/clock_tb_isim_beh.exe" -prj "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/clock_tb_beh.prj" "work.clock_tb" 

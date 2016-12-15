@@ -14,8 +14,9 @@
 --	use IEEE.NUMERIC_STD.ALL;
 
 	ENTITY Control is
-		 Port (	sysclk, en,  blank		: in   STD_LOGIC;
+		 Port (	sysclk, en		: in   STD_LOGIC;
 					dig3,dig2,dig1,dig0 		: in   STD_LOGIC_VECTOR (3 downto 0);
+					blank : in std_logic_vector (3 downto 0);
 					bcdout 						: out  STD_LOGIC_VECTOR (3 downto 0);
 					dignrout 					: out  STD_LOGIC_VECTOR (3 downto 0));
 	END Control;
@@ -56,15 +57,16 @@
 		
 		DIGSELECT: process (dignr_int,blank)
 			begin
-				if blank = '1' then dignrout <= "1111";
-				else 
+				
+				--if blank(dignr_int to dignr_int) = '1' then dignrout <= "1111";
+				--else 
 					case dignr_int is
-						when "00" => dignrout <= "1110";
-						when "01" => dignrout <= "1101";
-						when "10" => dignrout <= "1011";
-						when "11" => dignrout <= "0111";
+						when "00" => dignrout <= "1110"; if blank(3 downto 3) = "1" then dignrout <= "1111"; end if;
+						when "01" => dignrout <= "1101"; if blank(2 downto 2) = "1" then dignrout <= "1111"; end if;
+						when "10" => dignrout <= "1011"; if blank(1 downto 1) = "1" then dignrout <= "1111"; end if;
+						when "11" => dignrout <= "0111"; if blank(0 downto 0) = "1" then dignrout <= "1111"; end if;
 						when others => dignrout <= "1110";
 					end case;
-				end if;	
+				--end if;	
 		end process;			
 	END Behavioral;

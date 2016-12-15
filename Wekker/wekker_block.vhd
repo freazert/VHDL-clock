@@ -74,12 +74,12 @@ COMPONENT counter
 	signal present_state, next_state : state;
 	
 begin
-	
+	ledWekSignaal <= ledOut;
 	STATE_REG: process (sysclk)
 	begin
 		if rising_edge(sysclk) then 								
 			if reset = '1' then present_state <= static; else present_state <= next_state; end if;
-			ledWekSignaal <= ledOut;
+			
 			ledOn <= onOff;
 			alarmOutput <= countcheck;
 		end if;
@@ -121,20 +121,22 @@ begin
 		end case;
 	end process;
 
-   WEKKER_FUNCTIONALITEIT	: process (counterInput, btnStop)
+   WEKKER_FUNCTIONALITEIT	: process (sysclk)
 	begin
-	if present_state = static then
+	if rising_edge(sysclk) then 		
+	if present_state = static and btnStop = '0' then
 		if counterInput = countcheck and onOff = '1' then ledOut <= '1'; end if;
 	end if;
 	if btnStop = '1' then
 		if ledOut = '0' then onOff <= not onOff; else ledOut <= '0'; end if;
+	end if;
 	end if;
 	end process;
 	
 	WEKKER_FUNCTIONALITEIT2	: process (btnStop)
 	begin
 	--if btnStop = '1' then
-		--if ledOut = '1' then ledOut <= '0'; else onOff <= not onOff; end if;
+	--	if ledOut = '1' then ledOut <= '0'; else onOff <= not onOff; end if;
 	--end if;
 	end process;
 	

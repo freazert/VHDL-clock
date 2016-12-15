@@ -1,9 +1,56 @@
+## dit bestand is een beperkte versie van het volledige UCF-bestand voor het Nexys3 ontwikkelbord
+
+## VERWIJDER HET COMMENTAAR TEKEN (#) VOOR DE LIJNEN DIE RELEVANT ZIJN VOOR JE ONTWERP
+## indien nodig kan je ook de namen van de netten aanpassen aan de poortnamen gebruikt in je VHDL model
+
+##Clock signal
+Net "sysclk" LOC=V10	; 		# systeemklok 100 MHz (10 ns)
+
+## Switches
+#Net "sw<0>" LOC = T10;		# SW0  (uiterst rechtse schakelaar)
+#Net "sw<1>" LOC = T9 ;		# SW1
+#Net "sw<2>" LOC = V9 ;		# SW2
+#Net "sw<3>" LOC = M8 ;		# SW3
+#Net "sw<4>" LOC = N8 ; 	# SW4
+#Net "sw<5>" LOC = U8 ;		# SW5
+#Net "sw<6>" LOC = V8 ;		# SW6
+#Net "sw<7>" LOC = T5 ;		# SW7	(uiterst linkse schakelaar)
+
+## Buttons
+Net "btn_c" LOC = B8 ;	# BTNS	
+Net "btn_u" LOC = A8 ;	# BTNU
+Net "btn_l" LOC = C4 ;	# BTNL
+Net "btn_d" LOC = C9 ;	# BTND
+Net "btn_r" LOC = D9 ;	# BTNr
+
+## Leds
+#Net "Led<0>" LOC = U16 ;	# LD0	(uiterst rechtse led)
+#Net "Led<1>" LOC = V16 ;	# LD1
+#Net "Led<2>" LOC = U15 ;	# LD2
+#Net "Led<3>" LOC = V15 ;	# LD3
+#Net "Led<4>" LOC = M11 ;	# LD4
+#Net "Led<5>" LOC = N11 ;	# LD5
+Net "led_alarm_on" LOC = R11 ;	# LD6
+Net "led_alarm_buzzing" LOC = T11 ;	# LD7	(uiterst linkse led)
+
 ## 7 segment display
-Net "seg<0>" LOC = T17 ; # CA
-Net "seg<1>" LOC = T18 ; # CB
-Net "seg<2>" LOC = U17 ; # CC
-Net "seg<3>" LOC = U18 ; # CD
-Net "seg<4>" LOC = M14 ; # CE
-Net "seg<5>" LOC = N14 ; # CF
-Net "seg<6>" LOC = L14 ; # CG
-Net "seg<7>" LOC = M13 ; # DP
+Net "cath<0>" LOC = T17 ;	# CA
+Net "cath<1>" LOC = T18 ;	# CB
+Net "cath<2>" LOC = U17 ;	# CC
+Net "cath<3>" LOC = U18 ;	# CD
+Net "cath<4>" LOC = M14 ;	# CE
+Net "cath<5>" LOC = N14 ; 	# CF
+Net "cath<6>" LOC = L14 ; 	# CG
+#Net "cath<7>" LOC = M13 ; 	# DP
+
+Net "an<0>" LOC = N16 ; 	# AN0	(uiterst links cijfer)
+Net "an<1>" LOC = N15 ; 	# AN1
+Net "an<2>" LOC = P18 ; 	# AN2
+Net "an<3>" LOC = P17 ; 	# AN3	(uiterst rechts cijfer)
+
+
+
+
+
+
+

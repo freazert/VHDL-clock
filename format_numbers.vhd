@@ -44,15 +44,15 @@ begin
 	format:process(istate, idig)
 	begin
 		if istate = "0001" then
-			number1 <= (others => '0');
-			number2 <= (others => '0');
-			number3 <= idig(19 downto 16);
-			number4 <= idig(23 downto 20);
-		else
 			number1 <= idig(3 downto 0);
 			number2 <= idig(7 downto 4);
-			number3 <= idig(11 downto 8);
-			number4 <= idig(15 downto 12);
+			number3 <= (others => '0');
+			number4 <= (others => '0');
+		else
+			number1 <= idig(11 downto 8);
+			number2 <= idig(15 downto 12);
+			number3 <= idig(19 downto 16);
+			number4 <= idig(23 downto 20);
 		end if;
 	end process;
 end Behavioral;

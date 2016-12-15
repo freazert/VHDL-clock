@@ -85,12 +85,12 @@ begin
 		pulse_1ms <= tcT3; pulse_10ms <= tcT4; pulse_100ms <= tcT5; pulse_1s <= tcT6;
 	end process;
 	
-	T1us: counter PORT MAP(cnten => '1', 		reset => reset,sysclk => sysclk,min => x"00",max => x"99",count => cnt_us,  	tc => tcT1, upDwn => upDwn );
-	T100us: counter PORT MAP(cnten => cntenT2, reset => reset,sysclk => sysclk,min => x"00",max => x"99",count => cnt_100us, tc => tcT2, upDwn => upDwn ); --100us
-	T1ms: counter PORT MAP(cnten => cntenT3, reset => reset,sysclk => sysclk,min => x"00",max => x"09",count => cnt_ms, 	tc => tcT3, upDwn => upDwn ); -- 1ms
-	T10ms: counter PORT MAP(cnten => cntenT4, reset => reset,sysclk => sysclk,min => x"00",max => x"09",count => cnt_10ms, 	tc => tcT4, upDwn => upDwn ); -- 10ms
-	T100ms: counter PORT MAP(cnten => cntenT5, reset => reset,sysclk => sysclk,min => x"00",max => x"09",count => cnt_100ms, tc => tcT5, upDwn => upDwn ); -- 100ms
-	T1s: counter PORT MAP(cnten => cntenT6, reset => reset,sysclk => sysclk,min => x"00",max => x"09",count => cnt_s, 		tc => tcT6, upDwn => upDwn ); -- 1s
+	T1us: 	counter PORT MAP(cnten => '1', 		reset => reset,sysclk => sysclk,min => x"00",max => x"99",count => cnt_us,  	tc => tcT1, upDwn => upDwn );
+	T100us: 	counter PORT MAP(cnten => cntenT2, 	reset => reset,sysclk => sysclk,min => x"00",max => x"99",count => cnt_100us, tc => tcT2, upDwn => upDwn ); --100us
+	T1ms: 	counter PORT MAP(cnten => cntenT3, 	reset => reset,sysclk => sysclk,min => x"00",max => x"09",count => cnt_ms, 	tc => tcT3, upDwn => upDwn ); -- 1ms
+	T10ms: 	counter PORT MAP(cnten => cntenT4, 	reset => reset,sysclk => sysclk,min => x"00",max => x"09",count => cnt_10ms, 	tc => tcT4, upDwn => upDwn ); -- 10ms
+	T100ms: 	counter PORT MAP(cnten => cntenT5, 	reset => reset,sysclk => sysclk,min => x"00",max => x"09",count => cnt_100ms, tc => tcT5, upDwn => upDwn ); -- 100ms
+	T1s: 		counter PORT MAP(cnten => cntenT6, 	reset => reset,sysclk => sysclk,min => x"00",max => x"09",count => cnt_s, 		tc => tcT6, upDwn => upDwn ); -- 1s
 	
 end Behavioral;
 

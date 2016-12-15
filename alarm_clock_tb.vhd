@@ -54,7 +54,9 @@ ARCHITECTURE behavior OF alarm_clock_tb IS
          count_a : OUT  std_logic_vector(23 downto 0);
          state_t : OUT  std_logic_vector(3 downto 0);
          state_d : OUT  std_logic_vector(3 downto 0);
-         state_a : OUT  std_logic_vector(3 downto 0)
+         state_a : OUT  std_logic_vector(3 downto 0);
+			led_on : OUT std_logic;
+			led_alarm : out std_logic
         );
     END COMPONENT;
     
@@ -76,6 +78,8 @@ ARCHITECTURE behavior OF alarm_clock_tb IS
    signal state_t : std_logic_vector(3 downto 0);
    signal state_d : std_logic_vector(3 downto 0);
    signal state_a : std_logic_vector(3 downto 0);
+	signal led_on : std_logic;
+	signal led_alarm : std_logic;
 
    -- Clock period definitions
    constant sysclk_period : time := 10 ns;
@@ -97,7 +101,9 @@ BEGIN
           count_a => count_a,
           state_t => state_t,
           state_d => state_d,
-          state_a => state_a
+          state_a => state_a,
+			 led_on => led_on,
+			 led_alarm => led_alarm
         );
 
    -- Clock process definitions
@@ -314,7 +320,11 @@ BEGIN
 		decr <= '1';
 		wait for 10ns;
 		decr <= '0';
-		wait for 50ns;
+		wait for 10ns;
+		incr <= '1';
+		wait for 10ns;
+		incr <= '0';
+		wait for 50ns; 
 		mode <= '1';
 		wait for 10ns;
 		mode <= '0';
@@ -379,6 +389,19 @@ BEGIN
 		wait for 10ns;
 		decr <= '0';
 		wait for 50ns;
+		
+		sel <= "100";
+		wait for 100ns;
+		incr <= '1'; wait for sysclk_period;
+		incr <= '0'; wait for 100ns;
+		decr <= '1'; wait for sysclk_period;
+		decr <= '0'; wait for 100ns;
+		
+		stop <= '1'; wait for 10ns;
+		stop <= '0'; wait for 35000ns;
+		stop <= '1'; wait for 10ns;
+		stop <= '0'; wait for 10ns;
+		--stop <= '0'; wait for 105ns;
 		
 		
 		wait for sysclk_period * 3600 * 3;

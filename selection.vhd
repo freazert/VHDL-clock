@@ -29,20 +29,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity selection is
-    Port ( i1 : in  STD_LOGIC;
-           i2 : in  STD_LOGIC;
-           i3 : in  STD_LOGIC;
-           selectm : in  STD_LOGIC;
-           sysclk : in  STD_LOGIC;
-           U1_1 : out  STD_LOGIC;
-           U1_2 : out  STD_LOGIC;
-           U1_3 : out  STD_LOGIC;
-           U2_1 : out  STD_LOGIC;
-           U2_2 : out  STD_LOGIC;
-           U2_3 : out  STD_LOGIC;
-           U3_1 : out  STD_LOGIC;
-           U3_2 : out  STD_LOGIC;
-           U3_3 : out  STD_LOGIC;
+    Port ( i1, i2, i3 : in  STD_LOGIC;
+           selectm, sysclk : in  STD_LOGIC;
+           U1_1, U1_2, U1_3 : out  STD_LOGIC;
+			  U1_active: out std_logic; 
+           U2_1, U2_2, U2_3 : out  STD_LOGIC;
+           U2_active: out std_logic;
+           U3_1, U3_2, U3_3 : out  STD_LOGIC;
+           U3_active : out std_logic;
 			  ostate : out STD_LOGIC_Vector(1 downto 0)
 			  );
 end selection;
@@ -61,7 +55,7 @@ begin
 	SetType:process(sysclk)
 	begin
 		if rising_edge(sysclk) then
-			if i1 = '1' then
+			if selectm = '1' then
 				case current_edit is 
 				when clock => current_edit <= date; s_ostate <= "01";
 				when date => current_edit <= alarm; s_ostate <= "10";
@@ -76,9 +70,9 @@ begin
 	if rising_edge(sysclk) then
 			edit <= (others => '0');
 			case current_edit is
-				when clock => edit(0) <= selectm; edit(1) <= i2; edit(2) <= i3; 
-				when date => edit(3) <= selectm; edit(4) <= i2; edit(5) <= i3;
-				when alarm => edit(6) <= selectm; edit(7) <= i2; edit(8) <= i3; 
+				when clock => edit(0) <= i1; edit(1) <= i2; edit(2) <= i3; U1_active <= '0'; U2_active <= '1'; U3_active <= '1';
+				when date => edit(3) <= i1; edit(4) <= i2; edit(5) <= i3; U1_active <= '1'; U2_active <= '0'; U3_active <= '1';
+				when alarm => edit(6) <= i1; edit(7) <= i2; edit(8) <= i3; U1_active <= '1'; U2_active <= '1'; U3_active <= '0';
 			end case;
 	end if;
 	end process;
@@ -89,7 +83,7 @@ begin
 	U2_2 <= edit(4);
 	U2_3 <= edit(5);
 	U3_1 <= edit(6);
-	U3_2 <= edit(7);
+	U3_2 <= edit(7); 
 	U3_3 <= edit(8);
 	
 	ostate <= s_ostate;

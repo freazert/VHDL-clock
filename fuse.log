@@ -1,0 +1,27 @@
+Running: D:\programma's\xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/clock_tb_isim_beh.exe -prj D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/clock_tb_beh.prj work.clock_tb 
+ISim P.49d (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/one_pulse.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/debouncer.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/Date/max_day_setter.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/counter.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/Wekker/wekker_block.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/time_block.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/format_numbers.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/Date/date_block.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/button.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/blinking.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/BCD7segmDec.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/../../voorbeelden/Control.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/weergave4dig7segm.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/timer.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/select_show_function.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/selection.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/data_to_display.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/buttons.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/alarm_clock.vhd" into library work
+ERROR:HDLCompiler:432 - "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/alarm_clock.vhd" Line 116: Formal <end_edit_a> has no actual or default value.
+ERROR:HDLCompiler:854 - "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/alarm_clock.vhd" Line 49: Unit <behavioral> ignored due to previous errors.
+VHDL file D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/alarm_clock.vhd ignored due to errors

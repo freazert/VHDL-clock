@@ -5,19 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/Wekker/wekker_block.vhd" Line 90: &lt;<arg fmt="%s" index="1">endedit</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="432" delta="unknown" >"D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/alarm_clock.vhd" Line 116: Formal &lt;<arg fmt="%s" index="1">end_edit_a</arg>&gt; has no actual or default value.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="432" delta="unknown" >"D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/Wekker/wekker_block.vhd" Line 141: Formal &lt;<arg fmt="%s" index="1">endedit</arg>&gt; has no actual or default value.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="432" delta="unknown" >"D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/Wekker/wekker_block.vhd" Line 142: Formal &lt;<arg fmt="%s" index="1">endedit</arg>&gt; has no actual or default value.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="432" delta="unknown" >"D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/Wekker/wekker_block.vhd" Line 143: Formal &lt;<arg fmt="%s" index="1">endedit</arg>&gt; has no actual or default value.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="854" delta="unknown" >"D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/Wekker/wekker_block.vhd" Line 46: Unit &lt;<arg fmt="%s" index="1">behavioral</arg>&gt; ignored due to previous errors.
+<msg type="error" file="HDLCompiler" num="854" delta="unknown" >"D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/alarm_clock.vhd" Line 49: Unit &lt;<arg fmt="%s" index="1">behavioral</arg>&gt; ignored due to previous errors.
 </msg>
 
 </messages>

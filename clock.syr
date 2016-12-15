@@ -3,13 +3,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: clock.prj
@@ -105,6 +105,60 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\one_pulse.vhd" into library work
+Parsing entity <one_pulse>.
+Parsing architecture <Behavioral> of entity <one_pulse>.
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\debouncer.vhd" into library work
+Parsing entity <debouncer>.
+Parsing architecture <Behavioral> of entity <debouncer>.
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Date\max_day_setter.vhd" into library work
+Parsing entity <max_day_setter>.
+Parsing architecture <Behavioral> of entity <max_day_setter>.
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\counter.vhd" into library work
+Parsing entity <counter>.
+Parsing architecture <Behavioral> of entity <counter>.
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Wekker\wekker_block.vhd" into library work
+Parsing entity <wekker_block>.
+Parsing architecture <Behavioral> of entity <wekker_block>.
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\time_block.vhd" into library work
+Parsing entity <time_block>.
+Parsing architecture <Behavioral> of entity <time_block>.
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\format_numbers.vhd" into library work
+Parsing entity <format_numbers>.
+Parsing architecture <Behavioral> of entity <format_numbers>.
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Date\date_block.vhd" into library work
+Parsing entity <date_block>.
+Parsing architecture <Behavioral> of entity <date_block>.
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\button.vhd" into library work
+Parsing entity <button>.
+Parsing architecture <Behavioral> of entity <button>.
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\blinking.vhd" into library work
+Parsing entity <blinking>.
+Parsing architecture <Behavioral> of entity <blinking>.
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\BCD7segmDec.vhd" into library work
+Parsing entity <BCD7segmDec>.
+Parsing architecture <Behavioral> of entity <bcd7segmdec>.
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\voorbeelden\Control.vhd" into library work
+Parsing entity <Control>.
+Parsing architecture <Behavioral> of entity <control>.
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\weergave4dig7segm.vhd" into library work
+Parsing entity <weergave4dig7segm>.
+Parsing architecture <Behavioral> of entity <weergave4dig7segm>.
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd" into library work
+Parsing entity <timer>.
+Parsing architecture <Behavioral> of entity <timer>.
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\select_show_function.vhd" into library work
+Parsing entity <select_show_function>.
+Parsing architecture <Behavioral> of entity <select_show_function>.
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\data_to_display.vhd" into library work
+Parsing entity <data_to_display>.
+Parsing architecture <Behavioral> of entity <data_to_display>.
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\buttons.vhd" into library work
+Parsing entity <buttons>.
+Parsing architecture <Behavioral> of entity <buttons>.
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\alarm_clock.vhd" into library work
+Parsing entity <alarm_clock>.
+Parsing architecture <Behavioral> of entity <alarm_clock>.
 Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\clock.vhd" into library work
 Parsing entity <clock>.
 Parsing architecture <Behavioral> of entity <clock>.
@@ -114,6 +168,49 @@ Parsing architecture <Behavioral> of entity <clock>.
 =========================================================================
 
 Elaborating entity <clock> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\clock.vhd" Line 114: Using initial value "100" for selection since it is never assigned
+
+Elaborating entity <timer> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd" Line 59: Using initial value '1' for updwn since it is never assigned
+
+Elaborating entity <counter> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <buttons> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <button> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <debouncer> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <one_pulse> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <alarm_clock> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <time_block> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <date_block> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <max_day_setter> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <wekker_block> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <select_show_function> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\select_show_function.vhd" Line 64: sel should be on the sensitivity list of the process
+
+Elaborating entity <data_to_display> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <format_numbers> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <blinking> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <weergave4dig7segm> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\weergave4dig7segm.vhd" Line 50: Using initial value 10000 for div since it is never assigned
+
+Elaborating entity <Control> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\voorbeelden\Control.vhd" Line 36. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\voorbeelden\Control.vhd" Line 53. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\voorbeelden\Control.vhd" Line 66. Case statement is complete. others clause is never selected
+
+Elaborating entity <BCD7segmDec> (architecture <Behavioral>) from library <work>.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -121,45 +218,537 @@ Elaborating entity <clock> (architecture <Behavioral>) from library <work>.
 
 Synthesizing Unit <clock>.
     Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\clock.vhd".
-WARNING:Xst:647 - Input <sysclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\clock.vhd" line 129: Output port <op1> of the instance <BUTTONS1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\clock.vhd" line 151: Output port <obli0> of the instance <DATATODISPLAY> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <clock> synthesized.
 
+Synthesizing Unit <timer>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd".
+INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd" line 88: Output port <count> of the instance <T1us> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd" line 89: Output port <count> of the instance <T100us> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd" line 90: Output port <count> of the instance <T1ms> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd" line 91: Output port <count> of the instance <T10ms> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd" line 92: Output port <count> of the instance <T100ms> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd" line 93: Output port <count> of the instance <T1s> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <timer> synthesized.
+
+Synthesizing Unit <counter>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\counter.vhd".
+    Found 4-bit register for signal <Ucnt>.
+    Found 4-bit register for signal <Tcnt>.
+    Found 4-bit adder for signal <Tcnt[3]_GND_6_o_add_7_OUT> created at line 61.
+    Found 4-bit adder for signal <Ucnt[3]_GND_6_o_add_8_OUT> created at line 62.
+    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_17_OUT<3:0>> created at line 66.
+    Found 4-bit subtractor for signal <GND_6_o_GND_6_o_sub_18_OUT<3:0>> created at line 67.
+    Found 4-bit comparator equal for signal <Umax[3]_Ucnt[3]_equal_31_o> created at line 74
+    Found 4-bit comparator equal for signal <Tmax[3]_Tcnt[3]_equal_32_o> created at line 74
+    Found 4-bit comparator equal for signal <Umin[3]_Ucnt[3]_equal_33_o> created at line 75
+    Found 4-bit comparator equal for signal <Tmin[3]_Tcnt[3]_equal_34_o> created at line 75
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred  15 Multiplexer(s).
+Unit <counter> synthesized.
+
+Synthesizing Unit <buttons>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\buttons.vhd".
+    Summary:
+	no macro.
+Unit <buttons> synthesized.
+
+Synthesizing Unit <button>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\button.vhd".
+    Summary:
+	no macro.
+Unit <button> synthesized.
+
+Synthesizing Unit <debouncer>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\debouncer.vhd".
+        width = 4
+    Found 4-bit register for signal <del>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <debouncer> synthesized.
+
+Synthesizing Unit <one_pulse>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\one_pulse.vhd".
+WARNING:Xst:647 - Input <debclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <current_state>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 1                                              |
+    | Clock              | sysclk (rising_edge)                           |
+    | Power Up State     | wait1                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <one_pulse> synthesized.
+
+Synthesizing Unit <alarm_clock>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\alarm_clock.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <count_t<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  24 Latch(s).
+Unit <alarm_clock> synthesized.
+
+Synthesizing Unit <time_block>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\time_block.vhd".
+    Found 2-bit register for signal <present_state>.
+    Found finite state machine <FSM_1> for signal <present_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 5                                              |
+    | Clock              | sysclk (rising_edge)                           |
+    | Reset              | reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | cnt                                            |
+    | Power Up State     | cnt                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit 3-to-1 multiplexer for signal <cntenT1> created at line 103.
+    Found 1-bit 4-to-1 multiplexer for signal <cntenT2> created at line 103.
+    Found 1-bit 4-to-1 multiplexer for signal <cntenT3> created at line 103.
+    Summary:
+	inferred   5 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <time_block> synthesized.
+
+Synthesizing Unit <date_block>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Date\date_block.vhd".
+INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Date\date_block.vhd" line 129: Output port <tc> of the instance <T1> is unconnected or connected to loadless signal.
+    Found 2-bit register for signal <present_state>.
+    Found finite state machine <FSM_2> for signal <present_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 6                                              |
+    | Clock              | sysclk (rising_edge)                           |
+    | Reset              | reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | cnt                                            |
+    | Power Up State     | cnt                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit 3-to-1 multiplexer for signal <cntenT1> created at line 121.
+    Found 1-bit 4-to-1 multiplexer for signal <cntenT2> created at line 121.
+    Found 1-bit 4-to-1 multiplexer for signal <cntenT3> created at line 121.
+    Summary:
+	inferred   5 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <date_block> synthesized.
+
+Synthesizing Unit <max_day_setter>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Date\max_day_setter.vhd".
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <max_day_setter> synthesized.
+
+Synthesizing Unit <wekker_block>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Wekker\wekker_block.vhd".
+INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Wekker\wekker_block.vhd" line 143: Output port <tc> of the instance <T1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Wekker\wekker_block.vhd" line 144: Output port <tc> of the instance <T2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Wekker\wekker_block.vhd" line 145: Output port <tc> of the instance <T3> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <ledOn>.
+    Found 24-bit register for signal <alarmOutput>.
+    Found 1-bit register for signal <ledOut>.
+    Found 1-bit register for signal <onOff>.
+    Found 2-bit register for signal <present_state>.
+    Found finite state machine <FSM_3> for signal <present_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 7                                              |
+    | Clock              | sysclk (rising_edge)                           |
+    | Reset              | reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | static                                         |
+    | Power Up State     | static                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 24-bit comparator equal for signal <countcheck[23]_counterInput[23]_equal_15_o> created at line 128
+    Summary:
+	inferred  27 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   5 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <wekker_block> synthesized.
+
+Synthesizing Unit <select_show_function>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\select_show_function.vhd".
+WARNING:Xst:647 - Input <sysclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <select_show_function> synthesized.
+
+Synthesizing Unit <data_to_display>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\data_to_display.vhd".
+    Summary:
+	no macro.
+Unit <data_to_display> synthesized.
+
+Synthesizing Unit <format_numbers>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\format_numbers.vhd".
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <format_numbers> synthesized.
+
+Synthesizing Unit <blinking>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\blinking.vhd".
+    Found 4-bit register for signal <obli0_s>.
+    Found 16x4-bit Read Only RAM for signal <istate[3]_GND_242_o_wide_mux_0_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 D-type flip-flop(s).
+Unit <blinking> synthesized.
+
+Synthesizing Unit <weergave4dig7segm>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\weergave4dig7segm.vhd".
+WARNING:Xst:647 - Input <blank> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <weergave4dig7segm> synthesized.
+
+Synthesizing Unit <Control>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\voorbeelden\Control.vhd".
+    Found 2-bit register for signal <dignr_int>.
+    Found 4x6-bit Read Only RAM for signal <_n0024>
+    Found 4-bit 4-to-1 multiplexer for signal <bcdout> created at line 48.
+    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <dignr_int> would allow inference of a finite state machine and as consequence better performance and smaller area.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Control> synthesized.
+
+Synthesizing Unit <BCD7segmDec>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\BCD7segmDec.vhd".
+    Found 16x7-bit Read Only RAM for signal <segm>
+    Summary:
+	inferred   1 RAM(s).
+Unit <BCD7segmDec> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# RAMs                                                 : 3
+ 16x4-bit single-port Read Only RAM                    : 1
+ 16x7-bit single-port Read Only RAM                    : 1
+ 4x6-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 30
+ 4-bit addsub                                          : 30
+# Registers                                            : 41
+ 1-bit register                                        : 3
+ 2-bit register                                        : 1
+ 24-bit register                                       : 1
+ 4-bit register                                        : 36
+# Latches                                              : 24
+ 1-bit latch                                           : 24
+# Comparators                                          : 61
+ 24-bit comparator equal                               : 1
+ 4-bit comparator equal                                : 60
+# Multiplexers                                         : 249
+ 1-bit 2-to-1 multiplexer                              : 24
+ 1-bit 3-to-1 multiplexer                              : 2
+ 1-bit 4-to-1 multiplexer                              : 4
+ 2-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 216
+ 4-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 8
+
 =========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1290 - Hierarchical block <B1> is unconnected in block <BUTTONS1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <D1> is unconnected in block <ALARMCLOCK>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <B1> is unconnected in block <DATATODISPLAY>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <BCD7segmDec>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segm> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <bcd>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <segm>          |          |
+    -----------------------------------------------------------------------
+Unit <BCD7segmDec> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Control>.
+INFO:Xst:3231 - The small RAM <Mram__n0024> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 6-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <dignr_int>     |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Control> synthesized (advanced).
+
+Synthesizing (advanced) Unit <blinking>.
+INFO:Xst:3231 - The small RAM <Mram_istate[3]_GND_242_o_wide_mux_0_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 4-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <istate>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <blinking> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# RAMs                                                 : 3
+ 16x4-bit single-port distributed Read Only RAM        : 1
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 4x6-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 30
+ 4-bit addsub                                          : 30
+# Registers                                            : 173
+ Flip-Flops                                            : 173
+# Comparators                                          : 61
+ 24-bit comparator equal                               : 1
+ 4-bit comparator equal                                : 60
+# Multiplexers                                         : 249
+ 1-bit 2-to-1 multiplexer                              : 24
+ 1-bit 3-to-1 multiplexer                              : 2
+ 1-bit 4-to-1 multiplexer                              : 4
+ 2-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 216
+ 4-bit 4-to-1 multiplexer                              : 1
+# FSMs                                                 : 8
+
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:2677 - Node <BUTTONS1/B1/debouncer1/del_4> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <BUTTONS1/B1/debouncer1/del_3> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <BUTTONS1/B1/debouncer1/del_2> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <BUTTONS1/B1/debouncer1/del_1> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <DATATODISPLAY/B1/obli0_s_3> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <DATATODISPLAY/B1/obli0_s_2> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <DATATODISPLAY/B1/obli0_s_1> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <DATATODISPLAY/B1/obli0_s_0> of sequential type is unconnected in block <clock>.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <current_state[1:3]> with one-hot encoding.
+Optimizing FSM <FSM_0> on signal <current_state[1:3]> with one-hot encoding.
+Optimizing FSM <FSM_0> on signal <current_state[1:3]> with one-hot encoding.
+Optimizing FSM <FSM_0> on signal <current_state[1:3]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ wait1 | 001
+ outp1 | 010
+ wait0 | 100
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <ALARMCLOCK/T1/FSM_1> on signal <present_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ cnt   | 00
+ sett1 | 01
+ sett2 | 10
+ sett3 | 11
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <ALARMCLOCK/D1/FSM_2> on signal <present_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ cnt   | 00
+ sett1 | 01
+ sett2 | 10
+ sett3 | 11
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <ALARMCLOCK/A1/FSM_3> on signal <present_state[1:2]> with user encoding.
+--------------------
+ State  | Encoding
+--------------------
+ static | 00
+ sett1  | 01
+ sett2  | 10
+ sett3  | 11
+--------------------
+WARNING:Xst:1293 - FF/Latch <present_state_FSM_FFd2> has a constant value of 0 in block <date_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <present_state_FSM_FFd1> has a constant value of 0 in block <date_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <present_state_FSM_FFd2> has a constant value of 0 in block <wekker_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <present_state_FSM_FFd1> has a constant value of 0 in block <wekker_block>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <clock> ...
 
+Optimizing unit <counter> ...
+
+Optimizing unit <alarm_clock> ...
+
+Optimizing unit <time_block> ...
+
+Optimizing unit <wekker_block> ...
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T3/Tcnt_0> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T3/Tcnt_1> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T3/Tcnt_2> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T3/Tcnt_3> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T3/Ucnt_0> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T3/Ucnt_1> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T3/Ucnt_2> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T3/Ucnt_3> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T2/Tcnt_0> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T2/Tcnt_1> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T2/Tcnt_2> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T2/Tcnt_3> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T2/Ucnt_0> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T2/Ucnt_1> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T2/Ucnt_2> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T2/Ucnt_3> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T1/Tcnt_0> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T1/Tcnt_1> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T1/Tcnt_2> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T1/Tcnt_3> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T1/Ucnt_0> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T1/Ucnt_1> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T1/Ucnt_2> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/D1/T1/Ucnt_3> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_23> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_22> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_21> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_20> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_19> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_18> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_17> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_16> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_15> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_14> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_13> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_12> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_11> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_10> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_9> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_8> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_7> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_6> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_5> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_4> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_3> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_2> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_1> of sequential type is unconnected in block <clock>.
+WARNING:Xst:2677 - Node <ALARMCLOCK/A1/alarmOutput_0> of sequential type is unconnected in block <clock>.
+WARNING:Xst:1293 - FF/Latch <ALARMCLOCK/A1/T1/Ucnt_0> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T1/Ucnt_1> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T1/Ucnt_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T1/Ucnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T2/Tcnt_0> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T2/Tcnt_1> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T2/Tcnt_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T2/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T2/Ucnt_0> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T2/Ucnt_1> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T2/Ucnt_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T2/Ucnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T3/Tcnt_0> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T3/Tcnt_1> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T3/Tcnt_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T3/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T3/Ucnt_0> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T3/Ucnt_1> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T3/Ucnt_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T3/Ucnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T1s/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T1s/Tcnt_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T1s/Tcnt_1> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T1s/Tcnt_0> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T100ms/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T100ms/Tcnt_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T100ms/Tcnt_1> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T100ms/Tcnt_0> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T10ms/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T10ms/Tcnt_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T10ms/Tcnt_1> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T10ms/Tcnt_0> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T1ms/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T1ms/Tcnt_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T1ms/Tcnt_1> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T1ms/Tcnt_0> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T1/Tcnt_0> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T1/Tcnt_1> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T1/Tcnt_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T1/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block clock, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block clock, actual ratio is 3.
 
 Final Macro Processing ...
 
 =========================================================================
 Final Register Report
 
-Found no macro
+Macro Statistics
+# Registers                                            : 87
+ Flip-Flops                                            : 87
+
 =========================================================================
 
 =========================================================================
@@ -181,6 +770,28 @@ Top Level Output File Name         : clock.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
+# BELS                             : 329
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 27
+#      LUT3                        : 33
+#      LUT4                        : 48
+#      LUT5                        : 50
+#      LUT6                        : 146
+#      MUXCY                       : 8
+#      MUXF7                       : 13
+#      VCC                         : 1
+# FlipFlops/Latches                : 111
+#      FD                          : 19
+#      FDE                         : 39
+#      FDR                         : 2
+#      FDRE                        : 27
+#      LD                          : 24
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 5
+#      OBUF                        : 13
 
 Device utilization summary:
 ---------------------------
@@ -189,19 +800,23 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
+ Number of Slice Registers:             111  out of  18224     0%  
+ Number of Slice LUTs:                  306  out of   9112     3%  
+    Number used as Logic:               306  out of   9112     3%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      0
-   Number with an unused Flip Flop:       0  out of      0         
-   Number with an unused LUT:             0  out of      0         
-   Number of fully used LUT-FF pairs:     0  out of      0         
-   Number of unique control sets:         0
+ Number of LUT Flip Flop pairs used:    337
+   Number with an unused Flip Flop:     226  out of    337    67%  
+   Number with an unused LUT:            31  out of    337     9%  
+   Number of fully used LUT-FF pairs:    80  out of    337    23%  
+   Number of unique control sets:        23
 
 IO Utilization: 
- Number of IOs:                           5
- Number of bonded IOBs:                   0  out of    232     0%  
+ Number of IOs:                          20
+ Number of bonded IOBs:                  19  out of    232     8%  
 
 Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -221,7 +836,11 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-No clock signals found in this design
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+sysclk                             | BUFGP                  | 111   |
+-----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -231,9 +850,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: No path found
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
+   Minimum period: 7.011ns (Maximum Frequency: 142.637MHz)
+   Minimum input arrival time before clock: 6.420ns
+   Maximum output required time after clock: 7.699ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -241,21 +860,100 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
+Timing constraint: Default period analysis for Clock 'sysclk'
+  Clock period: 7.011ns (frequency: 142.637MHz)
+  Total number of paths / destination ports: 9830 / 187
+-------------------------------------------------------------------------
+Delay:               7.011ns (Levels of Logic = 5)
+  Source:            ALARMCLOCK/T1/T2/Tcnt_0 (FF)
+  Destination:       ALARMCLOCK/T1/T3/Ucnt_2 (FF)
+  Source Clock:      sysclk rising
+  Destination Clock: sysclk rising
+
+  Data Path: ALARMCLOCK/T1/T2/Tcnt_0 to ALARMCLOCK/T1/T3/Ucnt_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             10   0.447   1.085  ALARMCLOCK/T1/T2/Tcnt_0 (ALARMCLOCK/T1/T2/Tcnt_0)
+     LUT3:I0->O            1   0.205   0.580  ALARMCLOCK/T1/T2/Umin[3]_Tmin[3]_AND_9_o_SW0 (N18)
+     LUT6:I5->O           13   0.205   1.180  ALARMCLOCK/T1/T2/Umin[3]_Tmin[3]_AND_9_o (ALARMCLOCK/T1/T2/Umin[3]_Tmin[3]_AND_9_o)
+     LUT6:I2->O            9   0.203   0.830  ALARMCLOCK/T1/cntenT32_SW0 (N44)
+     LUT6:I5->O           10   0.205   0.857  ALARMCLOCK/T1/cntenT32 (ALARMCLOCK/T1/cntenT3)
+     LUT5:I4->O            1   0.205   0.579  ALARMCLOCK/T1/T3/Reset_OR_DriverANDClockEnable1 (ALARMCLOCK/T1/T3/Reset_OR_DriverANDClockEnable)
+     FDRE:R                    0.430          ALARMCLOCK/T1/T3/Ucnt_2
+    ----------------------------------------
+    Total                      7.011ns (1.900ns logic, 5.111ns route)
+                                       (27.1% logic, 72.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sysclk'
+  Total number of paths / destination ports: 147 / 122
+-------------------------------------------------------------------------
+Offset:              6.420ns (Levels of Logic = 5)
+  Source:            reset (PAD)
+  Destination:       ALARMCLOCK/T1/T3/Ucnt_3 (FF)
+  Destination Clock: sysclk rising
+
+  Data Path: reset to ALARMCLOCK/T1/T3/Ucnt_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            91   1.222   1.818  reset_IBUF (reset_IBUF)
+     LUT3:I2->O            3   0.205   0.755  ALARMCLOCK/T1/T3/_n0129_inv21_SW0 (N101)
+     LUT6:I4->O            1   0.203   0.000  ALARMCLOCK/T1/cntenT32_SW7_G (N221)
+     MUXF7:I1->O           1   0.140   0.827  ALARMCLOCK/T1/cntenT32_SW7 (N183)
+     LUT6:I2->O            2   0.203   0.616  ALARMCLOCK/T1/T3/_n01051 (ALARMCLOCK/T1/T3/_n0105)
+     FDRE:R                    0.430          ALARMCLOCK/T1/T3/Ucnt_3
+    ----------------------------------------
+    Total                      6.420ns (2.403ns logic, 4.017ns route)
+                                       (37.4% logic, 62.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sysclk'
+  Total number of paths / destination ports: 346 / 13
+-------------------------------------------------------------------------
+Offset:              7.699ns (Levels of Logic = 4)
+  Source:            ALARMCLOCK/T1/present_state_FSM_FFd2 (FF)
+  Destination:       cath<6> (PAD)
+  Source Clock:      sysclk rising
+
+  Data Path: ALARMCLOCK/T1/present_state_FSM_FFd2 to cath<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             34   0.447   1.425  ALARMCLOCK/T1/present_state_FSM_FFd2 (ALARMCLOCK/T1/present_state_FSM_FFd2)
+     LUT2:I0->O            4   0.203   1.048  DATATODISPLAY/F_N1/GND_241_o_istate[3]_equal_1_o<3>1 (DATATODISPLAY/F_N1/GND_241_o_istate[3]_equal_1_o)
+     LUT6:I0->O            7   0.203   1.021  W1/C1/Mmux_bcdout12 (W1/bcdout_int<0>)
+     LUT4:I0->O            1   0.203   0.579  W1/D1/Mram_segm41 (cath_4_OBUF)
+     OBUF:I->O                 2.571          cath_4_OBUF (cath<4>)
+    ----------------------------------------
+    Total                      7.699ns (3.627ns logic, 4.072ns route)
+                                       (47.1% logic, 52.9% route)
+
+=========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
+Clock to Setup on destination clock sysclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sysclk         |    7.011|         |    1.690|         |
+---------------+---------+---------+---------+---------+
+
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.82 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.08 secs
  
 --> 
 
-Total memory usage is 274744 kilobytes
+Total memory usage is 290936 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of warnings :  136 (   0 filtered)
+Number of infos    :   16 (   0 filtered)
 

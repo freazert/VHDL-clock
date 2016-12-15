@@ -12,7 +12,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity weergave4dig7segm is
 	--Generic (div : integer := 100000);  
-    Port ( sysclk, reset,en ,blank	 : in  STD_LOGIC;
+    Port ( sysclk, reset,en 	 : in  STD_LOGIC;
+				blank : in std_logic_vector(3 downto 0);
            dig3,dig2,dig1,dig0 : in  STD_LOGIC_VECTOR (3 downto 0);
            cath 					 : out  STD_LOGIC_VECTOR (6 downto 0);
            an 						 : out  STD_LOGIC_VECTOR (3 downto 0)
@@ -22,15 +23,18 @@ end weergave4dig7segm;
 
 architecture Behavioral of weergave4dig7segm is
     COMPONENT Control
-    PORT(sysclk, en, blank 				: IN   std_logic;
+    PORT(sysclk, en	 	 		: IN   std_logic;
+			blank 					: IN std_logic;
+			--pulse_1ms				: IN std_logic;
          dig3,dig2,dig1,dig0 	: IN   std_logic_vector(3 downto 0);
          bcdout 					: OUT  std_logic_vector(3 downto 0);
-         dignrout 				: OUT  std_logic_vector(3 downto 0));
+         dignrout 				: OUT  std_logic_vector(3 downto 0)
+			);
     END COMPONENT; 
 	 
     COMPONENT BCD7segmDec
     port(bcd 	: in	std_logic_vector(3 downto 0);
-         seg 	: out	std_logic_vector(6 downto 0));
+         segm 	: out	std_logic_vector(6 downto 0));
     END COMPONENT;
 	 
 	 COMPONENT timer
@@ -83,12 +87,12 @@ begin
 			--	 reset => reset
 			-- );
 			  
-   C1:Control PORT MAP (	sysclk => sysclk,en => en,blank=>'0',
+   C1:Control PORT MAP (	sysclk => sysclk,en => en,blank => '0',
 									dig3 => dig3,dig2 => dig2,dig1 => dig1,dig0 => dig0,
 									bcdout => bcdout_int,
 									dignrout => an);
 									--bcdout_int <= "1011";
-	D1:BCD7segmDec PORT MAP (bcd => bcdout_int, seg => cath);
+	D1:BCD7segmDec PORT MAP (bcd => bcdout_int, segm => cath);
 	--end process;
 end Behavioral;
 
