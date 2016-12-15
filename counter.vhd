@@ -57,7 +57,7 @@ begin
 		if rising_edge(sysclk) 	then 
 			if 	reset = '1' then Tcnt <= Tmin; Ucnt <= Umin;								-- RESET
 			elsif	updwn = '1' and cnten = '1' then												-- OPTELLEN					
-				if Tcnt = Tmax and  Ucnt = Umax then Tcnt <= Tmin;	  Ucnt <= Umin; 	
+				if Tcnt > Tmax or (Tcnt = Tmax and  Ucnt > Umax) or (Tcnt = Tmax and  Ucnt = Umax) then Tcnt <= Tmin;	  Ucnt <= Umin; 	
 				elsif	Ucnt	= 9 then	Tcnt <= Tcnt + 1;Ucnt <= 0;
 				else  Ucnt	<= Ucnt + 1;														
 				end if;
@@ -71,7 +71,7 @@ begin
 	end process;
 	MCNT :process (Ucnt,Tcnt,updwn,cnten,Umax,Umin,Tmax,Tmin)
 	begin
-		if    (Ucnt = Umax and Tcnt = Tmax) and updwn = '1' and cnten = '1' then tc <= '1';
+		if    (Tcnt > Tmax or (Tcnt = Tmax and  Ucnt > Umax) or (Ucnt = Umax and Tcnt = Tmax)) and updwn = '1' and cnten = '1' then tc <= '1';
 		elsif (Ucnt = Umin and Tcnt = Tmin) and updwn = '0' and cnten = '1' then tc <= '1';
 		else 	tc <='0';
 		end if;

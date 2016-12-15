@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "D:/School UAntwerpen/Electronica-1/Labo Digitaal/ISE Projects/Gitmap kopie/vhdl-clock/Date/tb_date_block.vhd";
+static const char *ng0 = "D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/Date/tb_date_block.vhd";
 
 
 

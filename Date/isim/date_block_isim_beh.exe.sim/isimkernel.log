@@ -1,0 +1,12 @@
+Command line:
+   date_block_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  9501
+
+Thu Dec 08 19:03:06 2016
+
+Resolution function required for the Net /date_block/udaycheck driven by:
+/date_block//date_block.vhd:DATE_COUNT_PROCESS
+/date_block//date_block.vhd:CHECKIFDAYISIMPOSSIBLE
+
