@@ -138,7 +138,11 @@
          <ClosedNode>/clock - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock.vhd/C1 - time_block - Behavioral</ClosedNode>
          <ClosedNode>/clock - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock.vhd/T1 - timer - Behavioral</ClosedNode>
          <ClosedNode>/clock - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock.vhd/W1 - weergave4dig7segm - Behavioral</ClosedNode>
-         <ClosedNode>/clock_tb - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|clock_tb.vhd</ClosedNode>
+         <ClosedNode>/clock_tb - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|clock_tb.vhd/uut - clock - Behavioral/ALARMCLOCK - alarm_clock - Behavioral</ClosedNode>
+         <ClosedNode>/clock_tb - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|clock_tb.vhd/uut - clock - Behavioral/BUTTONS1 - buttons - Behavioral</ClosedNode>
+         <ClosedNode>/clock_tb - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|clock_tb.vhd/uut - clock - Behavioral/DATATODISPLAY - data_to_display - Behavioral</ClosedNode>
+         <ClosedNode>/clock_tb - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|clock_tb.vhd/uut - clock - Behavioral/T1 - timer - Behavioral</ClosedNode>
+         <ClosedNode>/clock_tb - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|clock_tb.vhd/uut - clock - Behavioral/W1 - weergave4dig7segm - Behavioral</ClosedNode>
          <ClosedNode>/clock_tb - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock_tb.vhd/uut - clock - Behavioral/ALARMCLOCK - alarm_clock - Behavioral</ClosedNode>
          <ClosedNode>/clock_tb - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock_tb.vhd/uut - clock - Behavioral/BUTTONS - buttons - Behavioral</ClosedNode>
          <ClosedNode>/clock_tb - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock_tb.vhd/uut - clock - Behavioral/BUTTONS1 - buttons - Behavioral</ClosedNode>
@@ -177,18 +181,31 @@
          <ClosedNode>/weergave4dig7segm - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|weergave4dig7segm.vhd/T1 - timer - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>alarm_clock_tb - behavior (D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/alarm_clock_tb.vhd)</SelectedItem>
+         <SelectedItem>clock_tb - behavior (D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/clock_tb.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001bb000000020000000000000000000000000200000064ffffffff000000810000000300000002000001bb0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000211000000020000000000000000000000000200000064ffffffff000000810000000300000002000002110000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>alarm_clock_tb - behavior (D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/alarm_clock_tb.vhd)</CurrentItem>
+      <CurrentItem>clock_tb - behavior (D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/clock_tb.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ff000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ff0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem></SelectedItem>
@@ -198,19 +215,6 @@
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ff000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ff0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
-   </ItemView>
-   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
-      <ClosedNodes>
-         <ClosedNodesVersion>1</ClosedNodesVersion>
-      </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ac000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ac0000000100000000</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>

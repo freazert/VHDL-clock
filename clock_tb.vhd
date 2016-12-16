@@ -42,26 +42,26 @@ ARCHITECTURE behavior OF clock_tb IS
     COMPONENT clock
     Port ( 
 		sysclk : in  STD_LOGIC;
-		reset : in std_logic;
 		btn_l, btn_r, btn_c, btn_u, btn_d : in std_logic;
       
 		an : out  STD_LOGIC_VECTOR(3 downto 0);
       cath : out  STD_LOGIC_VECTOR(6 downto 0);
       led_alarm_buzzing : out  STD_LOGIC;
-		led_alarm_on: out std_logic
+		led_alarm_on: out std_logic;
+		sound_pulse: out std_logic
 		);
     END COMPONENT;
     
 
    --Inputs
    signal sysclk : std_logic := '0';
-   signal reset : std_logic := '0';
 	signal btn_l, btn_r, btn_c, btn_u, btn_d : std_logic := '0';
  	--Outputs
    signal an : std_logic_vector(3 downto 0);
    signal cath : std_logic_vector(6 downto 0);
    signal led_alarm_on : std_logic;
    signal led_alarm_buzzing : std_logic;
+	signal sound_pulse: std_logic;
 
    -- Clock period definitions
    constant sysclk_period : time := 10 ns;
@@ -71,7 +71,6 @@ BEGIN
 	-- Instantiate the Unit Under Test (UUT)
    uut: clock PORT MAP (
           sysclk => sysclk,
-          reset => reset,
 			 btn_l => btn_l,
 			 btn_r => btn_r,
 			 btn_c => btn_c,
@@ -80,7 +79,8 @@ BEGIN
           an => an,
           cath => cath,
           led_alarm_buzzing => led_alarm_buzzing,
-			 led_alarm_on => led_alarm_on
+			 led_alarm_on => led_alarm_on,
+			 sound_pulse => sound_pulse
         );
 
    -- Clock process definitions
@@ -97,10 +97,7 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-		reset <= '1';
-      wait for 100 ns;	
-		reset <= '0';
-		wait for 100 ns;
+		
 		
 		btn_u <= '0';
 		wait for 10 ns;

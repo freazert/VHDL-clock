@@ -36,6 +36,7 @@ entity timer is
     Port ( sysclk : in  STD_LOGIC;	 
 			  reset : in  STD_LOGIC := '0';
 			  init_reset : out std_logic;
+			  pulse_10us : out  STD_LOGIC;
 			  pulse_1ms : out  STD_LOGIC;
 			  pulse_10ms : out STD_LOGIC;
 			  pulse_100ms: out STD_LOGIC;
@@ -56,13 +57,13 @@ architecture Behavioral of timer is
 	
 
 	signal cnten_100us, cnten_1ms : std_logic;
-	--signal pulse_1us, pulse_100
+	--signal pulse_1us, pulse_100us : std_logic;
 	
 	
 begin
 	
 	--T1us: clock_divider GENERIC MAP	(div=> 100) PORT MAP(clk => sysclk, pulse => pulse_1us);
-	--T100us: clock_divider GENERIC MAP	(div=> 10000) PORT MAP(clk => sysclk, pulse => pulse_100us); --100us
+	T10us: clock_divider GENERIC MAP	(div=> 1000) PORT MAP(clk => sysclk, pulse => pulse_10us); --100us
 	T1ms: clock_divider GENERIC MAP	(div=> 100000) PORT MAP(clk => sysclk, pulse => pulse_1ms); -- 1ms
 	T10ms: clock_divider GENERIC MAP	(div=> 1000000) PORT MAP(clk => sysclk, pulse => pulse_10ms); -- 10ms
 	T100ms: clock_divider GENERIC MAP	(div=> 10000000) PORT MAP(clk => sysclk, pulse => pulse_100ms); -- 100ms

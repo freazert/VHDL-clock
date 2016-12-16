@@ -1,0 +1,3 @@
+vhdl work "Control.vhd"
+vhdl work "BCD7segmDec.vhd"
+vhdl work "weergave4dig7segm.vhd"

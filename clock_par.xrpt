@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Fri Dec 16 12:40:46 2016">
+  <application stringID="par" timeStamp="Fri Dec 16 23:49:30 2016">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="D:\Xilinx\14.4\ISE_DS\ISE\\lib\nt64;D:\Xilinx\14.4\ISE_DS\ISE\\bin\nt64;D:\Xilinx\Vivado\2012.4\bin;D:\Xilinx\14.4\ISE_DS\ISE\bin\nt64;D:\Xilinx\14.4\ISE_DS\ISE\lib\nt64;D:\Xilinx\14.4\ISE_DS\ISE\..\..\..\DocNav;D:\Xilinx\14.4\ISE_DS\PlanAhead\bin;D:\Xilinx\14.4\ISE_DS\EDK\bin\nt64;D:\Xilinx\14.4\ISE_DS\EDK\lib\nt64;D:\Xilinx\14.4\ISE_DS\EDK\gnu\microblaze\nt64\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnu\powerpc-eabi\nt64\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnuwin\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnu\arm\nt\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\Xilinx\14.4\ISE_DS\common\bin\nt64;D:\Xilinx\14.4\ISE_DS\common\lib\nt64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\arsen\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\QuickTime\QTSystem\;D:\Program Files (x86)\Smart Projects\IsoBuster;D:\Program Files\MATLAB\R2016b\runtime\win64;D:\Program Files\MATLAB\R2016b\bin;C:\Users\arsen\AppData\Local\Microsoft\WindowsApps"/>
+          <item stringID="value" value="D:\Xilinx\14.4\ISE_DS\ISE\\lib\nt64;D:\Xilinx\14.4\ISE_DS\ISE\\bin\nt64;D:\Xilinx\Vivado\2012.4\bin;D:\Xilinx\14.4\ISE_DS\ISE\bin\nt64;D:\Xilinx\14.4\ISE_DS\ISE\lib\nt64;D:\Xilinx\14.4\ISE_DS\ISE\..\..\..\DocNav;D:\Xilinx\14.4\ISE_DS\PlanAhead\bin;D:\Xilinx\14.4\ISE_DS\EDK\bin\nt64;D:\Xilinx\14.4\ISE_DS\EDK\lib\nt64;D:\Xilinx\14.4\ISE_DS\EDK\gnu\microblaze\nt64\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnu\powerpc-eabi\nt64\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnuwin\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnu\arm\nt\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\Xilinx\14.4\ISE_DS\common\bin\nt64;D:\Xilinx\14.4\ISE_DS\common\lib\nt64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\QuickTime\QTSystem\;D:\Program Files (x86)\Smart Projects\IsoBuster;D:\Program Files\MATLAB\R2016b\runtime\win64;D:\Program Files\MATLAB\R2016b\bin;C:\Users\arsen\AppData\Local\Microsoft\WindowsApps"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -67,8 +67,8 @@
         <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="5 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="6 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="6 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="5 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="5 secs "/>
       </section>
     </task>
     <task stringID="PAR_par">
@@ -2252,10 +2252,17 @@
           </row>
           <row stringID="row" value="318">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="V12"/>
-            <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOBS"/>
+            <item label="Signal&#xA;Name" stringID="Signal_Name" value="sound_pulse"/>
+            <item label="Pin&#xA;Usage" stringID="Pin_Usage" value="IOB"/>
             <item label="Pin&#xA;Name" sort="smart" stringID="Pin_Name" value="IO_L19N_2"/>
-            <item stringID="Direction" value="UNUSED"/>
+            <item stringID="Direction" value="OUTPUT"/>
+            <item label="IO&#xA;Standard" sort="smart" stringID="IO_Standard" value="LVCMOS25*"/>
             <item label="IO Bank&#xA;Number" stringID="IO_Bank_Number" value="2"/>
+            <item label="Drive&#xA;(mA)" stringID="Drive" value="12"/>
+            <item label="Slew&#xA;Rate" stringID="Slew_Rate" value="SLOW"/>
+            <item label="Constraint" stringID="Constraint" value="LOCATED"/>
+            <item label="IO&#xA;Register" stringID="IO_Register" value="NO"/>
+            <item label="Signal&#xA;Integrity" stringID="Signal_Integrity" value="NONE"/>
           </row>
           <row stringID="row" value="319">
             <item label="Pin&#xA;Number" sort="smart" stringID="Pin_Number" value="V13"/>
@@ -2315,14 +2322,14 @@
     </task>
   </application>
 
-  <application stringID="Par" timeStamp="Fri Dec 16 12:40:47 2016">
+  <application stringID="Par" timeStamp="Fri Dec 16 23:49:30 2016">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="D:\Xilinx\14.4\ISE_DS\ISE\\lib\nt64;D:\Xilinx\14.4\ISE_DS\ISE\\bin\nt64;D:\Xilinx\Vivado\2012.4\bin;D:\Xilinx\14.4\ISE_DS\ISE\bin\nt64;D:\Xilinx\14.4\ISE_DS\ISE\lib\nt64;D:\Xilinx\14.4\ISE_DS\ISE\..\..\..\DocNav;D:\Xilinx\14.4\ISE_DS\PlanAhead\bin;D:\Xilinx\14.4\ISE_DS\EDK\bin\nt64;D:\Xilinx\14.4\ISE_DS\EDK\lib\nt64;D:\Xilinx\14.4\ISE_DS\EDK\gnu\microblaze\nt64\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnu\powerpc-eabi\nt64\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnuwin\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnu\arm\nt\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\Xilinx\14.4\ISE_DS\common\bin\nt64;D:\Xilinx\14.4\ISE_DS\common\lib\nt64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\arsen\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\QuickTime\QTSystem\;D:\Program Files (x86)\Smart Projects\IsoBuster;D:\Program Files\MATLAB\R2016b\runtime\win64;D:\Program Files\MATLAB\R2016b\bin;C:\Users\arsen\AppData\Local\Microsoft\WindowsApps"/>
+          <item stringID="value" value="D:\Xilinx\14.4\ISE_DS\ISE\\lib\nt64;D:\Xilinx\14.4\ISE_DS\ISE\\bin\nt64;D:\Xilinx\Vivado\2012.4\bin;D:\Xilinx\14.4\ISE_DS\ISE\bin\nt64;D:\Xilinx\14.4\ISE_DS\ISE\lib\nt64;D:\Xilinx\14.4\ISE_DS\ISE\..\..\..\DocNav;D:\Xilinx\14.4\ISE_DS\PlanAhead\bin;D:\Xilinx\14.4\ISE_DS\EDK\bin\nt64;D:\Xilinx\14.4\ISE_DS\EDK\lib\nt64;D:\Xilinx\14.4\ISE_DS\EDK\gnu\microblaze\nt64\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnu\powerpc-eabi\nt64\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnuwin\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnu\arm\nt\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\Xilinx\14.4\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\Xilinx\14.4\ISE_DS\common\bin\nt64;D:\Xilinx\14.4\ISE_DS\common\lib\nt64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\QuickTime\QTSystem\;D:\Program Files (x86)\Smart Projects\IsoBuster;D:\Program Files\MATLAB\R2016b\runtime\win64;D:\Program Files\MATLAB\R2016b\bin;C:\Users\arsen\AppData\Local\Microsoft\WindowsApps"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -2371,10 +2378,10 @@
           <item dataType="int" stringID="PAR_NUM_SLICE_LATCHTHRU" value="0"/>
           <item dataType="int" stringID="PAR_NUM_SLICE_LATCHLOGIC" value="0"/>
         </item>
-        <item AVAILABLE="9112" dataType="int" label="Number of Slice LUTS" stringID="PAR_SLICE_LUTS" value="479">
+        <item AVAILABLE="9112" dataType="int" label="Number of Slice LUTS" stringID="PAR_SLICE_LUTS" value="484">
           <item dataType="int" stringID="PAR_NUM_LOGIC_O5ONLY" value="80"/>
-          <item dataType="int" stringID="PAR_NUM_LOGIC_O6ONLY" value="325"/>
-          <item dataType="int" stringID="PAR_NUM_LOGIC_O5ANDO6" value="70"/>
+          <item dataType="int" stringID="PAR_NUM_LOGIC_O6ONLY" value="328"/>
+          <item dataType="int" stringID="PAR_NUM_LOGIC_O5ANDO6" value="72"/>
           <item dataType="int" stringID="PAR_NUM_ROM_O5ONLY" value="0"/>
           <item dataType="int" stringID="PAR_NUM_ROM_O6ONLY" value="0"/>
           <item dataType="int" stringID="PAR_NUM_ROM_O5ANDO6" value="0"/>
@@ -2394,19 +2401,19 @@
           <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_CARRY4" value="4"/>
           <item dataType="int" stringID="PAR_NUM_LUT_RT_DRIVES_OTHERS" value="0"/>
         </item>
-        <item AVAILABLE="2278" dataType="int" stringID="PAR_OCCUPIED_SLICES" value="184">
+        <item AVAILABLE="2278" dataType="int" stringID="PAR_OCCUPIED_SLICES" value="170">
           <item AVAILABLE="595" dataType="int" stringID="PAR_NUM_SLICEL" value="35"/>
           <item AVAILABLE="544" dataType="int" stringID="PAR_NUM_SLICEM" value="0"/>
-          <item AVAILABLE="1139" dataType="int" stringID="PAR_NUM_SLICEX" value="149"/>
+          <item AVAILABLE="1139" dataType="int" stringID="PAR_NUM_SLICEX" value="135"/>
         </item>
-        <item dataType="int" stringID="PAR_OCCUPIED_LUT_AND_FF" value="537">
-          <item dataType="int" stringID="PAR_OCCUPIED_LUT_ONLY" value="314"/>
-          <item dataType="int" stringID="PAR_OCCUPIED_FF_ONLY" value="58"/>
-          <item dataType="int" stringID="PAR_OCCUPIED_FF_AND_LUT" value="165"/>
+        <item dataType="int" stringID="PAR_OCCUPIED_LUT_AND_FF" value="526">
+          <item dataType="int" stringID="PAR_OCCUPIED_LUT_ONLY" value="304"/>
+          <item dataType="int" stringID="PAR_OCCUPIED_FF_ONLY" value="42"/>
+          <item dataType="int" stringID="PAR_OCCUPIED_FF_AND_LUT" value="180"/>
         </item>
       </section>
       <section stringID="PAR_IOB_REPORTING">
-        <item AVAILABLE="232" dataType="int" stringID="PAR_AGG_BONDED_IO" value="22"/>
+        <item AVAILABLE="232" dataType="int" stringID="PAR_AGG_BONDED_IO" value="23"/>
         <item AVAILABLE="12" dataType="int" stringID="PAR_AGG_UNBONDED_IO" value="0"/>
         <item AVAILABLE="0" dataType="int" stringID="PAR_NUM_IOB_FF" value="0"/>
         <item AVAILABLE="0" dataType="int" stringID="PAR_NUM_IOB_LATCH" value="0"/>

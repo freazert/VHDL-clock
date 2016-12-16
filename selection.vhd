@@ -37,7 +37,8 @@ entity selection is
            U2_active: out std_logic;
            U3_1, U3_2, U3_3 : out  STD_LOGIC;
            U3_active : out std_logic;
-			  ostate : out STD_LOGIC_Vector(2 downto 0)
+			  ostate : out STD_LOGIC_Vector(2 downto 0);
+			  alarm_is_buzzing : in STD_LOGIC
 			  );
 end selection;
 
@@ -54,7 +55,8 @@ signal s_ostate : STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 begin
 	SetType:process(sysclk)
 	begin
-		if rising_edge(sysclk) then
+		if rising_edge(sysclk)  then
+		if alarm_is_buzzing = '0' then
 			if selectm = '1' then
 				case current_edit is 
 				when clock => current_edit <= date; s_ostate <= "001";
@@ -62,12 +64,15 @@ begin
 				when alarm => current_edit <= clock;  s_ostate <= "100";
 				end case;
 			end if;
+			else
+			current_edit <= clock;  s_ostate <= "100";
+			end if;
 		end if;
 	end process;
 	
 	SetButtons:process(sysclk)
 	begin
-	if rising_edge(sysclk) then
+	if rising_edge(sysclk) and alarm_is_buzzing = '0' then
 			edit <= (others => '0');
 			case current_edit is
 				when clock => edit(0) <= i1; edit(1) <= i2; edit(2) <= i3; U1_active <= '0'; U2_active <= '1'; U3_active <= '1';
@@ -87,5 +92,9 @@ begin
 	U3_3 <= edit(8);
 	
 	ostate <= s_ostate;
+	
+	
+	
+	
 end Behavioral;
 

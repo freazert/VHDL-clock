@@ -5,5 +5,11 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="error" file="HDLCompiler" num="439" delta="unknown" >"D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/clock.vhd" Line 76: Formal port <arg fmt="%s" index="1">alarm_is_buzzing</arg> of mode <arg fmt="%s" index="2">in</arg> cannot be associated with actual port <arg fmt="%s" index="3">alarm_is_buzzing</arg> of mode <arg fmt="%s" index="4">out</arg>
+</msg>
+
+<msg type="error" file="Simulator" num="777" delta="unknown" >Static elaboration of top level VHDL design unit <arg fmt="%s" index="1">clock_tb</arg> in library <arg fmt="%s" index="2">work</arg> failed
+</msg>
+
 </messages>
 

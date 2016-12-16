@@ -1,7 +1,7 @@
 #Release 14.4 - par P.49d (nt64)
 #Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-#Fri Dec 16 12:40:50 2016
+#Fri Dec 16 23:49:33 2016
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -336,7 +336,7 @@ V8,,IOBS,IO_L41N_VREF_2,UNUSED,,2,,,,,,,,,
 V9,,IOBS,IO_L32N_GCLK28_2,UNUSED,,2,,,,,,,,,
 V10,sysclk,IOB,IO_L30N_GCLK0_USERCCLK_2,INPUT,LVCMOS25*,2,,,,NONE,,LOCATED,NO,NONE,
 V11,,IOBS,IO_L23N_2,UNUSED,,2,,,,,,,,,
-V12,,IOBS,IO_L19N_2,UNUSED,,2,,,,,,,,,
+V12,sound_pulse,IOB,IO_L19N_2,OUTPUT,LVCMOS25*,2,12,SLOW,,,,LOCATED,NO,NONE,
 V13,,IOBS,IO_L14N_D12_2,UNUSED,,2,,,,,,,,,
 V14,,IOBS,IO_L12N_D2_MISO3_2,UNUSED,,2,,,,,,,,,
 V15,,IOBS,IO_L5N_2,UNUSED,,2,,,,,,,,,
