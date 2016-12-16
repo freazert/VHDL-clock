@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: clock.prj
 
@@ -123,6 +123,9 @@ Parsing architecture <Behavioral> of entity <wekker_block>.
 Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\time_block.vhd" into library work
 Parsing entity <time_block>.
 Parsing architecture <Behavioral> of entity <time_block>.
+Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\pulse_divider.vhd" into library work
+Parsing entity <clock_divider>.
+Parsing architecture <Behavioral> of entity <clock_divider>.
 Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\format_numbers.vhd" into library work
 Parsing entity <format_numbers>.
 Parsing architecture <Behavioral> of entity <format_numbers>.
@@ -173,10 +176,14 @@ Parsing architecture <Behavioral> of entity <clock>.
 Elaborating entity <clock> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <timer> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd" Line 60: Using initial value '1' for updwn since it is never assigned
-WARNING:HDLCompiler:92 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd" Line 89: next_reset should be on the sensitivity list of the process
 
-Elaborating entity <counter> (architecture <Behavioral>) from library <work>.
+Elaborating entity <clock_divider> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <clock_divider> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <clock_divider> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <clock_divider> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <buttons> (architecture <Behavioral>) from library <work>.
 
@@ -191,6 +198,8 @@ Elaborating entity <selection> (architecture <Behavioral>) from library <work>.
 Elaborating entity <alarm_clock> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <time_block> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <counter> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <date_block> (architecture <Behavioral>) from library <work>.
 WARNING:HDLCompiler:92 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Date\date_block.vhd" Line 136: tct2 should be on the sensitivity list of the process
@@ -236,37 +245,51 @@ Unit <clock> synthesized.
 
 Synthesizing Unit <timer>.
     Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd".
-INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd" line 101: Output port <count> of the instance <T1us> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd" line 102: Output port <count> of the instance <T100us> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd" line 103: Output port <count> of the instance <T1ms> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd" line 104: Output port <count> of the instance <T10ms> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd" line 105: Output port <count> of the instance <T100ms> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd" line 106: Output port <count> of the instance <T1s> is unconnected or connected to loadless signal.
-WARNING:Xst:737 - Found 1-bit latch for signal <next_reset>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <init_reset> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
-	inferred   1 Latch(s).
+	no macro.
 Unit <timer> synthesized.
 
-Synthesizing Unit <counter>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\counter.vhd".
-    Found 4-bit register for signal <Ucnt>.
-    Found 4-bit register for signal <Tcnt>.
-    Found 4-bit adder for signal <Tcnt[3]_GND_7_o_add_10_OUT> created at line 61.
-    Found 4-bit adder for signal <Ucnt[3]_GND_7_o_add_11_OUT> created at line 62.
-    Found 4-bit subtractor for signal <GND_7_o_GND_7_o_sub_20_OUT<3:0>> created at line 66.
-    Found 4-bit subtractor for signal <GND_7_o_GND_7_o_sub_21_OUT<3:0>> created at line 67.
-    Found 4-bit comparator greater for signal <Tmax[3]_Tcnt[3]_LessThan_34_o> created at line 74
-    Found 4-bit comparator equal for signal <Tmax[3]_Tcnt[3]_equal_35_o> created at line 74
-    Found 4-bit comparator greater for signal <Umax[3]_Ucnt[3]_LessThan_36_o> created at line 74
-    Found 4-bit comparator equal for signal <Umax[3]_Ucnt[3]_equal_37_o> created at line 74
-    Found 4-bit comparator equal for signal <Umin[3]_Ucnt[3]_equal_39_o> created at line 75
-    Found 4-bit comparator equal for signal <Tmin[3]_Tcnt[3]_equal_40_o> created at line 75
+Synthesizing Unit <clock_divider_1>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\pulse_divider.vhd".
+        div = 100000
+    Found 17-bit register for signal <cnt_signal>.
+    Found 17-bit adder for signal <cnt_signal[16]_GND_6_o_add_1_OUT> created at line 55.
     Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred   8 D-type flip-flop(s).
-	inferred   6 Comparator(s).
-	inferred  15 Multiplexer(s).
-Unit <counter> synthesized.
+	inferred   1 Adder/Subtractor(s).
+	inferred  17 D-type flip-flop(s).
+Unit <clock_divider_1> synthesized.
+
+Synthesizing Unit <clock_divider_2>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\pulse_divider.vhd".
+        div = 1000000
+    Found 20-bit register for signal <cnt_signal>.
+    Found 20-bit adder for signal <cnt_signal[19]_GND_7_o_add_1_OUT> created at line 55.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+Unit <clock_divider_2> synthesized.
+
+Synthesizing Unit <clock_divider_3>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\pulse_divider.vhd".
+        div = 10000000
+    Found 24-bit register for signal <cnt_signal>.
+    Found 24-bit adder for signal <cnt_signal[23]_GND_8_o_add_1_OUT> created at line 55.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+Unit <clock_divider_3> synthesized.
+
+Synthesizing Unit <clock_divider_4>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\pulse_divider.vhd".
+        div = 100000000
+    Found 27-bit register for signal <cnt_signal>.
+    Found 27-bit adder for signal <cnt_signal[26]_GND_9_o_add_1_OUT> created at line 55.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+Unit <clock_divider_4> synthesized.
 
 Synthesizing Unit <buttons>.
     Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\buttons.vhd".
@@ -326,7 +349,7 @@ Synthesizing Unit <selection>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 9-bit 3-to-1 multiplexer for signal <current_edit[1]_X_12_o_wide_mux_6_OUT> created at line 72.
+    Found 9-bit 3-to-1 multiplexer for signal <current_edit[1]_X_14_o_wide_mux_6_OUT> created at line 72.
     Summary:
 	inferred  15 D-type flip-flop(s).
 	inferred   1 Multiplexer(s).
@@ -388,6 +411,27 @@ Synthesizing Unit <time_block>.
 	inferred   5 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <time_block> synthesized.
+
+Synthesizing Unit <counter>.
+    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\counter.vhd".
+    Found 4-bit register for signal <Ucnt>.
+    Found 4-bit register for signal <Tcnt>.
+    Found 4-bit adder for signal <Tcnt[3]_GND_41_o_add_10_OUT> created at line 61.
+    Found 4-bit adder for signal <Ucnt[3]_GND_41_o_add_11_OUT> created at line 62.
+    Found 4-bit subtractor for signal <GND_41_o_GND_41_o_sub_20_OUT<3:0>> created at line 66.
+    Found 4-bit subtractor for signal <GND_41_o_GND_41_o_sub_21_OUT<3:0>> created at line 67.
+    Found 4-bit comparator greater for signal <Tmax[3]_Tcnt[3]_LessThan_34_o> created at line 74
+    Found 4-bit comparator equal for signal <Tmax[3]_Tcnt[3]_equal_35_o> created at line 74
+    Found 4-bit comparator greater for signal <Umax[3]_Ucnt[3]_LessThan_36_o> created at line 74
+    Found 4-bit comparator equal for signal <Umax[3]_Ucnt[3]_equal_37_o> created at line 74
+    Found 4-bit comparator equal for signal <Umin[3]_Ucnt[3]_equal_39_o> created at line 75
+    Found 4-bit comparator equal for signal <Tmin[3]_Tcnt[3]_equal_40_o> created at line 75
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred  17 Multiplexer(s).
+Unit <counter> synthesized.
 
 Synthesizing Unit <date_block>.
     Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Date\date_block.vhd".
@@ -495,7 +539,7 @@ Unit <weergave4dig7segm> synthesized.
 Synthesizing Unit <Control>.
     Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Control.vhd".
     Found 2-bit register for signal <dignr_int>.
-    Found 4x2-bit Read Only RAM for signal <dignr_int[1]_GND_231_o_wide_mux_0_OUT>
+    Found 4x2-bit Read Only RAM for signal <dignr_int[1]_GND_153_o_wide_mux_0_OUT>
     Found 4-bit 4-to-1 multiplexer for signal <bcdout> created at line 49.
     Found 4-bit 4-to-1 multiplexer for signal <dignrout> created at line 63.
     HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <dignr_int> would allow inference of a finite state machine and as consequence better performance and smaller area.
@@ -519,28 +563,35 @@ Macro Statistics
 # RAMs                                                 : 2
  16x7-bit single-port Read Only RAM                    : 1
  4x2-bit single-port Read Only RAM                     : 1
-# Adders/Subtractors                                   : 30
- 4-bit addsub                                          : 30
-# Registers                                            : 46
+# Adders/Subtractors                                   : 22
+ 17-bit adder                                          : 1
+ 20-bit adder                                          : 1
+ 24-bit adder                                          : 1
+ 27-bit adder                                          : 1
+ 4-bit addsub                                          : 18
+# Registers                                            : 38
  1-bit register                                        : 7
+ 17-bit register                                       : 1
  2-bit register                                        : 1
- 24-bit register                                       : 1
+ 20-bit register                                       : 1
+ 24-bit register                                       : 2
+ 27-bit register                                       : 1
  3-bit register                                        : 1
- 4-bit register                                        : 35
+ 4-bit register                                        : 23
  9-bit register                                        : 1
-# Latches                                              : 25
- 1-bit latch                                           : 25
-# Comparators                                          : 94
+# Latches                                              : 24
+ 1-bit latch                                           : 24
+# Comparators                                          : 58
  24-bit comparator equal                               : 1
- 4-bit comparator equal                                : 61
- 4-bit comparator greater                              : 32
-# Multiplexers                                         : 261
- 1-bit 2-to-1 multiplexer                              : 25
+ 4-bit comparator equal                                : 37
+ 4-bit comparator greater                              : 20
+# Multiplexers                                         : 189
+ 1-bit 2-to-1 multiplexer                              : 19
  1-bit 3-to-1 multiplexer                              : 2
  1-bit 4-to-1 multiplexer                              : 4
  2-bit 2-to-1 multiplexer                              : 2
  24-bit 2-to-1 multiplexer                             : 4
- 4-bit 2-to-1 multiplexer                              : 221
+ 4-bit 2-to-1 multiplexer                              : 155
  4-bit 4-to-1 multiplexer                              : 2
  9-bit 3-to-1 multiplexer                              : 1
 # FSMs                                                 : 9
@@ -568,7 +619,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segm> will be implemented on LUTs ei
 Unit <BCD7segmDec> synthesized (advanced).
 
 Synthesizing (advanced) Unit <Control>.
-INFO:Xst:3231 - The small RAM <Mram_dignr_int[1]_GND_231_o_wide_mux_0_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3231 - The small RAM <Mram_dignr_int[1]_GND_153_o_wide_mux_0_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -581,6 +632,22 @@ INFO:Xst:3231 - The small RAM <Mram_dignr_int[1]_GND_231_o_wide_mux_0_OUT> will 
     -----------------------------------------------------------------------
 Unit <Control> synthesized (advanced).
 
+Synthesizing (advanced) Unit <clock_divider_1>.
+The following registers are absorbed into counter <cnt_signal>: 1 register on signal <cnt_signal>.
+Unit <clock_divider_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clock_divider_2>.
+The following registers are absorbed into counter <cnt_signal>: 1 register on signal <cnt_signal>.
+Unit <clock_divider_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clock_divider_3>.
+The following registers are absorbed into counter <cnt_signal>: 1 register on signal <cnt_signal>.
+Unit <clock_divider_3> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clock_divider_4>.
+The following registers are absorbed into counter <cnt_signal>: 1 register on signal <cnt_signal>.
+Unit <clock_divider_4> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
@@ -588,21 +655,26 @@ Macro Statistics
 # RAMs                                                 : 2
  16x7-bit single-port distributed Read Only RAM        : 1
  4x2-bit single-port distributed Read Only RAM         : 1
-# Adders/Subtractors                                   : 30
- 4-bit addsub                                          : 30
-# Registers                                            : 185
- Flip-Flops                                            : 185
-# Comparators                                          : 94
+# Adders/Subtractors                                   : 18
+ 4-bit addsub                                          : 18
+# Counters                                             : 4
+ 17-bit up counter                                     : 1
+ 20-bit up counter                                     : 1
+ 24-bit up counter                                     : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 137
+ Flip-Flops                                            : 137
+# Comparators                                          : 58
  24-bit comparator equal                               : 1
- 4-bit comparator equal                                : 61
- 4-bit comparator greater                              : 32
-# Multiplexers                                         : 261
- 1-bit 2-to-1 multiplexer                              : 25
+ 4-bit comparator equal                                : 37
+ 4-bit comparator greater                              : 20
+# Multiplexers                                         : 189
+ 1-bit 2-to-1 multiplexer                              : 19
  1-bit 3-to-1 multiplexer                              : 2
  1-bit 4-to-1 multiplexer                              : 4
  2-bit 2-to-1 multiplexer                              : 2
  24-bit 2-to-1 multiplexer                             : 4
- 4-bit 2-to-1 multiplexer                              : 221
+ 4-bit 2-to-1 multiplexer                              : 155
  4-bit 4-to-1 multiplexer                              : 2
  9-bit 3-to-1 multiplexer                              : 1
 # FSMs                                                 : 9
@@ -664,88 +736,49 @@ Optimizing FSM <ALARMCLOCK/A1/FSM_4> on signal <present_state[1:2]> with user en
  sett2  | 10
  sett3  | 11
 --------------------
-WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
-   incompatible with the Spartan6 architecture. The two primary causes of this is
-   either a register or latch described with both an asynchronous set and
-   asynchronous reset, or a register or latch described with an asynchronous
-   set or reset which however has an initialization value of the opposite 
-   polarity (i.e. asynchronous reset with an initialization value of 1).
-    While this circuit can be built, it creates a sub-optimal implementation
-   in terms of area, power and performance. For a more optimal implementation
-   Xilinx highly recommends one of the following:
-
-          1) Remove either the set or reset from all registers and latches
-             if not needed for required functionality
-          2) Modify the code in order to produce a synchronous set
-             and/or reset (both is preferred)
-          3) Ensure all registers have the same initialization value as the
-             described asynchronous set or reset polarity
-          4) Use the -async_to_sync option to transform the asynchronous
-             set/reset to synchronous operation
-             (timing simulation highly recommended when using this option)
-
-  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
-
-  List of register instances with asynchronous set or reset and opposite initialization value:
-    next_reset in unit <timer>
-
 
 Optimizing unit <alarm_clock> ...
 
 Optimizing unit <clock> ...
 
-Optimizing unit <timer> ...
-
-Optimizing unit <counter> ...
-
 Optimizing unit <selection> ...
 
 Optimizing unit <time_block> ...
 
+Optimizing unit <counter> ...
+
 Optimizing unit <date_block> ...
 
 Optimizing unit <wekker_block> ...
-WARNING:Xst:2677 - Node <T1/next_reset> of sequential type is unconnected in block <clock>.
-WARNING:Xst:1293 - FF/Latch <ALARMCLOCK/A1/T3/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T3/Tcnt_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T2/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T1/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/T1/T3/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ALARMCLOCK/T1/T3/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/T1/T3/Tcnt_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/T1/T2/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/T1/T1/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T1ms/Tcnt_0> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T1ms/Tcnt_1> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T1ms/Tcnt_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T1ms/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T10ms/Tcnt_0> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T10ms/Tcnt_1> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T10ms/Tcnt_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T10ms/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T100ms/Tcnt_0> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T100ms/Tcnt_1> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T100ms/Tcnt_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T100ms/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T1s/Tcnt_0> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T1s/Tcnt_1> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T1s/Tcnt_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <T1/T1s/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/alarmOutput_7> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/alarmOutput_15> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/alarmOutput_22> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/alarmOutput_23> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/count_t_22> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/count_t_15> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/count_t_7> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T1/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T2/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T3/Tcnt_2> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/T3/Tcnt_3> has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/count_t_23> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/count_t_7> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/count_t_15> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/count_t_22> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/alarmOutput_23> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/alarmOutput_22> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/alarmOutput_15> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/alarmOutput_7> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <T1/T1s/cnt_signal_0> in Unit <clock> is equivalent to the following 3 FFs/Latches, which will be removed : <T1/T1ms/cnt_signal_0> <T1/T10ms/cnt_signal_0> <T1/T100ms/cnt_signal_0> 
+INFO:Xst:2261 - The FF/Latch <T1/T1s/cnt_signal_1> in Unit <clock> is equivalent to the following 3 FFs/Latches, which will be removed : <T1/T1ms/cnt_signal_1> <T1/T10ms/cnt_signal_1> <T1/T100ms/cnt_signal_1> 
+INFO:Xst:2261 - The FF/Latch <T1/T1s/cnt_signal_2> in Unit <clock> is equivalent to the following 3 FFs/Latches, which will be removed : <T1/T1ms/cnt_signal_2> <T1/T10ms/cnt_signal_2> <T1/T100ms/cnt_signal_2> 
+INFO:Xst:2261 - The FF/Latch <T1/T1s/cnt_signal_3> in Unit <clock> is equivalent to the following 3 FFs/Latches, which will be removed : <T1/T1ms/cnt_signal_3> <T1/T10ms/cnt_signal_3> <T1/T100ms/cnt_signal_3> 
+INFO:Xst:2261 - The FF/Latch <T1/T1s/cnt_signal_4> in Unit <clock> is equivalent to the following 3 FFs/Latches, which will be removed : <T1/T1ms/cnt_signal_4> <T1/T10ms/cnt_signal_4> <T1/T100ms/cnt_signal_4> 
+INFO:Xst:2261 - The FF/Latch <T1/T1s/cnt_signal_5> in Unit <clock> is equivalent to the following 2 FFs/Latches, which will be removed : <T1/T10ms/cnt_signal_5> <T1/T100ms/cnt_signal_5> 
+INFO:Xst:2261 - The FF/Latch <T1/T1s/cnt_signal_6> in Unit <clock> is equivalent to the following FF/Latch, which will be removed : <T1/T100ms/cnt_signal_6> 
 INFO:Xst:2261 - The FF/Latch <S/current_edit_FSM_FFd1> in Unit <clock> is equivalent to the following FF/Latch, which will be removed : <S/s_ostate_1> 
 INFO:Xst:2261 - The FF/Latch <S/current_edit_FSM_FFd2> in Unit <clock> is equivalent to the following FF/Latch, which will be removed : <S/s_ostate_0> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block clock, actual ratio is 7.
-FlipFlop ALARMCLOCK/D1/T2/Ucnt_0 has been replicated 1 time(s)
-FlipFlop ALARMCLOCK/T1/present_state_FSM_FFd2 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -753,8 +786,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 175
- Flip-Flops                                            : 175
+# Registers                                            : 211
+ Flip-Flops                                            : 211
 
 =========================================================================
 
@@ -777,22 +810,24 @@ Top Level Output File Name         : clock.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 602
+# BELS                             : 715
 #      GND                         : 1
-#      INV                         : 3
-#      LUT2                        : 52
-#      LUT3                        : 45
-#      LUT4                        : 70
-#      LUT5                        : 100
-#      LUT6                        : 311
-#      MUXCY                       : 8
-#      MUXF7                       : 11
+#      INV                         : 7
+#      LUT1                        : 84
+#      LUT2                        : 58
+#      LUT3                        : 48
+#      LUT4                        : 29
+#      LUT5                        : 59
+#      LUT6                        : 256
+#      MUXCY                       : 92
+#      MUXF7                       : 10
 #      VCC                         : 1
-# FlipFlops/Latches                : 195
-#      FD                          : 55
-#      FDE                         : 61
-#      FDR                         : 9
-#      FDRE                        : 50
+#      XORCY                       : 70
+# FlipFlops/Latches                : 231
+#      FD                          : 44
+#      FDE                         : 53
+#      FDR                         : 78
+#      FDRE                        : 36
 #      LD                          : 20
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
@@ -807,16 +842,16 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             195  out of  18224     1%  
- Number of Slice LUTs:                  581  out of   9112     6%  
-    Number used as Logic:               581  out of   9112     6%  
+ Number of Slice Registers:             231  out of  18224     1%  
+ Number of Slice LUTs:                  541  out of   9112     5%  
+    Number used as Logic:               541  out of   9112     5%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    627
-   Number with an unused Flip Flop:     432  out of    627    68%  
-   Number with an unused LUT:            46  out of    627     7%  
-   Number of fully used LUT-FF pairs:   149  out of    627    23%  
-   Number of unique control sets:        45
+ Number of LUT Flip Flop pairs used:    587
+   Number with an unused Flip Flop:     356  out of    587    60%  
+   Number with an unused LUT:            46  out of    587     7%  
+   Number of fully used LUT-FF pairs:   185  out of    587    31%  
+   Number of unique control sets:        35
 
 IO Utilization: 
  Number of IOs:                          23
@@ -846,7 +881,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-sysclk                             | BUFGP                  | 195   |
+sysclk                             | BUFGP                  | 231   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -857,9 +892,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 7.956ns (Maximum Frequency: 125.690MHz)
-   Minimum input arrival time before clock: 5.613ns
-   Maximum output required time after clock: 11.167ns
+   Minimum period: 8.821ns (Maximum Frequency: 113.361MHz)
+   Minimum input arrival time before clock: 5.518ns
+   Maximum output required time after clock: 11.150ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -868,76 +903,77 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sysclk'
-  Clock period: 7.956ns (frequency: 125.690MHz)
-  Total number of paths / destination ports: 32223 / 337
+  Clock period: 8.821ns (frequency: 113.361MHz)
+  Total number of paths / destination ports: 36896 / 426
 -------------------------------------------------------------------------
-Delay:               7.956ns (Levels of Logic = 6)
-  Source:            ALARMCLOCK/T1/T2/Tcnt_0 (FF)
-  Destination:       ALARMCLOCK/D1/T2/Ucnt_1 (FF)
+Delay:               8.821ns (Levels of Logic = 8)
+  Source:            T1/T1s/cnt_signal_24 (FF)
+  Destination:       ALARMCLOCK/D1/T2/Ucnt_3 (FF)
   Source Clock:      sysclk rising
   Destination Clock: sysclk rising
 
-  Data Path: ALARMCLOCK/T1/T2/Tcnt_0 to ALARMCLOCK/D1/T2/Ucnt_1
+  Data Path: T1/T1s/cnt_signal_24 to ALARMCLOCK/D1/T2/Ucnt_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             10   0.447   0.961  ALARMCLOCK/T1/T2/Tcnt_0 (ALARMCLOCK/T1/T2/Tcnt_0)
-     LUT2:I0->O            1   0.203   0.580  ALARMCLOCK/T1/T2/Umin[3]_Tmin[3]_AND_11_o_SW0 (N12)
-     LUT6:I5->O           13   0.205   1.161  ALARMCLOCK/T1/T2/Umin[3]_Tmin[3]_AND_11_o (ALARMCLOCK/T1/T2/Umin[3]_Tmin[3]_AND_11_o)
-     LUT6:I3->O            6   0.205   0.745  ALARMCLOCK/T1/cntenT32_SW0 (N88)
-     LUT6:I5->O            9   0.205   0.830  ALARMCLOCK/D1/Mmux_cntenT314_SW0 (N80)
-     LUT6:I5->O           14   0.205   0.958  ALARMCLOCK/D1/Mmux_cntenT111 (ALARMCLOCK/D1/cntenT2)
-     LUT4:I3->O            2   0.205   0.616  ALARMCLOCK/D1/T2/Reset_OR_DriverANDClockEnable1 (ALARMCLOCK/D1/T2/Reset_OR_DriverANDClockEnable)
-     FDRE:R                    0.430          ALARMCLOCK/D1/T2/Ucnt_1
+     FDR:C->Q              2   0.447   0.981  T1/T1s/cnt_signal_24 (T1/T1s/cnt_signal_24)
+     LUT6:I0->O            2   0.203   0.864  T1/T1s/pulse<26>7_SW0 (N108)
+     LUT6:I2->O            1   0.203   0.808  T1/T1s/pulse<26>7_1 (T1/T1s/pulse<26>7)
+     LUT6:I3->O           16   0.205   1.005  ALARMCLOCK/T1/cntenT32 (ALARMCLOCK/T1/cntenT3)
+     LUT3:I2->O            2   0.205   0.617  ALARMCLOCK/D1/Mmux_cntenT314_SW3 (N168)
+     LUT6:I5->O           17   0.205   1.028  ALARMCLOCK/D1/Mmux_cntenT111 (ALARMCLOCK/D1/cntenT2)
+     LUT6:I5->O            3   0.205   0.755  ALARMCLOCK/D1/T2/Mmux_Ucnt[3]_Ucnt[3]_mux_29_OUT_A21 (ALARMCLOCK/D1/T2/Mmux_Ucnt[3]_Ucnt[3]_mux_29_OUT_rs_A<1>)
+     LUT6:I4->O            1   0.203   0.580  ALARMCLOCK/D1/T2/Mmux_Ucnt[3]_Umin[3]_mux_30_OUT411 (ALARMCLOCK/D1/T2/Mmux_Ucnt[3]_Umin[3]_mux_30_OUT41)
+     LUT6:I5->O            1   0.205   0.000  ALARMCLOCK/D1/T2/Mmux_Ucnt[3]_Umin[3]_mux_30_OUT42 (ALARMCLOCK/D1/T2/Ucnt[3]_Umin[3]_mux_30_OUT<3>)
+     FDRE:D                    0.102          ALARMCLOCK/D1/T2/Ucnt_3
     ----------------------------------------
-    Total                      7.956ns (2.105ns logic, 5.851ns route)
-                                       (26.5% logic, 73.5% route)
+    Total                      8.821ns (2.183ns logic, 6.638ns route)
+                                       (24.7% logic, 75.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sysclk'
-  Total number of paths / destination ports: 254 / 223
+  Total number of paths / destination ports: 176 / 173
 -------------------------------------------------------------------------
-Offset:              5.613ns (Levels of Logic = 4)
+Offset:              5.518ns (Levels of Logic = 3)
   Source:            reset (PAD)
-  Destination:       ALARMCLOCK/D1/T2/Ucnt_0 (FF)
+  Destination:       ALARMCLOCK/D1/T1/Ucnt_0 (FF)
   Destination Clock: sysclk rising
 
-  Data Path: reset to ALARMCLOCK/D1/T2/Ucnt_0
+  Data Path: reset to ALARMCLOCK/D1/T1/Ucnt_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           163   1.222   2.020  reset_IBUF (reset_IBUF)
-     LUT3:I2->O            2   0.205   0.845  ALARMCLOCK/D1/T2/_n0151_inv21_SW0 (N121)
-     LUT6:I3->O            1   0.205   0.808  ALARMCLOCK/D1/T2/_n01271_SW0 (N303)
-     LUT6:I3->O            2   0.205   0.000  ALARMCLOCK/D1/T2/Ucnt_0_rstpot (ALARMCLOCK/D1/T2/Ucnt_0_rstpot)
-     FD:D                      0.102          ALARMCLOCK/D1/T2/Ucnt_0
+     IBUF:I->O            96   1.222   1.851  reset_IBUF (reset_IBUF)
+     LUT2:I1->O            1   0.205   0.924  ALARMCLOCK/D1/T1/_n0127_SW0 (N38)
+     LUT6:I1->O            4   0.203   0.683  ALARMCLOCK/D1/T1/_n0127 (ALARMCLOCK/D1/T1/_n0127)
+     FDRE:R                    0.430          ALARMCLOCK/D1/T1/Ucnt_0
     ----------------------------------------
-    Total                      5.613ns (1.939ns logic, 3.674ns route)
-                                       (34.5% logic, 65.5% route)
+    Total                      5.518ns (2.060ns logic, 3.458ns route)
+                                       (37.3% logic, 62.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sysclk'
   Total number of paths / destination ports: 5093 / 16
 -------------------------------------------------------------------------
-Offset:              11.167ns (Levels of Logic = 7)
-  Source:            ALARMCLOCK/A1/present_state_FSM_FFd1 (FF)
+Offset:              11.150ns (Levels of Logic = 7)
+  Source:            S/current_edit_FSM_FFd1 (FF)
   Destination:       cath<6> (PAD)
   Source Clock:      sysclk rising
 
-  Data Path: ALARMCLOCK/A1/present_state_FSM_FFd1 to cath<6>
+  Data Path: S/current_edit_FSM_FFd1 to cath<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             37   0.447   1.610  ALARMCLOCK/A1/present_state_FSM_FFd1 (ALARMCLOCK/A1/present_state_FSM_FFd1)
-     LUT6:I2->O            1   0.203   0.580  SELSHOWFUNC/Mmux_ostate41 (SELSHOWFUNC/Mmux_ostate4)
+     FD:C->Q              29   0.447   1.594  S/current_edit_FSM_FFd1 (S/current_edit_FSM_FFd1)
+     LUT6:I1->O            1   0.203   0.580  SELSHOWFUNC/Mmux_ostate41 (SELSHOWFUNC/Mmux_ostate4)
      LUT6:I5->O            3   0.205   0.898  SELSHOWFUNC/Mmux_ostate42 (ostate<3>)
      LUT4:I0->O           13   0.203   1.297  DATATODISPLAY/B1/_n00131 (DATATODISPLAY/B1/_n0013)
-     LUT6:I0->O            1   0.203   0.944  W1/C1/Mmux_bcdout128_SW0 (N379)
+     LUT6:I0->O            1   0.203   0.944  W1/C1/Mmux_bcdout128_SW0 (N244)
      LUT6:I0->O            7   0.203   1.021  W1/C1/Mmux_bcdout128 (W1/bcdout_int<2>)
      LUT4:I0->O            1   0.203   0.579  W1/D1/Mram_segm51 (cath_5_OBUF)
      OBUF:I->O                 2.571          cath_5_OBUF (cath<5>)
     ----------------------------------------
-    Total                     11.167ns (4.238ns logic, 6.929ns route)
+    Total                     11.150ns (4.238ns logic, 6.912ns route)
                                        (38.0% logic, 62.0% route)
 
 =========================================================================
@@ -950,20 +986,20 @@ Clock to Setup on destination clock sysclk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-sysclk         |    7.956|         |    1.488|         |
+sysclk         |    8.821|         |    1.465|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 10.73 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.58 secs
  
 --> 
 
 Total memory usage is 290940 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   74 (   0 filtered)
-Number of infos    :   16 (   0 filtered)
+Number of warnings :   55 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
 
