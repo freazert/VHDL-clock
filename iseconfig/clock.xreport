@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-12-16T11:57:56</DateModified>
+  <DateModified>2016-12-16T12:40:10</DateModified>
   <ModuleName>clock</ModuleName>
-  <SummaryTimeStamp>2016-12-16T11:55:45</SummaryTimeStamp>
-  <SavedFilePath>D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/iseconfig/clock.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2016-12-16T12:36:56</SummaryTimeStamp>
+  <SavedFilePath>D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/iseconfig/clock.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2\</ImplementationReportsDirectory>
   <DateInitialized>2016-11-28T18:26:47</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

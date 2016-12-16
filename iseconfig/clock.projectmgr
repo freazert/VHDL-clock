@@ -11,6 +11,11 @@
          <ClosedNode>/alarm_clock - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|alarm_clock.vhd/D1 - date_block - Behavioral</ClosedNode>
          <ClosedNode>/alarm_clock - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|alarm_clock.vhd/T1 - time_block - Behavioral</ClosedNode>
          <ClosedNode>/buttons - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|buttons.vhd</ClosedNode>
+         <ClosedNode>/clock - Behavioral D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|clock.vhd/ALARMCLOCK - alarm_clock - Behavioral</ClosedNode>
+         <ClosedNode>/clock - Behavioral D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|clock.vhd/BUTTONS1 - buttons - Behavioral</ClosedNode>
+         <ClosedNode>/clock - Behavioral D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|clock.vhd/DATATODISPLAY - data_to_display - Behavioral</ClosedNode>
+         <ClosedNode>/clock - Behavioral D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|clock.vhd/T1 - timer - Behavioral</ClosedNode>
+         <ClosedNode>/clock - Behavioral D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|clock.vhd/W1 - weergave4dig7segm - Behavioral</ClosedNode>
          <ClosedNode>/clock - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock.vhd/ALARMCLOCK - alarm_clock - Behavioral</ClosedNode>
          <ClosedNode>/clock - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock.vhd/ALARMCLOCK - alarm_clock - Behavioral/A1 - wekker_block - Behavioral</ClosedNode>
          <ClosedNode>/clock - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock.vhd/ALARMCLOCK - alarm_clock - Behavioral/D1 - date_block - Behavioral</ClosedNode>
@@ -20,24 +25,34 @@
          <ClosedNode>/clock - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock.vhd/DATATODISPLAY - data_to_display - Behavioral</ClosedNode>
          <ClosedNode>/clock - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock.vhd/T1 - timer - Behavioral</ClosedNode>
          <ClosedNode>/clock - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock.vhd/W1 - weergave4dig7segm - Behavioral</ClosedNode>
+         <ClosedNode>/display_test - Behavioral D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|display_test.vhd</ClosedNode>
          <ClosedNode>/display_test - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|display_test.vhd</ClosedNode>
+         <ClosedNode>/tb_blinking - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|tb_blinking.vhd</ClosedNode>
          <ClosedNode>/tb_blinking - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|tb_blinking.vhd/timer_1s - timer - Behavioral</ClosedNode>
+         <ClosedNode>/tb_button - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|tb_button.vhd</ClosedNode>
          <ClosedNode>/tb_button - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|tb_button.vhd/timer_1s - timer - Behavioral</ClosedNode>
          <ClosedNode>/tb_button - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|tb_button.vhd/uut - button - Behavioral</ClosedNode>
+         <ClosedNode>/tb_date_block - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|Date|tb_date_block.vhd</ClosedNode>
          <ClosedNode>/tb_date_block - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|Date|tb_date_block.vhd/uut - date_block - Behavioral</ClosedNode>
+         <ClosedNode>/tb_debouncer - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|tb_debouncer.vhd</ClosedNode>
          <ClosedNode>/tb_debouncer - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|tb_debouncer.vhd/timer_1s - timer - Behavioral</ClosedNode>
+         <ClosedNode>/tb_format_numbers - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|tb_format_numbers.vhd</ClosedNode>
+         <ClosedNode>/tb_max_day_setter - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|Date|tb_max_day_setter.vhd</ClosedNode>
          <ClosedNode>/tb_max_day_setter - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|Date|tb_max_day_setter.vhd</ClosedNode>
+         <ClosedNode>/tb_one_pulse - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|tb_one_pulse.vhd</ClosedNode>
          <ClosedNode>/tb_one_pulse - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|tb_one_pulse.vhd</ClosedNode>
+         <ClosedNode>/tb_selection - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|tb_selection.vhd</ClosedNode>
+         <ClosedNode>/tb_wekker_block - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|Wekker|tb_wekker_block.vhd</ClosedNode>
          <ClosedNode>/tb_wekker_block - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|Wekker|tb_wekker_block.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb_selection - behavior (D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/tb_selection.vhd)</SelectedItem>
+         <SelectedItem>clock - Behavioral (D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/clock.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001fd000000020000000000000000000000000200000064ffffffff000000810000000300000002000001fd0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>tb_selection - behavior (D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/tb_selection.vhd)</CurrentItem>
+      <CurrentItem>clock - Behavioral (D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/clock.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -45,13 +60,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ac000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ac0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ff000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ff0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -76,7 +91,7 @@
       <CurrentItem>work</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_BMM" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
@@ -101,13 +116,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Generate Programming File</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ac000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ac0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ee000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ee0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Generate Programming File</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -115,6 +130,7 @@
          <ClosedNode>/alarm_clock - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|alarm_clock.vhd/A1 - wekker_block - Behavioral</ClosedNode>
          <ClosedNode>/alarm_clock - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|alarm_clock.vhd/D1 - date_block - Behavioral</ClosedNode>
          <ClosedNode>/alarm_clock - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|alarm_clock.vhd/T1 - time_block - Behavioral</ClosedNode>
+         <ClosedNode>/alarm_clock_tb - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|alarm_clock_tb.vhd</ClosedNode>
          <ClosedNode>/alarm_clock_tb - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|alarm_clock_tb.vhd/uut - alarm_clock - Behavioral</ClosedNode>
          <ClosedNode>/alarm_clock_tb - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|alarm_clock_tb.vhd/uut - alarm_clock - Behavioral/A1 - wekker_block - Behavioral</ClosedNode>
          <ClosedNode>/alarm_clock_tb - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|alarm_clock_tb.vhd/uut - alarm_clock - Behavioral/D1 - date_block - Behavioral</ClosedNode>
@@ -122,14 +138,19 @@
          <ClosedNode>/clock - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock.vhd/C1 - time_block - Behavioral</ClosedNode>
          <ClosedNode>/clock - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock.vhd/T1 - timer - Behavioral</ClosedNode>
          <ClosedNode>/clock - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock.vhd/W1 - weergave4dig7segm - Behavioral</ClosedNode>
+         <ClosedNode>/clock_tb - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|clock_tb.vhd</ClosedNode>
          <ClosedNode>/clock_tb - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock_tb.vhd/uut - clock - Behavioral/ALARMCLOCK - alarm_clock - Behavioral</ClosedNode>
          <ClosedNode>/clock_tb - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock_tb.vhd/uut - clock - Behavioral/BUTTONS - buttons - Behavioral</ClosedNode>
          <ClosedNode>/clock_tb - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock_tb.vhd/uut - clock - Behavioral/BUTTONS1 - buttons - Behavioral</ClosedNode>
          <ClosedNode>/clock_tb - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock_tb.vhd/uut - clock - Behavioral/DATATODISPLAY - data_to_display - Behavioral</ClosedNode>
          <ClosedNode>/clock_tb - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock_tb.vhd/uut - clock - Behavioral/T1 - timer - Behavioral</ClosedNode>
          <ClosedNode>/clock_tb - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|clock_tb.vhd/uut - clock - Behavioral/W1 - weergave4dig7segm - Behavioral</ClosedNode>
+         <ClosedNode>/control_tb - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|control_tb.vhd</ClosedNode>
+         <ClosedNode>/counter_tb - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|counter_tb.vhd</ClosedNode>
          <ClosedNode>/counter_tb - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|counter_tb.vhd</ClosedNode>
+         <ClosedNode>/data_to_display_tb - behavior D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|data_to_display_tb.vhd</ClosedNode>
          <ClosedNode>/data_to_display_tb - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|data_to_display_tb.vhd</ClosedNode>
+         <ClosedNode>/display_test - Behavioral D:|School UAntwerpen|Electronica-1|Labo Digitaal|clock-v2|clock-vhdl-2|display_test.vhd</ClosedNode>
          <ClosedNode>/display_test - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|display_test.vhd</ClosedNode>
          <ClosedNode>/select_show_function_tb - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|select_show_function_tb.vhd</ClosedNode>
          <ClosedNode>/tb_blinking - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|tb_blinking.vhd</ClosedNode>
@@ -156,13 +177,13 @@
          <ClosedNode>/weergave4dig7segm - Behavioral D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|weergave4dig7segm.vhd/T1 - timer - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>uut - clock - Behavioral (D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/clock.vhd)</SelectedItem>
+         <SelectedItem>alarm_clock_tb - behavior (D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/alarm_clock_tb.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000211000000020000000000000000000000000200000064ffffffff000000810000000300000002000002110000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001bb000000020000000000000000000000000200000064ffffffff000000810000000300000002000001bb0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>uut - clock - Behavioral (D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/clock.vhd)</CurrentItem>
+      <CurrentItem>alarm_clock_tb - behavior (D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/alarm_clock_tb.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -170,13 +191,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ac000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ac0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ff000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ff0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -197,13 +218,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ac000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ac0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ff000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ff0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="PostTransSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>

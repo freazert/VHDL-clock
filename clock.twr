@@ -2,8 +2,8 @@
 Release 14.4 Trace  (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-D:\programma's\xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise
--v 3 -s 3 -n 3 -fastpaths -xml clock.twx clock.ncd -o clock.twr clock.pcf -ucf
+D:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml clock.twx clock.ncd -o clock.twr clock.pcf -ucf
 BCD7segmDec_UCF.ucf
 
 Design file:              clock.ncd
@@ -37,12 +37,11 @@ Setup/Hold to clock sysclk
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-btn_c       |    1.478(R)|      SLOW  |   -0.912(R)|      FAST  |sysclk_BUFGP      |   0.000|
-btn_d       |    1.429(R)|      SLOW  |   -0.899(R)|      SLOW  |sysclk_BUFGP      |   0.000|
-btn_l       |    2.078(R)|      SLOW  |   -1.319(R)|      FAST  |sysclk_BUFGP      |   0.000|
-btn_r       |    1.455(R)|      SLOW  |   -0.923(R)|      SLOW  |sysclk_BUFGP      |   0.000|
-btn_u       |    0.858(R)|      FAST  |   -0.280(R)|      SLOW  |sysclk_BUFGP      |   0.000|
-reset       |    5.075(R)|      SLOW  |   -0.966(R)|      SLOW  |sysclk_BUFGP      |   0.000|
+btn_c       |    0.849(R)|      FAST  |   -0.263(R)|      SLOW  |sysclk_BUFGP      |   0.000|
+btn_d       |    0.784(R)|      FAST  |   -0.138(R)|      SLOW  |sysclk_BUFGP      |   0.000|
+btn_l       |    1.527(R)|      SLOW  |   -1.008(R)|      FAST  |sysclk_BUFGP      |   0.000|
+btn_r       |    0.984(R)|      FAST  |   -0.340(R)|      SLOW  |sysclk_BUFGP      |   0.000|
+btn_u       |    0.716(R)|      FAST  |   -0.044(R)|      SLOW  |sysclk_BUFGP      |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock sysclk to Pad
@@ -50,29 +49,29 @@ Clock sysclk to Pad
                  |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination      |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 -----------------+-----------------+------------+-----------------+------------+------------------+--------+
-an<0>            |        11.367(R)|      SLOW  |         4.131(R)|      FAST  |sysclk_BUFGP      |   0.000|
-an<1>            |        11.461(R)|      SLOW  |         4.191(R)|      FAST  |sysclk_BUFGP      |   0.000|
-an<2>            |        11.059(R)|      SLOW  |         3.837(R)|      FAST  |sysclk_BUFGP      |   0.000|
-an<3>            |        11.166(R)|      SLOW  |         3.896(R)|      FAST  |sysclk_BUFGP      |   0.000|
-cath<0>          |        14.453(R)|      SLOW  |         4.508(R)|      FAST  |sysclk_BUFGP      |   0.000|
-                 |        11.302(F)|      SLOW  |         5.199(F)|      FAST  |sysclk_BUFGP      |   0.000|
-cath<1>          |        14.536(R)|      SLOW  |         4.560(R)|      FAST  |sysclk_BUFGP      |   0.000|
-                 |        11.385(F)|      SLOW  |         5.251(F)|      FAST  |sysclk_BUFGP      |   0.000|
-cath<2>          |        14.729(R)|      SLOW  |         4.686(R)|      FAST  |sysclk_BUFGP      |   0.000|
-                 |        11.225(F)|      SLOW  |         5.358(F)|      FAST  |sysclk_BUFGP      |   0.000|
-cath<3>          |        14.741(R)|      SLOW  |         4.874(R)|      FAST  |sysclk_BUFGP      |   0.000|
-                 |        11.479(F)|      SLOW  |         5.445(F)|      FAST  |sysclk_BUFGP      |   0.000|
-cath<4>          |        14.611(R)|      SLOW  |         4.612(R)|      FAST  |sysclk_BUFGP      |   0.000|
-                 |        11.107(F)|      SLOW  |         5.284(F)|      FAST  |sysclk_BUFGP      |   0.000|
-cath<5>          |        14.385(R)|      SLOW  |         4.595(R)|      FAST  |sysclk_BUFGP      |   0.000|
-                 |        11.234(F)|      SLOW  |         5.201(F)|      FAST  |sysclk_BUFGP      |   0.000|
-cath<6>          |        14.530(R)|      SLOW  |         4.711(R)|      FAST  |sysclk_BUFGP      |   0.000|
-                 |        11.268(F)|      SLOW  |         5.282(F)|      FAST  |sysclk_BUFGP      |   0.000|
-led_alarm_buzzing|         7.827(R)|      SLOW  |         4.130(R)|      FAST  |sysclk_BUFGP      |   0.000|
-led_alarm_on     |         7.461(R)|      SLOW  |         3.894(R)|      FAST  |sysclk_BUFGP      |   0.000|
-sel_out<0>       |         9.661(R)|      SLOW  |         5.297(R)|      FAST  |sysclk_BUFGP      |   0.000|
-sel_out<1>       |         8.932(R)|      SLOW  |         4.842(R)|      FAST  |sysclk_BUFGP      |   0.000|
-sel_out<2>       |        10.153(R)|      SLOW  |         5.579(R)|      FAST  |sysclk_BUFGP      |   0.000|
+an<0>            |        12.047(R)|      SLOW  |         4.511(R)|      FAST  |sysclk_BUFGP      |   0.000|
+an<1>            |        12.273(R)|      SLOW  |         4.627(R)|      FAST  |sysclk_BUFGP      |   0.000|
+an<2>            |        12.542(R)|      SLOW  |         4.565(R)|      FAST  |sysclk_BUFGP      |   0.000|
+an<3>            |        12.510(R)|      SLOW  |         4.521(R)|      FAST  |sysclk_BUFGP      |   0.000|
+cath<0>          |        16.222(R)|      SLOW  |         5.326(R)|      FAST  |sysclk_BUFGP      |   0.000|
+                 |        11.800(F)|      SLOW  |         5.503(F)|      FAST  |sysclk_BUFGP      |   0.000|
+cath<1>          |        16.145(R)|      SLOW  |         5.285(R)|      FAST  |sysclk_BUFGP      |   0.000|
+                 |        11.723(F)|      SLOW  |         5.462(F)|      FAST  |sysclk_BUFGP      |   0.000|
+cath<2>          |        16.685(R)|      SLOW  |         5.413(R)|      FAST  |sysclk_BUFGP      |   0.000|
+                 |        12.645(F)|      SLOW  |         5.578(F)|      FAST  |sysclk_BUFGP      |   0.000|
+cath<3>          |        16.729(R)|      SLOW  |         5.689(R)|      FAST  |sysclk_BUFGP      |   0.000|
+                 |        12.394(F)|      SLOW  |         5.913(F)|      FAST  |sysclk_BUFGP      |   0.000|
+cath<4>          |        16.725(R)|      SLOW  |         5.358(R)|      FAST  |sysclk_BUFGP      |   0.000|
+                 |        12.685(F)|      SLOW  |         5.523(F)|      FAST  |sysclk_BUFGP      |   0.000|
+cath<5>          |        16.665(R)|      SLOW  |         5.418(R)|      FAST  |sysclk_BUFGP      |   0.000|
+                 |        12.625(F)|      SLOW  |         5.583(F)|      FAST  |sysclk_BUFGP      |   0.000|
+cath<6>          |        16.604(R)|      SLOW  |         5.512(R)|      FAST  |sysclk_BUFGP      |   0.000|
+                 |        12.269(F)|      SLOW  |         5.736(F)|      FAST  |sysclk_BUFGP      |   0.000|
+led_alarm_buzzing|         8.193(R)|      SLOW  |         4.328(R)|      FAST  |sysclk_BUFGP      |   0.000|
+led_alarm_on     |         7.457(R)|      SLOW  |         3.889(R)|      FAST  |sysclk_BUFGP      |   0.000|
+sel_out<0>       |         9.183(R)|      SLOW  |         4.992(R)|      FAST  |sysclk_BUFGP      |   0.000|
+sel_out<1>       |         9.454(R)|      SLOW  |         5.164(R)|      FAST  |sysclk_BUFGP      |   0.000|
+sel_out<2>       |         9.940(R)|      SLOW  |         5.444(R)|      FAST  |sysclk_BUFGP      |   0.000|
 -----------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock sysclk
@@ -80,11 +79,11 @@ Clock to Setup on destination clock sysclk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-sysclk         |    6.982|         |    2.019|         |
+sysclk         |    7.581|         |    2.031|         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Dec 16 12:12:01 2016 
+Analysis completed Fri Dec 16 12:40:55 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:

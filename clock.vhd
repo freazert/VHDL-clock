@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity clock is
     Port ( 
 		sysclk : in  STD_LOGIC;
-		reset : in std_logic;
+		--reset : in std_logic;
 		btn_l, btn_r, btn_c, btn_u, btn_d : in std_logic;
       
 		an : out  STD_LOGIC_VECTOR(3 downto 0);
@@ -44,6 +44,10 @@ entity clock is
 end clock;
 
 architecture Behavioral of clock is
+
+signal reset: std_logic := '0';
+signal init : std_logic := '0';
+
 
 COMPONENT timer 
 PORT  (
@@ -142,6 +146,17 @@ signal edit_t, edit_d, edit_a : std_logic := '0';
 signal init_reset : std_logic := '0';
 
 begin
+ 
+ INIT_RESET_P: process (sysclk)
+begin
+	if rising_edge(sysclk) then 
+	 if init = '0' then
+	 reset <= '1';
+	 init <= '1';
+	 else reset <= '0';
+	 end if;
+	end if;
+end process;
 
 T1 : timer PORT MAP( 
 	sysclk => sysclk,	reset => reset,

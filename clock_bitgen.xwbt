@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\clock.ncd
-OUTFILE=D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\clock.bit
+INFILE=D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\clock.ncd
+OUTFILE=D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\clock.bit
 FAMILY=Spartan6
 PART=xc6slx16-3csg324
-WORKINGDIR=D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock
+WORKINGDIR=D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2
 LICENSE=WebPack
-USER_INFO=211259187_0_0_732
+USER_INFO=211257064_0_0_675
