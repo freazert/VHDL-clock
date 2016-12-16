@@ -100,7 +100,155 @@ BEGIN
 		reset <= '1';
       wait for 100 ns;	
 		reset <= '0';
-
+		wait for 100 ns;
+		
+		btn_u <= '0';
+		wait for 10 ns;
+		btn_d <= '1';
+		wait for 100 ns;
+		btn_d <= '0'; wait for 10ns;
+		
+		btn_r <= '1';
+		wait for 20000 ns;
+		btn_r <= '0';
+		wait for 10 ns;
+		
+		btn_u <= '1';
+		wait for 15000 ns;
+		btn_u <= '0';
+		wait for 10 ns;
+		btn_d <= '1';
+		wait for 100 ns;
+		btn_d <= '0'; wait for 10ns;
+		
+		btn_r <= '1';
+		wait for 200 ns;
+		btn_r <= '0';
+		wait for 10 ns;
+		
+		btn_u <= '1';
+		wait for 1500 ns;
+		btn_u <= '0';
+		wait for 10 ns;
+		btn_d <= '1';
+		wait for 100 ns;
+		btn_d <= '0'; wait for 10ns;
+		
+		btn_r <= '1';
+		wait for 200 ns;
+		btn_r <= '0';
+		wait for 10 ns;
+		
+		btn_u <= '1';
+		wait for 1500 ns;
+		btn_u <= '0';
+		wait for 10 ns;
+		btn_d <= '1';
+		wait for 100 ns;
+		btn_d <= '0'; wait for 10 ns;
+		
+		btn_l <= '1'; wait for 100 ns;
+		btn_l <= '0'; wait for 10 ns;
+		
+		btn_u <= '0';
+		wait for 10 ns;
+		btn_d <= '1';
+		wait for 100 ns;
+		btn_d <= '0'; wait for 10ns;
+		
+		btn_r <= '1';
+		wait for 200 ns;
+		btn_r <= '0';
+		wait for 10 ns;
+		
+		btn_u <= '1';
+		wait for 1500 ns;
+		btn_u <= '0';
+		wait for 10 ns;
+		btn_d <= '1';
+		wait for 100 ns;
+		btn_d <= '0'; wait for 10ns;
+		
+		btn_r <= '1';
+		wait for 200 ns;
+		btn_r <= '0';
+		wait for 10 ns;
+		
+		btn_u <= '1';
+		wait for 1500 ns;
+		btn_u <= '0';
+		wait for 10 ns;
+		btn_d <= '1';
+		wait for 100 ns;
+		btn_d <= '0'; wait for 10ns;
+		
+		btn_r <= '1';
+		wait for 200 ns;
+		btn_r <= '0';
+		wait for 10 ns;
+		
+		btn_u <= '1';
+		wait for 1500 ns;
+		btn_u <= '0';
+		wait for 10 ns;
+		btn_d <= '1';
+		wait for 100 ns;
+		btn_d <= '0'; wait for 10 ns;
+		
+		btn_l <= '1'; wait for 100 ns;
+		btn_l <= '0'; wait for 10 ns;
+		
+		btn_u <= '0';
+		wait for 10 ns;
+		btn_d <= '1';
+		wait for 100 ns;
+		btn_d <= '0'; wait for 10ns;
+		
+		btn_r <= '1';
+		wait for 200 ns;
+		btn_r <= '0';
+		wait for 10 ns;
+		
+		btn_u <= '1';
+		wait for 1500 ns;
+		btn_u <= '0';
+		wait for 10 ns;
+		btn_d <= '1';
+		wait for 100 ns;
+		btn_d <= '0'; wait for 10ns;
+		
+		btn_r <= '1';
+		wait for 200 ns;
+		btn_r <= '0';
+		wait for 10 ns;
+		
+		btn_u <= '1';
+		wait for 1500 ns;
+		btn_u <= '0';
+		wait for 10 ns;
+		btn_d <= '1';
+		wait for 100 ns;
+		btn_d <= '0'; wait for 10ns;
+		
+		btn_r <= '1';
+		wait for 200 ns;
+		btn_r <= '0';
+		wait for 10 ns;
+		
+		btn_u <= '1';
+		wait for 1500 ns;
+		btn_u <= '0';
+		wait for 10 ns;
+		btn_d <= '1';
+		wait for 100 ns;
+		btn_d <= '0'; wait for 10 ns;
+		
+		btn_l <= '1'; wait for 100 ns;
+		btn_l <= '0'; wait for 10 ns;
+		
+		btn_c <= '1'; wait for 150 ns;
+		btn_c <= '0'; wait for 10 ns;		
+		
       wait for sysclk_period*10;
 
       -- insert stimulus here 

@@ -1,26 +1,30 @@
 //! **************************************************************************
-// Written by: Map P.49d on Sat Dec 10 23:00:00 2016
+// Written by: Map P.49d on Fri Dec 16 12:01:42 2016
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "btn_l" LOCATE = SITE "C4" LEVEL 1;
+COMP "sel_out<0>" LOCATE = SITE "U15" LEVEL 1;
+COMP "sel_out<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "sel_out<2>" LOCATE = SITE "U16" LEVEL 1;
 COMP "cath<0>" LOCATE = SITE "T17" LEVEL 1;
-COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
 COMP "cath<1>" LOCATE = SITE "T18" LEVEL 1;
-COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
 COMP "cath<2>" LOCATE = SITE "U17" LEVEL 1;
-COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
 COMP "cath<3>" LOCATE = SITE "U18" LEVEL 1;
-COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
-COMP "btn_r" LOCATE = SITE "D9" LEVEL 1;
 COMP "cath<4>" LOCATE = SITE "M14" LEVEL 1;
-COMP "btn_u" LOCATE = SITE "A8" LEVEL 1;
 COMP "cath<5>" LOCATE = SITE "N14" LEVEL 1;
 COMP "cath<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "btn_c" LOCATE = SITE "B8" LEVEL 1;
+COMP "btn_d" LOCATE = SITE "C9" LEVEL 1;
+COMP "btn_l" LOCATE = SITE "C4" LEVEL 1;
+COMP "btn_r" LOCATE = SITE "D9" LEVEL 1;
+COMP "btn_u" LOCATE = SITE "A8" LEVEL 1;
+COMP "reset" LOCATE = SITE "T5" LEVEL 1;
 COMP "led_alarm_buzzing" LOCATE = SITE "T11" LEVEL 1;
 COMP "led_alarm_on" LOCATE = SITE "R11" LEVEL 1;
 COMP "sysclk" LOCATE = SITE "V10" LEVEL 1;
-COMP "btn_c" LOCATE = SITE "B8" LEVEL 1;
-COMP "btn_d" LOCATE = SITE "C9" LEVEL 1;
 SCHEMATIC END;
 

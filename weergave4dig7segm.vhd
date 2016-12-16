@@ -24,7 +24,7 @@ end weergave4dig7segm;
 architecture Behavioral of weergave4dig7segm is
     COMPONENT Control
     PORT(sysclk, en	 	 		: IN   std_logic;
-			blank 					: IN std_logic;
+			blank 					: IN std_logic_vector (3 downto 0);
 			--pulse_1ms				: IN std_logic;
          dig3,dig2,dig1,dig0 	: IN   std_logic_vector(3 downto 0);
          bcdout 					: OUT  std_logic_vector(3 downto 0);
@@ -87,7 +87,7 @@ begin
 			--	 reset => reset
 			-- );
 			  
-   C1:Control PORT MAP (	sysclk => sysclk,en => en,blank => '0',
+   C1:Control PORT MAP (	sysclk => sysclk,en => en,blank => blank,
 									dig3 => dig3,dig2 => dig2,dig1 => dig1,dig0 => dig0,
 									bcdout => bcdout_int,
 									dignrout => an);

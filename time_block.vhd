@@ -103,7 +103,7 @@ begin
 	case present_state is
 			when cnt  	=> cntenT1 <= cnten;	cntenT2 <= tcT1;	cntenT3 <= tcT2; Ostate <= "1000";
 			when setT3  =>	cntenT1 <= '0';	cntenT2 <= '0'; 	cntenT3 <= btn; Ostate <= "0100";
-			when setT2  =>	cntenT1 <= '0';	cntenT2 <= btn;	cntenT3 <= '0'; Ostate <= "1000";
+			when setT2  =>	cntenT1 <= '0';	cntenT2 <= btn;	cntenT3 <= '0'; Ostate <= "0010";
 			when setT1  =>	cntenT1 <= btn;	cntenT2 <= '0'; 	cntenT3 <= '0'; Ostate <= "0001";
 		end case;
 	end process;

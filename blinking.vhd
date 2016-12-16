@@ -39,24 +39,34 @@ end blinking;
 architecture Behavioral of blinking is
 
 	signal obli0_s : STD_LOGIC_Vector (3 downto 0) := (others => '0');
+	signal blink_on : std_logic := '0';
 
 begin
 	process(sysclk)
 	begin
 		if rising_edge(sysclk) then
 			if bliclk = '1' then
+				blink_on <= not blink_on;
+			end if;
+		end if;
+	end process;
+	
+	process(blink_on)
+	begin
+			if blink_on = '1' then
 				case istate is
 					--when "0000" => 
-					when "0001" => obli0_s <= "0011";
-					when "0010" => obli0_s <= "0011";
-					when "0100" => obli0_s <= "1100";
+					when "0001" => obli0_s <= "1100";
+					when "0010" => obli0_s <= "1100";
+					when "0100" => obli0_s <= "0011";
+					when "1000" => obli0_s <= "0000";
 					when others => obli0_s <= "0000";
 				end case;
 			else
 				obli0_s <= "0000";
 			end if;
-		end if;
 	end process;
+	
 	obli0 <= obli0_s;
 end Behavioral;
 

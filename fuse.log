@@ -1,4 +1,4 @@
-Running: D:\programma's\xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/clock_tb_isim_beh.exe -prj D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/clock_tb_beh.prj work.clock_tb 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/clock_tb_isim_beh.exe" -prj "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/clock_tb_beh.prj" "work.clock_tb" 
 ISim P.49d (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
@@ -22,6 +22,38 @@ Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directo
 Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/data_to_display.vhd" into library work
 Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/buttons.vhd" into library work
 Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/alarm_clock.vhd" into library work
-ERROR:HDLCompiler:432 - "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/alarm_clock.vhd" Line 116: Formal <end_edit_a> has no actual or default value.
-ERROR:HDLCompiler:854 - "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/alarm_clock.vhd" Line 49: Unit <behavioral> ignored due to previous errors.
-VHDL file D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/alarm_clock.vhd ignored due to errors
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/clock.vhd" into library work
+Parsing VHDL file "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/clock_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity counter [counter_default]
+Compiling architecture behavioral of entity timer [timer_default]
+Compiling architecture behavioral of entity debouncer [\debouncer(4)\]
+Compiling architecture behavioral of entity one_pulse [one_pulse_default]
+Compiling architecture behavioral of entity button [button_default]
+Compiling architecture behavioral of entity buttons [buttons_default]
+Compiling architecture behavioral of entity selection [selection_default]
+Compiling architecture behavioral of entity time_block [time_block_default]
+Compiling architecture behavioral of entity max_day_setter [max_day_setter_default]
+Compiling architecture behavioral of entity date_block [date_block_default]
+Compiling architecture behavioral of entity wekker_block [wekker_block_default]
+Compiling architecture behavioral of entity alarm_clock [alarm_clock_default]
+Compiling architecture behavioral of entity select_show_function [select_show_function_default]
+Compiling architecture behavioral of entity format_numbers [format_numbers_default]
+Compiling architecture behavioral of entity blinking [blinking_default]
+Compiling architecture behavioral of entity data_to_display [data_to_display_default]
+Compiling architecture behavioral of entity Control [control_default]
+Compiling architecture behavioral of entity BCD7segmDec [bcd7segmdec_default]
+Compiling architecture behavioral of entity weergave4dig7segm [weergave4dig7segm_default]
+Compiling architecture behavioral of entity clock [clock_default]
+Compiling architecture behavior of entity clock_tb
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: Het systeem kan het opgegeven pad niet vinden, "isim\clock_tb_isim_beh.exe.sim\libPortability.dll".
+Compiled 44 VHDL Units
+Built simulation executable D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/clock_tb_isim_beh.exe
+Fuse Memory Usage: 36388 KB
+Fuse CPU Usage: 827 ms

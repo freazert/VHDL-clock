@@ -8,28 +8,7 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/alarm_clock_tb.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/clock_tb.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/control_tb.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/counter_tb.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/data_to_display_tb.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/select_show_function_tb.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/time_block_tb.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/timer_tb.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/timer.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

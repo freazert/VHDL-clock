@@ -1,0 +1,4 @@
+vhdl work "counter.vhd"
+vhdl work "timer.vhd"
+vhdl work "blinking.vhd"
+vhdl work "tb_blinking.vhd"

@@ -1,0 +1,6 @@
+vhdl isim_temp "Date/max_day_setter.vhd"
+vhdl isim_temp "counter.vhd"
+vhdl isim_temp "Wekker/wekker_block.vhd"
+vhdl isim_temp "time_block.vhd"
+vhdl isim_temp "Date/date_block.vhd"
+vhdl isim_temp "alarm_clock.vhd"

@@ -14,7 +14,7 @@ Net "sysclk" LOC=V10	; 		# systeemklok 100 MHz (10 ns)
 #Net "sw<4>" LOC = N8 ; 	# SW4
 #Net "sw<5>" LOC = U8 ;		# SW5
 #Net "sw<6>" LOC = V8 ;		# SW6
-#Net "sw<7>" LOC = T5 ;		# SW7	(uiterst linkse schakelaar)
+Net "reset" LOC = T5 ;		# SW7	(uiterst linkse schakelaar)
 
 ## Buttons
 Net "btn_c" LOC = B8 ;	# BTNS	
@@ -24,9 +24,9 @@ Net "btn_d" LOC = C9 ;	# BTND
 Net "btn_r" LOC = D9 ;	# BTNr
 
 ## Leds
-#Net "Led<0>" LOC = U16 ;	# LD0	(uiterst rechtse led)
-#Net "Led<1>" LOC = V16 ;	# LD1
-#Net "Led<2>" LOC = U15 ;	# LD2
+Net "sel_out<2>" LOC = U16 ;	# LD0	(uiterst rechtse led)
+Net "sel_out<1>" LOC = V16 ;	# LD1
+Net "sel_out<0>" LOC = U15 ;	# LD2
 #Net "Led<3>" LOC = V15 ;	# LD3
 #Net "Led<4>" LOC = M11 ;	# LD4
 #Net "Led<5>" LOC = N11 ;	# LD5

@@ -52,7 +52,7 @@ component time_block
 	port(
 		sysclk, reset, cnten : in std_logic;
 		mode, incr, decr 		: in std_logic;
-		end_edit_a, end_edit_d, end_edit_t : in std_logic;
+		--end_edit_a, end_edit_d, end_edit_t : in std_logic;
 		endEdit					: in std_logic;
 		time_cnt					: out std_logic_vector(23 downto 0);
 		tc							: out std_logic;

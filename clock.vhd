@@ -37,6 +37,7 @@ entity clock is
       
 		an : out  STD_LOGIC_VECTOR(3 downto 0);
       cath : out  STD_LOGIC_VECTOR(6 downto 0);
+		sel_out: out std_logic_vector(2 downto 0);
       led_alarm_buzzing : out  STD_LOGIC;
 		led_alarm_on: out std_logic
 		);
@@ -47,7 +48,7 @@ architecture Behavioral of clock is
 COMPONENT timer 
 PORT  (
 	sysclk, reset : in  STD_LOGIC;	 
-	pulse_1ms, pulse_10ms, pulse_100ms, pulse_1s : out  STD_LOGIC
+	init_reset, pulse_1ms, pulse_10ms, pulse_100ms, pulse_1s : out  STD_LOGIC
 );
 end component;
 
@@ -64,17 +65,22 @@ COMPONENT selection
 Port (
 	i1, i2, i3 : in  STD_LOGIC;
 	selectm, sysclk : in  STD_LOGIC;
-   U1_1, U1_2, U3_3 : out STD_LOGIC;
+   U1_1, U1_2, U1_3 : out STD_LOGIC;
 	U2_1, U2_2, U2_3 : out  STD_LOGIC;
 	U3_1, U3_2, U3_3 : out  STD_LOGIC;
 	U1_active, U2_active, U3_active : out std_logic;
-	ostate : out STD_LOGIC_Vector(1 downto 0)
+	ostate : out STD_LOGIC_Vector(2 downto 0)
 );
+end component;
 
 COMPONENT alarm_clock
 port (
 		sysclk, reset, en 			: in std_logic;
-		mode, incr, decr, stop 		: in std_logic;
+		mode_t, incr_t, decr_t : in std_logic;
+		mode_d, incr_d, decr_d : in std_logic;
+		mode_a, incr_a, decr_a : in std_logic;
+		end_edit_a, end_edit_d, end_edit_t : in std_logic;
+		stop : in std_logic;
 		sel 								: in std_logic_vector(2 downto 0);
 		count_t, count_d, count_a 	: out std_logic_vector(23 downto 0);
 		state_t, state_d, state_a 	: out std_logic_vector( 3 downto 0);
@@ -122,18 +128,24 @@ signal pulse_1ms : std_logic := '0';
 signal pulse_10ms : std_logic := '0';
 signal pulse_100ms: std_logic := '0';
 signal pulse_1s: std_logic := '0';
-signal selection : std_logic_vector(2 downto 0) := "100";
+signal sel : std_logic_vector(2 downto 0) := "100";
 
 signal op_l, op_r, op_u, op_d, op_c: std_logic := '0';
 signal odig, odig0, odig1, odig2, odig3: std_logic_vector(23 downto 0);
 signal ostate, ostate0, ostate1, ostate2, ostate3: std_logic_vector(3 downto 0);
 signal number1, number2, number3, number4 : std_logic_vector(3 downto 0);
 signal blinking: std_logic_vector(3 downto 0);
+signal mode_t, mode_d, mode_a : std_logic := '0';
+signal incr_t, incr_d, incr_a : std_logic := '0';
+signal decr_t, decr_d, decr_a : std_logic := '0';
+signal edit_t, edit_d, edit_a : std_logic := '0';
+signal init_reset : std_logic := '0';
 
 begin
 
 T1 : timer PORT MAP( 
 	sysclk => sysclk,	reset => reset,
+	init_reset => init_reset,
 	pulse_1ms => pulse_1ms, pulse_10ms => pulse_10ms, pulse_100ms => pulse_100ms, pulse_1s => pulse_1s
 );
 
@@ -143,27 +155,30 @@ BUTTONS1: buttons PORT MAP(
 	op1 => op_l,op2 => op_r,op3 => op_c,op4 => op_u,op5 => op_d
 );
 
-SELECTION: selection PORT MAP(
+S: selection PORT MAP(
 	i1 => op_r, i2 => op_u, i3 => op_d,
 	selectm => op_l, sysclk => sysclk,
-   U1_1 => mode_t, U1_2 => incr_t, U3_3 => decr_t,
+   U1_1 => mode_t, U1_2 => incr_t, U1_3 => decr_t,
 	U2_1 => mode_d, U2_2 => incr_d, U2_3 => decr_d,
 	U3_1 => mode_a, U3_2 => incr_a, U3_3 => decr_a,
-	U1_active => edit_t, U2_active => edit_d, U3_active => edit_a
+	U1_active => edit_t, U2_active => edit_d, U3_active => edit_a,
+	oState => sel
 );
 
 ALARMCLOCK: alarm_clock PORT MAP(
 	sysclk => sysclk, reset => reset, en => pulse_1s,
-	mode => op_r, incr => op_u, decr => op_d, stop => op_c ,	
-	sel => selection,
-	end_edit_t => U1_active, end_edit_d => U2_active, end_edit_a => U3_active,
+	mode_t => mode_t, mode_a => mode_a, mode_d => mode_d, 
+	incr_t => incr_t, incr_d => incr_d, incr_a => incr_a,
+	decr_t => decr_t, decr_d => decr_d, decr_a => decr_a,	
+	sel => sel, stop => op_c,
+	end_edit_t => edit_t, end_edit_d => edit_d, end_edit_a => edit_a,
 	count_t => odig1, count_d => odig2, count_a => odig3, 	
 	state_t => ostate1, state_d => ostate2, state_a => ostate3,	
 	led_on => led_alarm_on, led_alarm => led_alarm_buzzing			
 );
 
 SELSHOWFUNC: select_show_function PORT MAP(
-	sysclk => sysclk, reset => reset,sel => selection,
+	sysclk => sysclk, reset => reset,sel => sel,
 	idig1 => odig1, idig2 => odig2, idig3 => odig3,
 	istate1 => ostate1, istate2 => ostate2, istate3 => ostate3,
 	odig => odig, ostate => ostate
@@ -176,10 +191,12 @@ DATATODISPLAY: data_to_display PORT MAP(
 );
 
 W1 : weergave4dig7segm PORT MAP (
-	sysclk => sysclk, reset => reset, en => pulse_1ms,	blank => "0000",
+	sysclk => sysclk, reset => reset, en => pulse_1ms,	blank => blinking,
 	dig3 => number4, dig2 => number3, dig1 => number2,	dig0 => number1,
 	an => an, cath => cath
 );
+
+sel_out <= sel;
 
 
 end Behavioral;

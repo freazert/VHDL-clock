@@ -70,7 +70,7 @@ begin
 				--elsif istate1 = "1000" then ostate <= "0100";
 				--elsif istate1 = "0001" then ostate <= "1000";
 				--end if;
-			when "010" => 
+			when "001" => 
 				odig <= idig2;
 				ostate <= istate2;
 				--if 	istate2 = "00" then ostate <= "0001"; 
@@ -78,7 +78,7 @@ begin
 				--elsif istate2 = "10" then ostate <= "0100";
 				--elsif istate2 = "11" then ostate <= "1000";
 				--end if;
-			when "001" => 
+			when "010" => 
 				odig <= idig3;
 				ostate <= istate3;
 				--if 	istate3 = "00" then ostate <= "0001"; 

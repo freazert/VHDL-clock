@@ -49,7 +49,6 @@ ARCHITECTURE behavior OF tb_blinking IS
     END COMPONENT;
 	 
 	 COMPONENT timer
-	 generic (div : integer := 2000000);
     PORT(
          clk : IN  std_logic;
          pulse : OUT  std_logic

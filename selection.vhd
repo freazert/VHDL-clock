@@ -37,7 +37,7 @@ entity selection is
            U2_active: out std_logic;
            U3_1, U3_2, U3_3 : out  STD_LOGIC;
            U3_active : out std_logic;
-			  ostate : out STD_LOGIC_Vector(1 downto 0)
+			  ostate : out STD_LOGIC_Vector(2 downto 0)
 			  );
 end selection;
 
@@ -50,16 +50,16 @@ Type element is (clock, date, alarm);
 signal current_edit : element := clock; -- 00 clocl 	  -- 01 date	  -- alarm 
 signal current_mode : STD_LOGIC := '0';
 signal edit : STD_LOGIC_VECTOR(8 downto 0) := (others => '0');
-signal s_ostate : STD_LOGIC_VECTOR (1 downto 0) := (others => '0');
+signal s_ostate : STD_LOGIC_VECTOR (2 downto 0) := (others => '0');
 begin
 	SetType:process(sysclk)
 	begin
 		if rising_edge(sysclk) then
 			if selectm = '1' then
 				case current_edit is 
-				when clock => current_edit <= date; s_ostate <= "01";
-				when date => current_edit <= alarm; s_ostate <= "10";
-				when alarm => current_edit <= clock;  s_ostate <= "00";
+				when clock => current_edit <= date; s_ostate <= "001";
+				when date => current_edit <= alarm; s_ostate <= "010";
+				when alarm => current_edit <= clock;  s_ostate <= "100";
 				end case;
 			end if;
 		end if;
