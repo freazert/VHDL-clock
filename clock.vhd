@@ -32,23 +32,28 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity clock is
     Port ( 
 		sysclk : in  STD_LOGIC;
-		reset : in std_logic;
+		--reset : in std_logic;
 		btn_l, btn_r, btn_c, btn_u, btn_d : in std_logic;
       
 		an : out  STD_LOGIC_VECTOR(3 downto 0);
       cath : out  STD_LOGIC_VECTOR(6 downto 0);
 		sel_out: out std_logic_vector(2 downto 0);
       led_alarm_buzzing : out  STD_LOGIC;
-		led_alarm_on: out std_logic
+		led_alarm_on: out std_logic;
+		sound_pulse: out std_logic
 		);
 end clock;
 
 architecture Behavioral of clock is
 
+signal reset: std_logic := '0';
+signal init : std_logic := '0';
+signal led_alarm_buzzing_s : std_logic := '0';
+
 COMPONENT timer 
 PORT  (
 	sysclk, reset : in  STD_LOGIC;	 
-	init_reset, pulse_1ms, pulse_10ms, pulse_100ms, pulse_1s : out  STD_LOGIC
+	init_reset, pulse_10us, pulse_1ms, pulse_10ms, pulse_100ms, pulse_1s : out  STD_LOGIC
 );
 end component;
 
@@ -68,6 +73,7 @@ Port (
    U1_1, U1_2, U1_3 : out STD_LOGIC;
 	U2_1, U2_2, U2_3 : out  STD_LOGIC;
 	U3_1, U3_2, U3_3 : out  STD_LOGIC;
+	alarm_is_buzzing : out Std_logic;
 	U1_active, U2_active, U3_active : out std_logic;
 	ostate : out STD_LOGIC_Vector(2 downto 0)
 );
@@ -124,12 +130,22 @@ Port (
 );
 end component;
 
+COMPONENT Sound 
+PORT  (
+	alarm_sound : in  STD_LOGIC;
+	sysclk : in STD_LOGIC;
+	pulske : in STD_LOGIC;
+   soundpulse : out  STD_LOGIC
+);
+end component;
+
+signal pulse_10us : std_logic;
 signal pulse_1ms : std_logic := '0';
 signal pulse_10ms : std_logic := '0';
 signal pulse_100ms: std_logic := '0';
 signal pulse_1s: std_logic := '0';
-signal sel : std_logic_vector(2 downto 0) := "100";
 
+signal sel : std_logic_vector(2 downto 0) := "100";
 signal op_l, op_r, op_u, op_d, op_c: std_logic := '0';
 signal odig, odig0, odig1, odig2, odig3: std_logic_vector(23 downto 0);
 signal ostate, ostate0, ostate1, ostate2, ostate3: std_logic_vector(3 downto 0);
@@ -142,11 +158,22 @@ signal edit_t, edit_d, edit_a : std_logic := '0';
 signal init_reset : std_logic := '0';
 
 begin
+ 
+ INIT_RESET_P: process (sysclk)
+begin
+	if rising_edge(sysclk) then 
+	 if init = '0' then
+	 reset <= '1';
+	 init <= '1';
+	 else reset <= '0'; 
+	 end if;
+	 	end if;
+end process;
 
 T1 : timer PORT MAP( 
 	sysclk => sysclk,	reset => reset,
 	init_reset => init_reset,
-	pulse_1ms => pulse_1ms, pulse_10ms => pulse_10ms, pulse_100ms => pulse_100ms, pulse_1s => pulse_1s
+	pulse_10us => pulse_10us, pulse_1ms => pulse_1ms, pulse_10ms => pulse_10ms, pulse_100ms => pulse_100ms, pulse_1s => pulse_1s
 );
 
 BUTTONS1: buttons PORT MAP(
@@ -161,6 +188,7 @@ S: selection PORT MAP(
    U1_1 => mode_t, U1_2 => incr_t, U1_3 => decr_t,
 	U2_1 => mode_d, U2_2 => incr_d, U2_3 => decr_d,
 	U3_1 => mode_a, U3_2 => incr_a, U3_3 => decr_a,
+	alarm_is_buzzing => led_alarm_buzzing_s,
 	U1_active => edit_t, U2_active => edit_d, U3_active => edit_a,
 	oState => sel
 );
@@ -174,7 +202,7 @@ ALARMCLOCK: alarm_clock PORT MAP(
 	end_edit_t => edit_t, end_edit_d => edit_d, end_edit_a => edit_a,
 	count_t => odig1, count_d => odig2, count_a => odig3, 	
 	state_t => ostate1, state_d => ostate2, state_a => ostate3,	
-	led_on => led_alarm_on, led_alarm => led_alarm_buzzing			
+	led_on => led_alarm_on, led_alarm => led_alarm_buzzing_s			
 );
 
 SELSHOWFUNC: select_show_function PORT MAP(
@@ -196,8 +224,14 @@ W1 : weergave4dig7segm PORT MAP (
 	an => an, cath => cath
 );
 
-sel_out <= sel;
+ALARMSOUND: Sound PORT MAP(
+	sysclk => sysclk, pulske => pulse_10ms, alarm_sound => led_alarm_buzzing_s, soundpulse => sound_pulse
+);
 
+--sel_out <= sel;
+
+ sel_out <= "100" when sel = "000" else sel;   
+ led_alarm_buzzing <= led_alarm_buzzing_s;
 
 end Behavioral;
 

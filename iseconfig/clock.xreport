@@ -1,11 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< HEAD
   <DateModified>2016-12-19T14:15:07</DateModified>
+=======
+  <DateModified>2016-12-16T23:48:52</DateModified>
+>>>>>>> e92c09aaba43e07f4753baddc1059f0cb8ed4601
   <ModuleName>clock</ModuleName>
-  <SummaryTimeStamp>2016-12-16T11:55:45</SummaryTimeStamp>
-  <SavedFilePath>D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/iseconfig/clock.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2016-12-16T23:28:10</SummaryTimeStamp>
+  <SavedFilePath>D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/iseconfig/clock.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2\</ImplementationReportsDirectory>
   <DateInitialized>2016-11-28T18:26:47</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
@@ -23,8 +27,8 @@
    <view inputState="Translated" program="map" contextTags="FPGA_ONLY" hidden="true" type="Control_Sets" file="clock_map.xrpt" label="Control Set Information" />
    <view inputState="Translated" program="map" locator="MAP_MODULE_HIERARCHY" contextTags="FPGA_ONLY" type="Module_Utilization" file="clock_map.xrpt" label="Module Level Utilization" />
    <view inputState="Mapped" program="par" locator="CONSTRAINT_TABLE" contextTags="FPGA_ONLY" type="ConstraintsData" file="clock.ptwx" label="Timing Constraints" translator="ptwxToTableXML.xslt" />
-   <view inputState="Mapped" program="par" locator="PAR_PINOUT_BY_PIN_NUMBER" contextTags="FPGA_ONLY" type="PinoutData" file="clock_par.xrpt" label="Pinout Report" />
-   <view inputState="Mapped" program="par" locator="PAR_CLOCK_TABLE" contextTags="FPGA_ONLY" type="ClocksData" file="clock_par.xrpt" label="Clock Report" />
+   <view inputState="Mapped" program="par" locator="PAR_PINOUT_BY_PIN_NUMBER" contextTags="FPGA_ONLY" type="PinoutData" file="clock_par.xrpt" showConstraints="0" label="Pinout Report" />
+   <view inputState="Mapped" program="par" locator="PAR_CLOCK_TABLE" contextTags="FPGA_ONLY" type="ClocksData" file="clock_par.xrpt" showConstraints="0" label="Clock Report" />
    <view inputState="Mapped" program="par" contextTags="FPGA_ONLY,EDK_OFF" type="Timing_Analyzer" file="clock.twx" label="Static Timing" />
    <view inputState="Translated" program="cpldfit" contextTags="CPLD_ONLY,EDK_OFF" hidden="true" type="EXTERNAL_HTML" file="clock_html/fit/report.htm" label="CPLD Fitter Report" />
    <view inputState="Fitted" program="taengine" contextTags="CPLD_ONLY,EDK_OFF" hidden="true" type="EXTERNAL_HTML" file="clock_html/tim/report.htm" label="CPLD Timing Report" />

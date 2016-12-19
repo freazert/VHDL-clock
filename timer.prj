@@ -1,1 +1,2 @@
+vhdl work "pulse_divider.vhd"
 vhdl work "timer.vhd"

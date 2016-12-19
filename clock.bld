@@ -1,20 +1,27 @@
 Release 14.4 ngdbuild P.49d (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
-Command Line:
-D:\programma's\xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -intstyle
-ise -dd _ngo -nt timestamp -uc BCD7segmDec_UCF.ucf -p xc6slx16-csg324-3
-clock.ngc clock.ngd
+Command Line: D:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc BCD7segmDec_UCF.ucf -p
+xc6slx16-csg324-3 clock.ngc clock.ngd
 
-Reading NGO file
-"D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/clock.ngc
-" ...
+Reading NGO file "D:/School UAntwerpen/Electronica-1/Labo
+Digitaal/clock-v2/clock-vhdl-2/clock.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
 Annotating constraints to design from ucf file "BCD7segmDec_UCF.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
+WARNING:ConstraintSystem:119 - Constraint <Net "reset" LOC = T5 ;>
+   [BCD7segmDec_UCF.ucf(17)]: This constraint cannot be distributed from the
+   design objects matching 'NET "reset"' because those design objects do not
+   contain or drive any instances of the correct type.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net "reset" LOC = T5 ;> [BCD7segmDec_UCF.ucf(17)]' could not be found and
+   so the Locate constraint will be removed.
+
 Done...
 
 Checking expanded design ...
@@ -28,9 +35,9 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:   0
+  Number of warnings:   2
 
-Total memory usage is 185468 kilobytes
+Total memory usage is 185440 kilobytes
 
 Writing NGD file "clock.ngd" ...
 Total REAL time to NGDBUILD completion:  3 sec

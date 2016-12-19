@@ -1,16 +1,16 @@
 Release 14.4 - xst P.49d (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/xst/projnav.tmp
+--> Parameter TMPDIR set to D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.07 secs
  
---> Parameter xsthdpdir set to D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/xst
+--> Parameter xsthdpdir set to D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> Reading design: timer.prj
 
@@ -39,13 +39,16 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\pulse_divider.vhd" into library work
+Parsing entity <clock_divider>.
+Parsing architecture <Behavioral> of entity <clock_divider>.
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\timer.vhd" into library work
 Parsing entity <timer>.
 Parsing architecture <Behavioral> of entity <timer>.
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.79 secs
+Total CPU time to Xst completion: 3.50 secs
  
 --> 
 

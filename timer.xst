@@ -1,5 +1,5 @@
-set -tmpdir "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/xst/projnav.tmp"
-set -xsthdpdir "D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/xst"
+set -tmpdir "D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/xst/projnav.tmp"
+set -xsthdpdir "D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/xst"
 run -compileonly yes
 -p xc6slx16-3-csg324
 -top timer

@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> Reading design: clock.prj
 
@@ -105,67 +105,70 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\one_pulse.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\one_pulse.vhd" into library work
 Parsing entity <one_pulse>.
 Parsing architecture <Behavioral> of entity <one_pulse>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\debouncer.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\debouncer.vhd" into library work
 Parsing entity <debouncer>.
 Parsing architecture <Behavioral> of entity <debouncer>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Date\max_day_setter.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Date\max_day_setter.vhd" into library work
 Parsing entity <max_day_setter>.
 Parsing architecture <Behavioral> of entity <max_day_setter>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\counter.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\counter.vhd" into library work
 Parsing entity <counter>.
 Parsing architecture <Behavioral> of entity <counter>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Wekker\wekker_block.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Wekker\wekker_block.vhd" into library work
 Parsing entity <wekker_block>.
 Parsing architecture <Behavioral> of entity <wekker_block>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\time_block.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\time_block.vhd" into library work
 Parsing entity <time_block>.
 Parsing architecture <Behavioral> of entity <time_block>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\pulse_divider.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\pulse_divider.vhd" into library work
 Parsing entity <clock_divider>.
 Parsing architecture <Behavioral> of entity <clock_divider>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\format_numbers.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\format_numbers.vhd" into library work
 Parsing entity <format_numbers>.
 Parsing architecture <Behavioral> of entity <format_numbers>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Date\date_block.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Date\date_block.vhd" into library work
 Parsing entity <date_block>.
 Parsing architecture <Behavioral> of entity <date_block>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Control.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Control.vhd" into library work
 Parsing entity <Control>.
 Parsing architecture <Behavioral> of entity <control>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\button.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\button.vhd" into library work
 Parsing entity <button>.
 Parsing architecture <Behavioral> of entity <button>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\blinking.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\blinking.vhd" into library work
 Parsing entity <blinking>.
 Parsing architecture <Behavioral> of entity <blinking>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\BCD7segmDec.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\BCD7segmDec.vhd" into library work
 Parsing entity <BCD7segmDec>.
 Parsing architecture <Behavioral> of entity <bcd7segmdec>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\weergave4dig7segm.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\weergave4dig7segm.vhd" into library work
 Parsing entity <weergave4dig7segm>.
 Parsing architecture <Behavioral> of entity <weergave4dig7segm>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\timer.vhd" into library work
 Parsing entity <timer>.
 Parsing architecture <Behavioral> of entity <timer>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\select_show_function.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Sound.vhd" into library work
+Parsing entity <Sound>.
+Parsing architecture <Behavioral> of entity <sound>.
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\select_show_function.vhd" into library work
 Parsing entity <select_show_function>.
 Parsing architecture <Behavioral> of entity <select_show_function>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\selection.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\selection.vhd" into library work
 Parsing entity <selection>.
 Parsing architecture <Behavioral> of entity <selection>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\data_to_display.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\data_to_display.vhd" into library work
 Parsing entity <data_to_display>.
 Parsing architecture <Behavioral> of entity <data_to_display>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\buttons.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\buttons.vhd" into library work
 Parsing entity <buttons>.
 Parsing architecture <Behavioral> of entity <buttons>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\alarm_clock.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\alarm_clock.vhd" into library work
 Parsing entity <alarm_clock>.
 Parsing architecture <Behavioral> of entity <alarm_clock>.
-Parsing VHDL file "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\clock.vhd" into library work
+Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\clock.vhd" into library work
 Parsing entity <clock>.
 Parsing architecture <Behavioral> of entity <clock>.
 
@@ -185,6 +188,8 @@ Elaborating entity <clock_divider> (architecture <Behavioral>) with generics fro
 
 Elaborating entity <clock_divider> (architecture <Behavioral>) with generics from library <work>.
 
+Elaborating entity <clock_divider> (architecture <Behavioral>) with generics from library <work>.
+
 Elaborating entity <buttons> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <button> (architecture <Behavioral>) from library <work>.
@@ -192,8 +197,12 @@ Elaborating entity <button> (architecture <Behavioral>) from library <work>.
 Elaborating entity <debouncer> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <one_pulse> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:439 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\clock.vhd" Line 76: Formal port alarm_is_buzzing of mode in cannot be associated with actual port alarm_is_buzzing of mode out
+INFO:HDLCompiler:1408 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\selection.vhd" Line 41. alarm_is_buzzing is declared here
 
 Elaborating entity <selection> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\selection.vhd" Line 75: alarm_is_buzzing should be on the sensitivity list of the process
+INFO:HDLCompiler:1408 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\selection.vhd" Line 41. alarm_is_buzzing is declared here
 
 Elaborating entity <alarm_clock> (architecture <Behavioral>) from library <work>.
 
@@ -202,49 +211,57 @@ Elaborating entity <time_block> (architecture <Behavioral>) from library <work>.
 Elaborating entity <counter> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <date_block> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Date\date_block.vhd" Line 136: tct2 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Date\date_block.vhd" Line 148: countt3 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Date\date_block.vhd" Line 149: countt3 should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Date\date_block.vhd" Line 151: dayforward should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Date\date_block.vhd" Line 158: tday should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Date\date_block.vhd" Line 136: tct2 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Date\date_block.vhd" Line 148: countt3 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Date\date_block.vhd" Line 149: countt3 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Date\date_block.vhd" Line 151: dayforward should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Date\date_block.vhd" Line 158: tday should be on the sensitivity list of the process
 
 Elaborating entity <max_day_setter> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <wekker_block> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <select_show_function> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\select_show_function.vhd" Line 64: sel should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\select_show_function.vhd" Line 64: sel should be on the sensitivity list of the process
 
 Elaborating entity <data_to_display> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <format_numbers> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <blinking> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\blinking.vhd" Line 57: istate should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\blinking.vhd" Line 57: istate should be on the sensitivity list of the process
 
 Elaborating entity <weergave4dig7segm> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\weergave4dig7segm.vhd" Line 50: Using initial value 10000 for div since it is never assigned
+WARNING:HDLCompiler:871 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\weergave4dig7segm.vhd" Line 50: Using initial value 10000 for div since it is never assigned
 
 Elaborating entity <Control> (architecture <Behavioral>) from library <work>.
-INFO:HDLCompiler:679 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Control.vhd" Line 37. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Control.vhd" Line 54. Case statement is complete. others clause is never selected
-INFO:HDLCompiler:679 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Control.vhd" Line 68. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Control.vhd" Line 37. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Control.vhd" Line 54. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Control.vhd" Line 68. Case statement is complete. others clause is never selected
 
 Elaborating entity <BCD7segmDec> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Sound> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Sound.vhd" Line 45: alarm_sound should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Sound.vhd" Line 46: pulske should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <clock>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\clock.vhd".
-INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\clock.vhd" line 146: Output port <init_reset> of the instance <T1> is unconnected or connected to loadless signal.
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\clock.vhd".
+INFO:Xst:3210 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\clock.vhd" line 173: Output port <init_reset> of the instance <T1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\clock.vhd" line 173: Output port <pulse_10us> of the instance <T1> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <init>.
+    Found 1-bit register for signal <reset>.
     Summary:
-	no macro.
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
 Unit <clock> synthesized.
 
 Synthesizing Unit <timer>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\timer.vhd".
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\timer.vhd".
 WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:653 - Signal <init_reset> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
@@ -252,59 +269,69 @@ WARNING:Xst:653 - Signal <init_reset> is used but never assigned. This sourceles
 Unit <timer> synthesized.
 
 Synthesizing Unit <clock_divider_1>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\pulse_divider.vhd".
-        div = 100000
-    Found 17-bit register for signal <cnt_signal>.
-    Found 17-bit adder for signal <cnt_signal[16]_GND_6_o_add_1_OUT> created at line 55.
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\pulse_divider.vhd".
+        div = 1000
+    Found 10-bit register for signal <cnt_signal>.
+    Found 10-bit adder for signal <cnt_signal[9]_GND_6_o_add_1_OUT> created at line 55.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  17 D-type flip-flop(s).
+	inferred  10 D-type flip-flop(s).
 Unit <clock_divider_1> synthesized.
 
 Synthesizing Unit <clock_divider_2>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\pulse_divider.vhd".
-        div = 1000000
-    Found 20-bit register for signal <cnt_signal>.
-    Found 20-bit adder for signal <cnt_signal[19]_GND_7_o_add_1_OUT> created at line 55.
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\pulse_divider.vhd".
+        div = 100000
+    Found 17-bit register for signal <cnt_signal>.
+    Found 17-bit adder for signal <cnt_signal[16]_GND_7_o_add_1_OUT> created at line 55.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  20 D-type flip-flop(s).
+	inferred  17 D-type flip-flop(s).
 Unit <clock_divider_2> synthesized.
 
 Synthesizing Unit <clock_divider_3>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\pulse_divider.vhd".
-        div = 10000000
-    Found 24-bit register for signal <cnt_signal>.
-    Found 24-bit adder for signal <cnt_signal[23]_GND_8_o_add_1_OUT> created at line 55.
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\pulse_divider.vhd".
+        div = 1000000
+    Found 20-bit register for signal <cnt_signal>.
+    Found 20-bit adder for signal <cnt_signal[19]_GND_8_o_add_1_OUT> created at line 55.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  24 D-type flip-flop(s).
+	inferred  20 D-type flip-flop(s).
 Unit <clock_divider_3> synthesized.
 
 Synthesizing Unit <clock_divider_4>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\pulse_divider.vhd".
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\pulse_divider.vhd".
+        div = 10000000
+    Found 24-bit register for signal <cnt_signal>.
+    Found 24-bit adder for signal <cnt_signal[23]_GND_9_o_add_1_OUT> created at line 55.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+Unit <clock_divider_4> synthesized.
+
+Synthesizing Unit <clock_divider_5>.
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\pulse_divider.vhd".
         div = 100000000
     Found 27-bit register for signal <cnt_signal>.
-    Found 27-bit adder for signal <cnt_signal[26]_GND_9_o_add_1_OUT> created at line 55.
+    Found 27-bit adder for signal <cnt_signal[26]_GND_10_o_add_1_OUT> created at line 55.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  27 D-type flip-flop(s).
-Unit <clock_divider_4> synthesized.
+Unit <clock_divider_5> synthesized.
 
 Synthesizing Unit <buttons>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\buttons.vhd".
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\buttons.vhd".
     Summary:
 	no macro.
 Unit <buttons> synthesized.
 
 Synthesizing Unit <button>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\button.vhd".
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\button.vhd".
     Summary:
 	no macro.
 Unit <button> synthesized.
 
 Synthesizing Unit <debouncer>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\debouncer.vhd".
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\debouncer.vhd".
         width = 4
     Found 4-bit register for signal <del>.
     Summary:
@@ -312,7 +339,7 @@ Synthesizing Unit <debouncer>.
 Unit <debouncer> synthesized.
 
 Synthesizing Unit <one_pulse>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\one_pulse.vhd".
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\one_pulse.vhd".
 WARNING:Xst:647 - Input <debclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 2-bit register for signal <current_state>.
     Found finite state machine <FSM_0> for signal <current_state>.
@@ -331,7 +358,7 @@ WARNING:Xst:647 - Input <debclk> is never used. This port will be preserved and 
 Unit <one_pulse> synthesized.
 
 Synthesizing Unit <selection>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\selection.vhd".
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\selection.vhd".
     Found 3-bit register for signal <s_ostate>.
     Found 9-bit register for signal <edit>.
     Found 1-bit register for signal <U1_active>.
@@ -345,19 +372,22 @@ Synthesizing Unit <selection>.
     | Inputs             | 1                                              |
     | Outputs            | 6                                              |
     | Clock              | sysclk (rising_edge)                           |
+    | Reset              | alarm_is_buzzing (positive)                    |
+    | Reset type         | synchronous                                    |
+    | Reset State        | clock                                          |
     | Power Up State     | clock                                          |
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 9-bit 3-to-1 multiplexer for signal <current_edit[1]_X_14_o_wide_mux_6_OUT> created at line 72.
+    Found 9-bit 3-to-1 multiplexer for signal <current_edit[1]_X_15_o_wide_mux_8_OUT> created at line 77.
     Summary:
 	inferred  15 D-type flip-flop(s).
-	inferred   1 Multiplexer(s).
+	inferred   2 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <selection> synthesized.
 
 Synthesizing Unit <alarm_clock>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\alarm_clock.vhd".
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\alarm_clock.vhd".
 WARNING:Xst:647 - Input <sel> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:737 - Found 1-bit latch for signal <count_t<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <count_t<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -388,7 +418,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <count_t<23>>. Latches may be gen
 Unit <alarm_clock> synthesized.
 
 Synthesizing Unit <time_block>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\time_block.vhd".
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\time_block.vhd".
     Found 2-bit register for signal <present_state>.
     Found finite state machine <FSM_2> for signal <present_state>.
     -----------------------------------------------------------------------
@@ -413,13 +443,13 @@ Synthesizing Unit <time_block>.
 Unit <time_block> synthesized.
 
 Synthesizing Unit <counter>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\counter.vhd".
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\counter.vhd".
     Found 4-bit register for signal <Ucnt>.
     Found 4-bit register for signal <Tcnt>.
-    Found 4-bit adder for signal <Tcnt[3]_GND_41_o_add_10_OUT> created at line 61.
-    Found 4-bit adder for signal <Ucnt[3]_GND_41_o_add_11_OUT> created at line 62.
-    Found 4-bit subtractor for signal <GND_41_o_GND_41_o_sub_20_OUT<3:0>> created at line 66.
-    Found 4-bit subtractor for signal <GND_41_o_GND_41_o_sub_21_OUT<3:0>> created at line 67.
+    Found 4-bit adder for signal <Tcnt[3]_GND_42_o_add_10_OUT> created at line 61.
+    Found 4-bit adder for signal <Ucnt[3]_GND_42_o_add_11_OUT> created at line 62.
+    Found 4-bit subtractor for signal <GND_42_o_GND_42_o_sub_20_OUT<3:0>> created at line 66.
+    Found 4-bit subtractor for signal <GND_42_o_GND_42_o_sub_21_OUT<3:0>> created at line 67.
     Found 4-bit comparator greater for signal <Tmax[3]_Tcnt[3]_LessThan_34_o> created at line 74
     Found 4-bit comparator equal for signal <Tmax[3]_Tcnt[3]_equal_35_o> created at line 74
     Found 4-bit comparator greater for signal <Umax[3]_Ucnt[3]_LessThan_36_o> created at line 74
@@ -434,8 +464,8 @@ Synthesizing Unit <counter>.
 Unit <counter> synthesized.
 
 Synthesizing Unit <date_block>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Date\date_block.vhd".
-INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Date\date_block.vhd" line 176: Output port <tc> of the instance <T1> is unconnected or connected to loadless signal.
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Date\date_block.vhd".
+INFO:Xst:3210 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Date\date_block.vhd" line 176: Output port <tc> of the instance <T1> is unconnected or connected to loadless signal.
     Found 2-bit register for signal <present_state>.
     Found finite state machine <FSM_3> for signal <present_state>.
     -----------------------------------------------------------------------
@@ -464,16 +494,16 @@ INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory
 Unit <date_block> synthesized.
 
 Synthesizing Unit <max_day_setter>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Date\max_day_setter.vhd".
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Date\max_day_setter.vhd".
     Summary:
 	inferred   4 Multiplexer(s).
 Unit <max_day_setter> synthesized.
 
 Synthesizing Unit <wekker_block>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Wekker\wekker_block.vhd".
-INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Wekker\wekker_block.vhd" line 143: Output port <tc> of the instance <T1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Wekker\wekker_block.vhd" line 144: Output port <tc> of the instance <T2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Wekker\wekker_block.vhd" line 145: Output port <tc> of the instance <T3> is unconnected or connected to loadless signal.
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Wekker\wekker_block.vhd".
+INFO:Xst:3210 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Wekker\wekker_block.vhd" line 143: Output port <tc> of the instance <T1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Wekker\wekker_block.vhd" line 144: Output port <tc> of the instance <T2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Wekker\wekker_block.vhd" line 145: Output port <tc> of the instance <T3> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <ledOn>.
     Found 24-bit register for signal <alarmOutput>.
     Found 1-bit register for signal <ledOut>.
@@ -502,7 +532,7 @@ INFO:Xst:3210 - "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory
 Unit <wekker_block> synthesized.
 
 Synthesizing Unit <select_show_function>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\select_show_function.vhd".
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\select_show_function.vhd".
 WARNING:Xst:647 - Input <sysclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
@@ -510,19 +540,19 @@ WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and l
 Unit <select_show_function> synthesized.
 
 Synthesizing Unit <data_to_display>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\data_to_display.vhd".
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\data_to_display.vhd".
     Summary:
 	no macro.
 Unit <data_to_display> synthesized.
 
 Synthesizing Unit <format_numbers>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\format_numbers.vhd".
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\format_numbers.vhd".
     Summary:
 	inferred   4 Multiplexer(s).
 Unit <format_numbers> synthesized.
 
 Synthesizing Unit <blinking>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\blinking.vhd".
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\blinking.vhd".
     Found 1-bit register for signal <blink_on>.
     Summary:
 	inferred   1 D-type flip-flop(s).
@@ -530,16 +560,16 @@ Synthesizing Unit <blinking>.
 Unit <blinking> synthesized.
 
 Synthesizing Unit <weergave4dig7segm>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\weergave4dig7segm.vhd".
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\weergave4dig7segm.vhd".
 WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <weergave4dig7segm> synthesized.
 
 Synthesizing Unit <Control>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\Control.vhd".
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Control.vhd".
     Found 2-bit register for signal <dignr_int>.
-    Found 4x2-bit Read Only RAM for signal <dignr_int[1]_GND_153_o_wide_mux_0_OUT>
+    Found 4x2-bit Read Only RAM for signal <dignr_int[1]_GND_154_o_wide_mux_0_OUT>
     Found 4-bit 4-to-1 multiplexer for signal <bcdout> created at line 49.
     Found 4-bit 4-to-1 multiplexer for signal <dignrout> created at line 63.
     HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <dignr_int> would allow inference of a finite state machine and as consequence better performance and smaller area.
@@ -550,11 +580,18 @@ Synthesizing Unit <Control>.
 Unit <Control> synthesized.
 
 Synthesizing Unit <BCD7segmDec>.
-    Related source file is "D:\school\SCH-IW_EI\elektronica\digitale\labo\working_directory\clock\BCD7segmDec.vhd".
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\BCD7segmDec.vhd".
     Found 16x7-bit Read Only RAM for signal <segm>
     Summary:
 	inferred   1 RAM(s).
 Unit <BCD7segmDec> synthesized.
+
+Synthesizing Unit <Sound>.
+    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Sound.vhd".
+WARNING:Xst:647 - Input <sysclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Sound> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -563,14 +600,16 @@ Macro Statistics
 # RAMs                                                 : 2
  16x7-bit single-port Read Only RAM                    : 1
  4x2-bit single-port Read Only RAM                     : 1
-# Adders/Subtractors                                   : 22
+# Adders/Subtractors                                   : 23
+ 10-bit adder                                          : 1
  17-bit adder                                          : 1
  20-bit adder                                          : 1
  24-bit adder                                          : 1
  27-bit adder                                          : 1
  4-bit addsub                                          : 18
-# Registers                                            : 38
- 1-bit register                                        : 7
+# Registers                                            : 41
+ 1-bit register                                        : 9
+ 10-bit register                                       : 1
  17-bit register                                       : 1
  2-bit register                                        : 1
  20-bit register                                       : 1
@@ -585,12 +624,13 @@ Macro Statistics
  24-bit comparator equal                               : 1
  4-bit comparator equal                                : 37
  4-bit comparator greater                              : 20
-# Multiplexers                                         : 189
- 1-bit 2-to-1 multiplexer                              : 19
+# Multiplexers                                         : 192
+ 1-bit 2-to-1 multiplexer                              : 20
  1-bit 3-to-1 multiplexer                              : 2
  1-bit 4-to-1 multiplexer                              : 4
  2-bit 2-to-1 multiplexer                              : 2
  24-bit 2-to-1 multiplexer                             : 4
+ 3-bit 2-to-1 multiplexer                              : 2
  4-bit 2-to-1 multiplexer                              : 155
  4-bit 4-to-1 multiplexer                              : 2
  9-bit 3-to-1 multiplexer                              : 1
@@ -603,6 +643,8 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1290 - Hierarchical block <T10us> is unconnected in block <T1>.
+   It will be removed from the design.
 
 Synthesizing (advanced) Unit <BCD7segmDec>.
 INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segm> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
@@ -619,7 +661,7 @@ INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segm> will be implemented on LUTs ei
 Unit <BCD7segmDec> synthesized (advanced).
 
 Synthesizing (advanced) Unit <Control>.
-INFO:Xst:3231 - The small RAM <Mram_dignr_int[1]_GND_153_o_wide_mux_0_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+INFO:Xst:3231 - The small RAM <Mram_dignr_int[1]_GND_154_o_wide_mux_0_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
     -----------------------------------------------------------------------
     | ram_type           | Distributed                         |          |
     -----------------------------------------------------------------------
@@ -648,6 +690,10 @@ Synthesizing (advanced) Unit <clock_divider_4>.
 The following registers are absorbed into counter <cnt_signal>: 1 register on signal <cnt_signal>.
 Unit <clock_divider_4> synthesized (advanced).
 
+Synthesizing (advanced) Unit <clock_divider_5>.
+The following registers are absorbed into counter <cnt_signal>: 1 register on signal <cnt_signal>.
+Unit <clock_divider_5> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
@@ -657,23 +703,25 @@ Macro Statistics
  4x2-bit single-port distributed Read Only RAM         : 1
 # Adders/Subtractors                                   : 18
  4-bit addsub                                          : 18
-# Counters                                             : 4
+# Counters                                             : 5
+ 10-bit up counter                                     : 1
  17-bit up counter                                     : 1
  20-bit up counter                                     : 1
  24-bit up counter                                     : 1
  27-bit up counter                                     : 1
-# Registers                                            : 137
- Flip-Flops                                            : 137
+# Registers                                            : 139
+ Flip-Flops                                            : 139
 # Comparators                                          : 58
  24-bit comparator equal                               : 1
  4-bit comparator equal                                : 37
  4-bit comparator greater                              : 20
-# Multiplexers                                         : 189
+# Multiplexers                                         : 191
  1-bit 2-to-1 multiplexer                              : 19
  1-bit 3-to-1 multiplexer                              : 2
  1-bit 4-to-1 multiplexer                              : 4
  2-bit 2-to-1 multiplexer                              : 2
  24-bit 2-to-1 multiplexer                             : 4
+ 3-bit 2-to-1 multiplexer                              : 2
  4-bit 2-to-1 multiplexer                              : 155
  4-bit 4-to-1 multiplexer                              : 2
  9-bit 3-to-1 multiplexer                              : 1
@@ -766,19 +814,21 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/alarm
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/alarmOutput_22> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/alarmOutput_15> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ALARMCLOCK/A1/alarmOutput_7> (without init value) has a constant value of 0 in block <clock>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <T1/T1s/cnt_signal_0> in Unit <clock> is equivalent to the following 3 FFs/Latches, which will be removed : <T1/T1ms/cnt_signal_0> <T1/T10ms/cnt_signal_0> <T1/T100ms/cnt_signal_0> 
-INFO:Xst:2261 - The FF/Latch <T1/T1s/cnt_signal_1> in Unit <clock> is equivalent to the following 3 FFs/Latches, which will be removed : <T1/T1ms/cnt_signal_1> <T1/T10ms/cnt_signal_1> <T1/T100ms/cnt_signal_1> 
-INFO:Xst:2261 - The FF/Latch <T1/T1s/cnt_signal_2> in Unit <clock> is equivalent to the following 3 FFs/Latches, which will be removed : <T1/T1ms/cnt_signal_2> <T1/T10ms/cnt_signal_2> <T1/T100ms/cnt_signal_2> 
-INFO:Xst:2261 - The FF/Latch <T1/T1s/cnt_signal_3> in Unit <clock> is equivalent to the following 3 FFs/Latches, which will be removed : <T1/T1ms/cnt_signal_3> <T1/T10ms/cnt_signal_3> <T1/T100ms/cnt_signal_3> 
-INFO:Xst:2261 - The FF/Latch <T1/T1s/cnt_signal_4> in Unit <clock> is equivalent to the following 3 FFs/Latches, which will be removed : <T1/T1ms/cnt_signal_4> <T1/T10ms/cnt_signal_4> <T1/T100ms/cnt_signal_4> 
 INFO:Xst:2261 - The FF/Latch <T1/T1s/cnt_signal_5> in Unit <clock> is equivalent to the following 2 FFs/Latches, which will be removed : <T1/T10ms/cnt_signal_5> <T1/T100ms/cnt_signal_5> 
 INFO:Xst:2261 - The FF/Latch <T1/T1s/cnt_signal_6> in Unit <clock> is equivalent to the following FF/Latch, which will be removed : <T1/T100ms/cnt_signal_6> 
 INFO:Xst:2261 - The FF/Latch <S/current_edit_FSM_FFd1> in Unit <clock> is equivalent to the following FF/Latch, which will be removed : <S/s_ostate_1> 
 INFO:Xst:2261 - The FF/Latch <S/current_edit_FSM_FFd2> in Unit <clock> is equivalent to the following FF/Latch, which will be removed : <S/s_ostate_0> 
+INFO:Xst:2261 - The FF/Latch <T1/T1ms/cnt_signal_0> in Unit <clock> is equivalent to the following 3 FFs/Latches, which will be removed : <T1/T1s/cnt_signal_0> <T1/T10ms/cnt_signal_0> <T1/T100ms/cnt_signal_0> 
+INFO:Xst:2261 - The FF/Latch <T1/T1ms/cnt_signal_1> in Unit <clock> is equivalent to the following 3 FFs/Latches, which will be removed : <T1/T1s/cnt_signal_1> <T1/T10ms/cnt_signal_1> <T1/T100ms/cnt_signal_1> 
+INFO:Xst:2261 - The FF/Latch <T1/T1ms/cnt_signal_2> in Unit <clock> is equivalent to the following 3 FFs/Latches, which will be removed : <T1/T1s/cnt_signal_2> <T1/T10ms/cnt_signal_2> <T1/T100ms/cnt_signal_2> 
+INFO:Xst:2261 - The FF/Latch <T1/T1ms/cnt_signal_3> in Unit <clock> is equivalent to the following 3 FFs/Latches, which will be removed : <T1/T1s/cnt_signal_3> <T1/T10ms/cnt_signal_3> <T1/T100ms/cnt_signal_3> 
+INFO:Xst:2261 - The FF/Latch <T1/T1ms/cnt_signal_4> in Unit <clock> is equivalent to the following 3 FFs/Latches, which will be removed : <T1/T1s/cnt_signal_4> <T1/T10ms/cnt_signal_4> <T1/T100ms/cnt_signal_4> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block clock, actual ratio is 7.
+WARNING:Xst:1426 - The value init of the FF/Latch init hinder the constant cleaning in the block clock.
+   You should achieve better results by setting this init to 1.
 
 Final Macro Processing ...
 
@@ -786,8 +836,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 211
- Flip-Flops                                            : 211
+# Registers                                            : 213
+ Flip-Flops                                            : 213
 
 =========================================================================
 
@@ -810,30 +860,30 @@ Top Level Output File Name         : clock.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 715
+# BELS                             : 723
 #      GND                         : 1
-#      INV                         : 7
+#      INV                         : 11
 #      LUT1                        : 84
-#      LUT2                        : 58
-#      LUT3                        : 48
+#      LUT2                        : 60
+#      LUT3                        : 49
 #      LUT4                        : 29
 #      LUT5                        : 59
-#      LUT6                        : 256
+#      LUT6                        : 257
 #      MUXCY                       : 92
 #      MUXF7                       : 10
 #      VCC                         : 1
 #      XORCY                       : 70
-# FlipFlops/Latches                : 231
-#      FD                          : 44
-#      FDE                         : 53
+# FlipFlops/Latches                : 233
+#      FD                          : 34
+#      FDE                         : 65
 #      FDR                         : 78
 #      FDRE                        : 36
 #      LD                          : 20
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 22
-#      IBUF                        : 6
-#      OBUF                        : 16
+#      IBUF                        : 5
+#      OBUF                        : 17
 
 Device utilization summary:
 ---------------------------
@@ -842,15 +892,15 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             231  out of  18224     1%  
- Number of Slice LUTs:                  541  out of   9112     5%  
-    Number used as Logic:               541  out of   9112     5%  
+ Number of Slice Registers:             233  out of  18224     1%  
+ Number of Slice LUTs:                  549  out of   9112     6%  
+    Number used as Logic:               549  out of   9112     6%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    587
-   Number with an unused Flip Flop:     356  out of    587    60%  
-   Number with an unused LUT:            46  out of    587     7%  
-   Number of fully used LUT-FF pairs:   185  out of    587    31%  
+ Number of LUT Flip Flop pairs used:    597
+   Number with an unused Flip Flop:     364  out of    597    60%  
+   Number with an unused LUT:            48  out of    597     8%  
+   Number of fully used LUT-FF pairs:   185  out of    597    30%  
    Number of unique control sets:        35
 
 IO Utilization: 
@@ -881,7 +931,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-sysclk                             | BUFGP                  | 231   |
+sysclk                             | BUFGP                  | 233   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -893,8 +943,8 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 8.821ns (Maximum Frequency: 113.361MHz)
-   Minimum input arrival time before clock: 5.518ns
-   Maximum output required time after clock: 11.150ns
+   Minimum input arrival time before clock: 1.903ns
+   Maximum output required time after clock: 11.168ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -904,7 +954,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sysclk'
   Clock period: 8.821ns (frequency: 113.361MHz)
-  Total number of paths / destination ports: 36896 / 426
+  Total number of paths / destination ports: 37034 / 441
 -------------------------------------------------------------------------
 Delay:               8.821ns (Levels of Logic = 8)
   Source:            T1/T1s/cnt_signal_24 (FF)
@@ -917,10 +967,10 @@ Delay:               8.821ns (Levels of Logic = 8)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDR:C->Q              2   0.447   0.981  T1/T1s/cnt_signal_24 (T1/T1s/cnt_signal_24)
-     LUT6:I0->O            2   0.203   0.864  T1/T1s/pulse<26>7_SW0 (N108)
+     LUT6:I0->O            2   0.203   0.864  T1/T1s/pulse<26>7_SW0 (N114)
      LUT6:I2->O            1   0.203   0.808  T1/T1s/pulse<26>7_1 (T1/T1s/pulse<26>7)
      LUT6:I3->O           16   0.205   1.005  ALARMCLOCK/T1/cntenT32 (ALARMCLOCK/T1/cntenT3)
-     LUT3:I2->O            2   0.205   0.617  ALARMCLOCK/D1/Mmux_cntenT314_SW3 (N168)
+     LUT3:I2->O            2   0.205   0.617  ALARMCLOCK/D1/Mmux_cntenT314_SW3 (N174)
      LUT6:I5->O           17   0.205   1.028  ALARMCLOCK/D1/Mmux_cntenT111 (ALARMCLOCK/D1/cntenT2)
      LUT6:I5->O            3   0.205   0.755  ALARMCLOCK/D1/T2/Mmux_Ucnt[3]_Ucnt[3]_mux_29_OUT_A21 (ALARMCLOCK/D1/T2/Mmux_Ucnt[3]_Ucnt[3]_mux_29_OUT_rs_A<1>)
      LUT6:I4->O            1   0.203   0.580  ALARMCLOCK/D1/T2/Mmux_Ucnt[3]_Umin[3]_mux_30_OUT411 (ALARMCLOCK/D1/T2/Mmux_Ucnt[3]_Umin[3]_mux_30_OUT41)
@@ -932,30 +982,28 @@ Delay:               8.821ns (Levels of Logic = 8)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'sysclk'
-  Total number of paths / destination ports: 176 / 173
+  Total number of paths / destination ports: 5 / 5
 -------------------------------------------------------------------------
-Offset:              5.518ns (Levels of Logic = 3)
-  Source:            reset (PAD)
-  Destination:       ALARMCLOCK/D1/T1/Ucnt_0 (FF)
+Offset:              1.903ns (Levels of Logic = 1)
+  Source:            btn_l (PAD)
+  Destination:       BUTTONS1/B1/debouncer1/del_1 (FF)
   Destination Clock: sysclk rising
 
-  Data Path: reset to ALARMCLOCK/D1/T1/Ucnt_0
+  Data Path: btn_l to BUTTONS1/B1/debouncer1/del_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            96   1.222   1.851  reset_IBUF (reset_IBUF)
-     LUT2:I1->O            1   0.205   0.924  ALARMCLOCK/D1/T1/_n0127_SW0 (N38)
-     LUT6:I1->O            4   0.203   0.683  ALARMCLOCK/D1/T1/_n0127 (ALARMCLOCK/D1/T1/_n0127)
-     FDRE:R                    0.430          ALARMCLOCK/D1/T1/Ucnt_0
+     IBUF:I->O             1   1.222   0.579  btn_l_IBUF (btn_l_IBUF)
+     FDE:D                     0.102          BUTTONS1/B1/debouncer1/del_1
     ----------------------------------------
-    Total                      5.518ns (2.060ns logic, 3.458ns route)
-                                       (37.3% logic, 62.7% route)
+    Total                      1.903ns (1.324ns logic, 0.579ns route)
+                                       (69.6% logic, 30.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sysclk'
-  Total number of paths / destination ports: 5093 / 16
+  Total number of paths / destination ports: 5116 / 17
 -------------------------------------------------------------------------
-Offset:              11.150ns (Levels of Logic = 7)
+Offset:              11.168ns (Levels of Logic = 7)
   Source:            S/current_edit_FSM_FFd1 (FF)
   Destination:       cath<6> (PAD)
   Source Clock:      sysclk rising
@@ -964,16 +1012,16 @@ Offset:              11.150ns (Levels of Logic = 7)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              29   0.447   1.594  S/current_edit_FSM_FFd1 (S/current_edit_FSM_FFd1)
-     LUT6:I1->O            1   0.203   0.580  SELSHOWFUNC/Mmux_ostate41 (SELSHOWFUNC/Mmux_ostate4)
-     LUT6:I5->O            3   0.205   0.898  SELSHOWFUNC/Mmux_ostate42 (ostate<3>)
-     LUT4:I0->O           13   0.203   1.297  DATATODISPLAY/B1/_n00131 (DATATODISPLAY/B1/_n0013)
-     LUT6:I0->O            1   0.203   0.944  W1/C1/Mmux_bcdout128_SW0 (N244)
+     FDR:C->Q             30   0.447   1.628  S/current_edit_FSM_FFd1 (S/current_edit_FSM_FFd1)
+     LUT6:I0->O            1   0.203   0.580  SELSHOWFUNC/Mmux_ostate31 (SELSHOWFUNC/Mmux_ostate3)
+     LUT6:I5->O            3   0.205   0.879  SELSHOWFUNC/Mmux_ostate32 (ostate<2>)
+     LUT4:I1->O           13   0.205   1.297  DATATODISPLAY/B1/_n00131 (DATATODISPLAY/B1/_n0013)
+     LUT6:I0->O            1   0.203   0.944  W1/C1/Mmux_bcdout128_SW0 (N248)
      LUT6:I0->O            7   0.203   1.021  W1/C1/Mmux_bcdout128 (W1/bcdout_int<2>)
      LUT4:I0->O            1   0.203   0.579  W1/D1/Mram_segm51 (cath_5_OBUF)
      OBUF:I->O                 2.571          cath_5_OBUF (cath<5>)
     ----------------------------------------
-    Total                     11.150ns (4.238ns logic, 6.912ns route)
+    Total                     11.168ns (4.240ns logic, 6.928ns route)
                                        (38.0% logic, 62.0% route)
 
 =========================================================================
@@ -992,14 +1040,14 @@ sysclk         |    8.821|         |    1.465|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.58 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.64 secs
  
 --> 
 
-Total memory usage is 290940 kilobytes
+Total memory usage is 290856 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   55 (   0 filtered)
-Number of infos    :   17 (   0 filtered)
+Number of warnings :   62 (   0 filtered)
+Number of infos    :   18 (   0 filtered)
 
