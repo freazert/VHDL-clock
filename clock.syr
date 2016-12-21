@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.23 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.22 secs
+Total CPU time to Xst completion: 0.23 secs
  
 --> Reading design: clock.prj
 
@@ -150,9 +150,6 @@ Parsing architecture <Behavioral> of entity <weergave4dig7segm>.
 Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\timer.vhd" into library work
 Parsing entity <timer>.
 Parsing architecture <Behavioral> of entity <timer>.
-Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Sound.vhd" into library work
-Parsing entity <Sound>.
-Parsing architecture <Behavioral> of entity <sound>.
 Parsing VHDL file "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\select_show_function.vhd" into library work
 Parsing entity <select_show_function>.
 Parsing architecture <Behavioral> of entity <select_show_function>.
@@ -197,7 +194,7 @@ Elaborating entity <button> (architecture <Behavioral>) from library <work>.
 Elaborating entity <debouncer> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <one_pulse> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:439 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\clock.vhd" Line 76: Formal port alarm_is_buzzing of mode in cannot be associated with actual port alarm_is_buzzing of mode out
+WARNING:HDLCompiler:439 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\clock.vhd" Line 75: Formal port alarm_is_buzzing of mode in cannot be associated with actual port alarm_is_buzzing of mode out
 INFO:HDLCompiler:1408 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\selection.vhd" Line 41. alarm_is_buzzing is declared here
 
 Elaborating entity <selection> (architecture <Behavioral>) from library <work>.
@@ -241,18 +238,14 @@ INFO:HDLCompiler:679 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v
 
 Elaborating entity <BCD7segmDec> (architecture <Behavioral>) from library <work>.
 
-Elaborating entity <Sound> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Sound.vhd" Line 45: alarm_sound should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Sound.vhd" Line 46: pulske should be on the sensitivity list of the process
-
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <clock>.
     Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\clock.vhd".
-INFO:Xst:3210 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\clock.vhd" line 173: Output port <init_reset> of the instance <T1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\clock.vhd" line 173: Output port <pulse_10us> of the instance <T1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\clock.vhd" line 164: Output port <init_reset> of the instance <T1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\clock.vhd" line 164: Output port <pulse_10us> of the instance <T1> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <init>.
     Found 1-bit register for signal <reset>.
     Summary:
@@ -586,13 +579,6 @@ Synthesizing Unit <BCD7segmDec>.
 	inferred   1 RAM(s).
 Unit <BCD7segmDec> synthesized.
 
-Synthesizing Unit <Sound>.
-    Related source file is "D:\School UAntwerpen\Electronica-1\Labo Digitaal\clock-v2\clock-vhdl-2\Sound.vhd".
-WARNING:Xst:647 - Input <sysclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-    Summary:
-	inferred   1 Multiplexer(s).
-Unit <Sound> synthesized.
-
 =========================================================================
 HDL Synthesis Report
 
@@ -624,8 +610,8 @@ Macro Statistics
  24-bit comparator equal                               : 1
  4-bit comparator equal                                : 37
  4-bit comparator greater                              : 20
-# Multiplexers                                         : 192
- 1-bit 2-to-1 multiplexer                              : 20
+# Multiplexers                                         : 191
+ 1-bit 2-to-1 multiplexer                              : 19
  1-bit 3-to-1 multiplexer                              : 2
  1-bit 4-to-1 multiplexer                              : 4
  2-bit 2-to-1 multiplexer                              : 2
@@ -860,7 +846,7 @@ Top Level Output File Name         : clock.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 723
+# BELS                             : 722
 #      GND                         : 1
 #      INV                         : 11
 #      LUT1                        : 84
@@ -868,7 +854,7 @@ Primitive and Black Box Usage:
 #      LUT3                        : 49
 #      LUT4                        : 29
 #      LUT5                        : 59
-#      LUT6                        : 257
+#      LUT6                        : 256
 #      MUXCY                       : 92
 #      MUXF7                       : 10
 #      VCC                         : 1
@@ -881,9 +867,9 @@ Primitive and Black Box Usage:
 #      LD                          : 20
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 22
+# IO Buffers                       : 21
 #      IBUF                        : 5
-#      OBUF                        : 17
+#      OBUF                        : 16
 
 Device utilization summary:
 ---------------------------
@@ -893,19 +879,19 @@ Selected Device : 6slx16csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:             233  out of  18224     1%  
- Number of Slice LUTs:                  549  out of   9112     6%  
-    Number used as Logic:               549  out of   9112     6%  
+ Number of Slice LUTs:                  548  out of   9112     6%  
+    Number used as Logic:               548  out of   9112     6%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    597
-   Number with an unused Flip Flop:     364  out of    597    60%  
-   Number with an unused LUT:            48  out of    597     8%  
-   Number of fully used LUT-FF pairs:   185  out of    597    30%  
+ Number of LUT Flip Flop pairs used:    596
+   Number with an unused Flip Flop:     363  out of    596    60%  
+   Number with an unused LUT:            48  out of    596     8%  
+   Number of fully used LUT-FF pairs:   185  out of    596    31%  
    Number of unique control sets:        35
 
 IO Utilization: 
- Number of IOs:                          23
- Number of bonded IOBs:                  23  out of    232     9%  
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    232     9%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -1001,7 +987,7 @@ Offset:              1.903ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'sysclk'
-  Total number of paths / destination ports: 5116 / 17
+  Total number of paths / destination ports: 5095 / 16
 -------------------------------------------------------------------------
 Offset:              11.168ns (Levels of Logic = 7)
   Source:            S/current_edit_FSM_FFd1 (FF)
@@ -1040,14 +1026,14 @@ sysclk         |    8.821|         |    1.465|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.64 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.28 secs
  
 --> 
 
 Total memory usage is 290856 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   62 (   0 filtered)
+Number of warnings :   59 (   0 filtered)
 Number of infos    :   18 (   0 filtered)
 

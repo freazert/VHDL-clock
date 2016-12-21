@@ -48,8 +48,6 @@ Net "an<1>" LOC = N15 ; 	# AN1
 Net "an<2>" LOC = P18 ; 	# AN2
 Net "an<3>" LOC = P17 ; 	# AN3	(uiterst rechts cijfer)
 
-## Sound
-Net "sound_pulse" LOC = V12 ; 
 #Net "led_alarm_buzzing" LOC = T12 ;
 
 

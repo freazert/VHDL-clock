@@ -39,8 +39,7 @@ entity clock is
       cath : out  STD_LOGIC_VECTOR(6 downto 0);
 		sel_out: out std_logic_vector(2 downto 0);
       led_alarm_buzzing : out  STD_LOGIC;
-		led_alarm_on: out std_logic;
-		sound_pulse: out std_logic
+		led_alarm_on: out std_logic
 		);
 end clock;
 
@@ -130,14 +129,6 @@ Port (
 );
 end component;
 
-COMPONENT Sound 
-PORT  (
-	alarm_sound : in  STD_LOGIC;
-	sysclk : in STD_LOGIC;
-	pulske : in STD_LOGIC;
-   soundpulse : out  STD_LOGIC
-);
-end component;
 
 signal pulse_10us : std_logic;
 signal pulse_1ms : std_logic := '0';
@@ -222,10 +213,6 @@ W1 : weergave4dig7segm PORT MAP (
 	sysclk => sysclk, reset => reset, en => pulse_1ms,	blank => blinking,
 	dig3 => number4, dig2 => number3, dig1 => number2,	dig0 => number1,
 	an => an, cath => cath
-);
-
-ALARMSOUND: Sound PORT MAP(
-	sysclk => sysclk, pulske => pulse_10ms, alarm_sound => led_alarm_buzzing_s, soundpulse => sound_pulse
 );
 
 --sel_out <= sel;

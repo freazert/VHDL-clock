@@ -207,49 +207,9 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="BCD7segmDec.vhd"/>
-      <outfile xil_pn:name="Control.vhd"/>
-      <outfile xil_pn:name="Date/date_block.vhd"/>
-      <outfile xil_pn:name="Date/max_day_setter.vhd"/>
-      <outfile xil_pn:name="Date/tb_date_block.vhd"/>
-      <outfile xil_pn:name="Date/tb_max_day_setter.vhd"/>
-      <outfile xil_pn:name="Sound.vhd"/>
-      <outfile xil_pn:name="Wekker/tb_wekker_block.vhd"/>
-      <outfile xil_pn:name="Wekker/wekker_block.vhd"/>
-      <outfile xil_pn:name="alarm_clock.vhd"/>
-      <outfile xil_pn:name="alarm_clock_tb.vhd"/>
-      <outfile xil_pn:name="blinking.vhd"/>
-      <outfile xil_pn:name="button.vhd"/>
-      <outfile xil_pn:name="buttons.vhd"/>
-      <outfile xil_pn:name="clock.vhd"/>
-      <outfile xil_pn:name="clock_tb.vhd"/>
-      <outfile xil_pn:name="control_tb.vhd"/>
-      <outfile xil_pn:name="counter.vhd"/>
-      <outfile xil_pn:name="counter_tb.vhd"/>
-      <outfile xil_pn:name="data_to_display.vhd"/>
-      <outfile xil_pn:name="data_to_display_tb.vhd"/>
-      <outfile xil_pn:name="debouncer.vhd"/>
-      <outfile xil_pn:name="display_test.vhd"/>
-      <outfile xil_pn:name="format_numbers.vhd"/>
-      <outfile xil_pn:name="one_pulse.vhd"/>
-      <outfile xil_pn:name="pulse_divider.vhd"/>
-      <outfile xil_pn:name="select_show_function.vhd"/>
-      <outfile xil_pn:name="select_show_function_tb.vhd"/>
-      <outfile xil_pn:name="selection.vhd"/>
-      <outfile xil_pn:name="tb_Sound.vhd"/>
-      <outfile xil_pn:name="tb_blinking.vhd"/>
-      <outfile xil_pn:name="tb_button.vhd"/>
-      <outfile xil_pn:name="tb_debouncer.vhd"/>
-      <outfile xil_pn:name="tb_format_numbers.vhd"/>
-      <outfile xil_pn:name="tb_one_pulse.vhd"/>
-      <outfile xil_pn:name="tb_selection.vhd"/>
-      <outfile xil_pn:name="time_block.vhd"/>
-      <outfile xil_pn:name="time_block_tb.vhd"/>
-      <outfile xil_pn:name="timer.vhd"/>
-      <outfile xil_pn:name="timer_tb.vhd"/>
-      <outfile xil_pn:name="weergave.vhd"/>
-      <outfile xil_pn:name="weergave4dig7segm.vhd"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1481927462" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-899032313505467017" xil_pn:start_ts="1481927462">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -270,65 +230,28 @@
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="BCD7segmDec.vhd"/>
-      <outfile xil_pn:name="Control.vhd"/>
-      <outfile xil_pn:name="Date/date_block.vhd"/>
-      <outfile xil_pn:name="Date/max_day_setter.vhd"/>
-      <outfile xil_pn:name="Date/tb_date_block.vhd"/>
-      <outfile xil_pn:name="Date/tb_max_day_setter.vhd"/>
-      <outfile xil_pn:name="Sound.vhd"/>
-      <outfile xil_pn:name="Wekker/tb_wekker_block.vhd"/>
-      <outfile xil_pn:name="Wekker/wekker_block.vhd"/>
-      <outfile xil_pn:name="alarm_clock.vhd"/>
-      <outfile xil_pn:name="alarm_clock_tb.vhd"/>
-      <outfile xil_pn:name="blinking.vhd"/>
-      <outfile xil_pn:name="button.vhd"/>
-      <outfile xil_pn:name="buttons.vhd"/>
-      <outfile xil_pn:name="clock.vhd"/>
-      <outfile xil_pn:name="clock_tb.vhd"/>
-      <outfile xil_pn:name="control_tb.vhd"/>
-      <outfile xil_pn:name="counter.vhd"/>
-      <outfile xil_pn:name="counter_tb.vhd"/>
-      <outfile xil_pn:name="data_to_display.vhd"/>
-      <outfile xil_pn:name="data_to_display_tb.vhd"/>
-      <outfile xil_pn:name="debouncer.vhd"/>
-      <outfile xil_pn:name="display_test.vhd"/>
-      <outfile xil_pn:name="format_numbers.vhd"/>
-      <outfile xil_pn:name="one_pulse.vhd"/>
-      <outfile xil_pn:name="pulse_divider.vhd"/>
-      <outfile xil_pn:name="select_show_function.vhd"/>
-      <outfile xil_pn:name="select_show_function_tb.vhd"/>
-      <outfile xil_pn:name="selection.vhd"/>
-      <outfile xil_pn:name="tb_Sound.vhd"/>
-      <outfile xil_pn:name="tb_blinking.vhd"/>
-      <outfile xil_pn:name="tb_button.vhd"/>
-      <outfile xil_pn:name="tb_debouncer.vhd"/>
-      <outfile xil_pn:name="tb_format_numbers.vhd"/>
-      <outfile xil_pn:name="tb_one_pulse.vhd"/>
-      <outfile xil_pn:name="tb_selection.vhd"/>
-      <outfile xil_pn:name="time_block.vhd"/>
-      <outfile xil_pn:name="time_block_tb.vhd"/>
-      <outfile xil_pn:name="timer.vhd"/>
-      <outfile xil_pn:name="timer_tb.vhd"/>
-      <outfile xil_pn:name="weergave.vhd"/>
-      <outfile xil_pn:name="weergave4dig7segm.vhd"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1481927627" xil_pn:in_ck="-5549294307635493906" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2900814031469728946" xil_pn:start_ts="1481927623">
       <status xil_pn:value="FailedRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1481926028" xil_pn:in_ck="-2299099118185838497" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2406420939855971846" xil_pn:start_ts="1481926027">
       <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutOfDateForced"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="tb_Sound_isim_beh.wdb"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1481888413" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1481888413">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -358,7 +281,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1481928552" xil_pn:in_ck="-5027436373714253533" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-6537997521826744811" xil_pn:start_ts="1481928538">
+    <transform xil_pn:end_ts="1482334500" xil_pn:in_ck="7324260260558356426" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-6537997521826744811" xil_pn:start_ts="1482334482">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -381,11 +304,11 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1481927065" xil_pn:in_ck="7086797893406026337" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7304699253844187868" xil_pn:start_ts="1481927065">
+    <transform xil_pn:end_ts="1482334500" xil_pn:in_ck="7086797893406026337" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7304699253844187868" xil_pn:start_ts="1482334500">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1481928557" xil_pn:in_ck="2795336721987474605" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8493608034150444313" xil_pn:start_ts="1481928552">
+    <transform xil_pn:end_ts="1482334507" xil_pn:in_ck="2795336721987474605" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-8493608034150444313" xil_pn:start_ts="1482334500">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -395,11 +318,9 @@
       <outfile xil_pn:name="clock.ngd"/>
       <outfile xil_pn:name="clock_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1481928567" xil_pn:in_ck="-7996993076738960848" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1481928557">
+    <transform xil_pn:end_ts="1482334526" xil_pn:in_ck="-7996993076738960848" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1482334507">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="clock.pcf"/>
       <outfile xil_pn:name="clock_map.map"/>
@@ -410,7 +331,7 @@
       <outfile xil_pn:name="clock_summary.xml"/>
       <outfile xil_pn:name="clock_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1481928580" xil_pn:in_ck="-8177523084189153946" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1481928567">
+    <transform xil_pn:end_ts="1482334540" xil_pn:in_ck="-8177523084189153946" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1482334526">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -424,7 +345,7 @@
       <outfile xil_pn:name="clock_pad.txt"/>
       <outfile xil_pn:name="clock_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1481928590" xil_pn:in_ck="-6109581640743220821" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1481928580">
+    <transform xil_pn:end_ts="1482334551" xil_pn:in_ck="-6109581640743220821" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1482334540">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
@@ -436,7 +357,7 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1481928580" xil_pn:in_ck="-3665552515695165716" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1481928575">
+    <transform xil_pn:end_ts="1482334540" xil_pn:in_ck="-3665552515695165716" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1482334535">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
@@ -447,10 +368,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="netgen"/>
-      <outfile xil_pn:name="netgen/translate/clock_translate.nlf"/>
-      <outfile xil_pn:name="netgen/translate/clock_translate.vhd"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 
