@@ -46,6 +46,15 @@
          <ClosedNode>/tb_wekker_block - behavior D:|school|SCH-IW_EI|elektronica|digitale|labo|working_directory|clock|Wekker|tb_wekker_block.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
+<<<<<<< HEAD
+         <SelectedItem>clock - Behavioral (D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/clock.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001fd000000020000000000000000000000000200000064ffffffff000000810000000300000002000001fd0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>clock - Behavioral (D:/school/SCH-IW_EI/elektronica/digitale/labo/working_directory/clock/clock.vhd)</CurrentItem>
+=======
          <SelectedItem>clock - Behavioral (D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/clock.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
@@ -53,6 +62,7 @@
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001fd000000020000000000000000000000000200000064ffffffff000000810000000300000002000001fd0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>clock - Behavioral (D:/School UAntwerpen/Electronica-1/Labo Digitaal/clock-v2/clock-vhdl-2/clock.vhd)</CurrentItem>
+>>>>>>> e92c09aaba43e07f4753baddc1059f0cb8ed4601
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -109,10 +119,8 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Design Utilities</ClosedNode>
-         <ClosedNode>Implement Design/Map</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
          <ClosedNode>Implement Design/Translate</ClosedNode>
-         <ClosedNode>Synthesize - XST</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
@@ -120,7 +128,11 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+<<<<<<< HEAD
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000019b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000019b0000000100000000</ViewHeaderState>
+=======
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ee000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ee0000000100000000</ViewHeaderState>
+>>>>>>> e92c09aaba43e07f4753baddc1059f0cb8ed4601
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Generate Programming File</CurrentItem>
    </ItemView>
